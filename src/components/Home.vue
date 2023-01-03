@@ -1,11 +1,14 @@
+<script setup>
+    import Intro from "./Intro.vue"
+</script>
+
 <template>
     <div>
-        <div class="logo"></div>
-        <div class="circuits"></div>
+        <Intro />
     </div>
 </template>
 
-<style scoped>
+<style>
     /* circuit-board background image */
     .circuits {
         background-image: url("../assets/svg/circuit_board_vector.svg");
@@ -20,7 +23,6 @@
     }
 
     .logo {
-        /* visibility: hidden; */
         background-image: url('../assets/svg/logo2.svg');
         width: 90vw;
         max-width: 520px;
@@ -36,5 +38,16 @@
         transform: translate(-49%, -58%);
         margin: 1rem auto;
         animation: logofadein 3s ease-in-out;
+    }
+
+    @keyframes logofadein {
+        from {
+            visibility: hidden;
+            opacity: 0;
+        }
+        to {
+            visibility: visible;
+            opacity: 40%;
+        }
     }
 </style>

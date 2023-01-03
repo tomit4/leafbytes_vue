@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<style scoped>
+<style>
     h1 {
         display: flex;
         position: absolute;

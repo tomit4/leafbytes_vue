@@ -1,17 +1,16 @@
 <script setup>
-    import Home from "./components/Home.vue"
-    /* import {RouterView} from "vue-router" */
+    import {RouterView} from "vue-router"
 </script>
 
 <template>
     <div>
         <RouterView />
-        <Home />
+        <div class="logo"></div>
+        <div class="circuits"></div>
     </div>
 </template>
 
 <style>
-
 /* *********************
 * scrollbar styles
 ***********************/

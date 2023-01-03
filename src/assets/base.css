@@ -1,5 +1,12 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
+
+    --dark-blue: #004b77;
+    --light-blue: #baf6ff;
+    --bg-black: #252525;
+
+
+
+
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -21,34 +28,19 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+/* @media (prefers-color-scheme: dark) { */
+  /* :root { */
+    /* --color-background: var(--vt-c-black); */
+    /* --color-background-soft: var(--vt-c-black-soft); */
+    /* --color-background-mute: var(--vt-c-black-mute); */
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+    /* --color-border: var(--vt-c-divider-dark-2); */
+    /* --color-border-hover: var(--vt-c-divider-dark-1); */
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
+    /* --color-heading: var(--vt-c-text-dark-1); */
+    /* --color-text: var(--vt-c-text-dark-2); */
+  /* } */
+/* } */
 
 *,
 *::before,
@@ -75,8 +67,9 @@ body {
 }
 
 /* *********************
- * CUSTOM FONTS
+ * CUSTOM CSS
  * *********************/
+
 @font-face {
     font-family: entsans;
     src: url('./fonts/entsans.ttf');
@@ -89,59 +82,4 @@ body {
 @font-face {
     font-family: HussarBold;
     src: url('./fonts/HussarBold-7mRE.otf');
-}
-
-/* *********************
- * HTML SETTINGS
- * *********************/
-
-html {
-    background-color: #252525;
-}
-
-html, body {
-    /* background-image: linear-gradient(280deg, #004b77 0%, #94fff4 120%); */
-    /* less saturated version of background */
-    background-image: linear-gradient(280deg, #004b77 0%, #baf6ff 120%);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
-    /* max-width: 1440px; */
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0;
-    overscroll-behavior: none;
-    overflow: hidden;
-
-    /* mozilla firefox styling of scrollbar */
-    scrollbar-color: #004b77 #baf6ff;
-}
-
-/* chromium styling of scrollbar */
-
-*::-webkit-scrollbar {
-    width: 3px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #baf6ff;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #004b77;
-    border-radius: 20px;
-    border: 3px solid #004b77;
-}
-
-/* circuit-board background image */
-.circuits {
-    background-image: url("./svg/circuit_board_vector.svg");
-    background-size: contain;
-    background-position: center center;
-    width: 98vw;
-    max-width: 1920px;
-    margin: 0 auto;
-    height: 98vh;
-    opacity: 25%;
-    overflow: hidden;
 }

@@ -5,21 +5,21 @@
     const subtitleEl = ref(null)
     const circuitOuterEl = ref(null)
 
-    function wait(ms) {
+    function delay(ms) {
         return new Promise(res => setTimeout(res, ms))
     }
 
     onMounted(async () => {
-        await wait(2900)
+        await delay(2900)
         leafbytesEl.value.classList.add('loadtitlefade')
         subtitleEl.value.classList.add('loadtitlefade')
-        await wait(5000)
+        await delay(5000)
         leafbytesEl.value.classList.remove('loadtitlefade')
         subtitleEl.value.classList.remove('loadtitlefade')
         leafbytesEl.value.classList.add('loadtitlefadeout')
         subtitleEl.value.classList.add('loadtitlefadeout')
         circuitOuterEl.value.classList.add('loadtitlefadeout')
-        await wait(2500)
+        await delay(2500)
         leafbytesEl.value.remove()
         subtitleEl.value.remove()
         circuitOuterEl.value.remove()

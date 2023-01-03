@@ -41,7 +41,7 @@
     /* logo/title */
     .circuit-outer {
         position: fixed;
-        background-image: linear-gradient(280deg, #62a5bf 0%, #2a7296 120%);
+        background-image: linear-gradient(280deg, var(--bg-light-blue) 0%, var(--bg-dark-blue) 120%);
         z-index: 1;
         opacity: 70%;
         min-width: 300px;
@@ -60,7 +60,7 @@
 
     .current {
         position: absolute;
-        background: #004b77;
+        background: var(--dark-blue);
         animation-iteration-count: 1;
         animation-timing-function: linear;
         animation-fill-mode: forwards;

@@ -11,7 +11,7 @@
 </template>
 
 <style>
-/* *********************
+/***********************
 * scrollbar styles
 ***********************/
     /* chromium styling of scrollbar */

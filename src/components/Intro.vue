@@ -143,15 +143,16 @@
     }
 
     .leafbytes {
-        font-size: clamp(250%, 5rem, 300%);
-        top: 47%;
-        left: 50.25%;
+        font-size: clamp(250%, 1rem, 300%);
+        top: 47.5%;
+        left: 51.25%;
     }
 
     .subtitle {
         top: 52%;
-        left: 50.25%;
-        font-size: clamp(110%, 3rem, 150%);
+        left: 51.25%;
+        white-space: nowrap;
+        font-size: clamp(110%, 1rem, 150%);
     }
 
     @keyframes zap1 {

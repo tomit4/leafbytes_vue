@@ -1,14 +1,14 @@
 <script setup>
     import Nav from "./Nav.vue"
     import Intro from "./Intro.vue"
-    /* import Foot from "./Foot.vue" */
+    import Foot from "./Foot.vue"
 </script>
 
 <template>
     <div>
         <Nav />
         <Intro />
-        <!-- <Foot /> -->
+        <Foot />
     </div>
 </template>
 

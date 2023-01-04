@@ -26,7 +26,7 @@
     <div>
         <nav>
             <div ref="navEl" class="navbar">
-                <div ref="iconElems" class="iconElems" >
+                <div ref="iconElems" class="iconElems">
                     <button v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="navigation"
                     class="icons" :id="icon.id" v-html="icon.svg"
@@ -45,8 +45,8 @@
 
     .navbar {
         position: fixed;
-        background: #004b77;
-        border: 4px solid #004b77;
+        background: var(--dark-blue);
+        border: 4px solid var(--dark-blue);
         border-radius: 8px;
         opacity: 60%;
         width: 80vw;

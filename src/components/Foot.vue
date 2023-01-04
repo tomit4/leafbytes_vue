@@ -35,6 +35,10 @@
 </template>
 
 <style scoped>
+    button {
+        cursor: pointer;
+    }
+
     .foot {
         background: var(--dark-blue);
         border-radius: 8px;

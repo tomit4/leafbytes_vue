@@ -1,6 +1,7 @@
 <script setup>
     import Nav from "./Nav.vue"
     import Intro from "./Intro.vue"
+    import Body from "./Body.vue"
     import Foot from "./Foot.vue"
 </script>
 
@@ -8,6 +9,7 @@
     <div>
         <Nav />
         <Intro />
+        <Body />
         <Foot />
     </div>
 </template>

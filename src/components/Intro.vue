@@ -6,10 +6,6 @@
     const subtitleEl = ref(null)
     const circuitOuterEl = ref(null)
 
-    /* function delay(ms) { */
-        /* return new Promise(res => setTimeout(res, ms)) */
-    /* } */
-
     onMounted(async () => {
         await delay(2900)
         leafbytesEl.value.classList.add('loadtitlefade')

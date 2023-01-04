@@ -13,7 +13,7 @@
         await delay(2900)
         leafbytesEl.value.classList.add('loadtitlefade')
         subtitleEl.value.classList.add('loadtitlefade')
-        await delay(5000)
+        await delay(2500)
         circuitOuterEl.value.classList.add('loadtitlefadeout')
         await delay(2500)
         circuitOuterEl.value.remove()

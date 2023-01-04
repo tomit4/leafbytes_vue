@@ -74,7 +74,7 @@
         align-items: center;
         z-index: 3;
         padding: 0.25rem;
-        margin: 0.25rem 1rem 0.25rem 1rem;
+        margin: 0.1rem 1rem 0.25rem 1rem;
         background: none;
         border: none;
         transform: translate(20%, -0%);

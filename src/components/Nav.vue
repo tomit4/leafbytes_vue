@@ -1,13 +1,10 @@
 <script setup>
     import { ref, onMounted } from 'vue'
     import icons from './icons/navicons.json'
+    import { delay } from '../utilities/utils.js'
 
     const navEl = ref(null)
     const iconElems = ref(null)
-
-    function delay(ms) {
-        return new Promise(res => setTimeout(res, ms))
-    }
 
     function test() {
         console.log('button was clicked')

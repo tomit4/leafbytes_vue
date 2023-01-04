@@ -1,13 +1,14 @@
 <script setup>
     import { ref, onMounted } from 'vue'
+    import { delay } from '../utilities/utils.js'
 
     const leafbytesEl = ref(null)
     const subtitleEl = ref(null)
     const circuitOuterEl = ref(null)
 
-    function delay(ms) {
-        return new Promise(res => setTimeout(res, ms))
-    }
+    /* function delay(ms) { */
+        /* return new Promise(res => setTimeout(res, ms)) */
+    /* } */
 
     onMounted(async () => {
         await delay(2900)

@@ -11,7 +11,7 @@
     }
 
     onMounted(async () => {
-        await delay(7000)
+        await delay(5500)
         navEl.value.classList.add('navbar-onscrollup')
         await delay(1500)
         iconElems.value.classList.add('fade-in')
@@ -86,7 +86,7 @@
 
     .navbar-onscrollup {
         height: 2.5em;
-        animation: navbar-onscrollup-animation 1.5s ease-in;
+        animation: navbar-onscrollup-animation 1.25s ease-in;
     }
 
     @keyframes navbar-onscrollup-animation {

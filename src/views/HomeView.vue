@@ -50,8 +50,30 @@
         border-right: none;
     }
 
+    .tree-subject {
+        position: absolute;
+        color: rgba(0, 44, 70, 1);
+        text-decoration: none;
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 1);
+        opacity: 95%;
+        border: 3px solid rgba(0, 44, 70, 1);
+        border-radius: 5px;
+        border-right: none;
+        border-top: none;
+        width: auto;
+        padding: 0.1rem 0 0 0.3rem;
+        white-space: nowrap;
+    }
+
     .tree-container{
         max-width: 26rem;
         margin: 0 auto;
+    }
+
+    @media (max-width: 31rem) {
+        .tree-container {
+            max-width: 85vw;
+        }
     }
 </style>

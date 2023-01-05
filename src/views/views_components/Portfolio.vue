@@ -12,15 +12,15 @@
         toggleTree(vertEl, subjEl, horizEl, 'portfolio')
 
     onMounted(async () => {
-            await delay(1200)
-            horizEl.value.forEach((el) =>
-                el.classList.add('portfolio-tree-horiz-show'))
-            await delay(1000)
-            subjEl.value.forEach((el) => {
-                el.classList.remove('portfolio-tree-subject-hidden')
-                el.classList.remove('displaynone')
-                el.classList.add('portfolio-tree-subject-show')
-            })
+        await delay(1200)
+        horizEl.value.forEach((el) =>
+            el.classList.add('portfolio-tree-horiz-show'))
+        await delay(1000)
+        subjEl.value.forEach((el) => {
+            el.classList.remove('portfolio-tree-subject-hidden')
+            el.classList.remove('displaynone')
+            el.classList.add('portfolio-tree-subject-show')
+        })
     })
 </script>
 

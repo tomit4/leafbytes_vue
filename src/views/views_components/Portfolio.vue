@@ -26,20 +26,20 @@
 
 <template>
     <div>
-            <div ref="linkEl" class="link-item link-item-scaled portfolio"
-            @click="lclToggleTree()">portfolio</div>
-            <div class="portfolio-tree">
-                <div class="tree-container">
-                    <div ref="vertEl" class="portfolio-tree-vert
-                    portfolio-tree-vert-show"></div>
-                     <div ref="horizEl" v-for="data in treeData"
-                     class="portfolio-tree-horiz" :id="`portfolio-hbar-${data.id}`">
-                        <a ref="subjEl" class="tree-subject displaynone portfolio-tree-subject-hidden"
-                        :id="`portfolio-subject-${data.id}`" target="_blank"
-                        rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
-                    </div>
+        <div ref="linkEl" class="link-item link-item-scaled portfolio"
+        @click="lclToggleTree()">portfolio</div>
+        <div class="portfolio-tree">
+            <div class="tree-container">
+                <div ref="vertEl" class="portfolio-tree-vert
+                portfolio-tree-vert-show"></div>
+                <div ref="horizEl" v-for="data in treeData"
+                class="portfolio-tree-horiz" :id="`portfolio-hbar-${data.id}`">
+                    <a ref="subjEl" class="tree-subject displaynone portfolio-tree-subject-hidden"
+                    :id="`portfolio-subject-${data.id}`" target="_blank"
+                    rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
                 </div>
             </div>
+        </div>
     </div>
 </template>
 

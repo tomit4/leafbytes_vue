@@ -53,8 +53,16 @@
         border-right: none;
     }
 
+    .link-item-scaled {
+        transform: scale(1.03);
+    }
+
+    .link-item:hover {
+        cursor: pointer;
+    }
 
     .tree-subject {
+        /* visibility: hidden; */
         position: absolute;
         color: rgba(0, 44, 70, 1);
         text-decoration: none;

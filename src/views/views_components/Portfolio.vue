@@ -3,13 +3,42 @@
     import treeData from '../views_data/portfoliotree.json'
     import { delay } from '../../utilities/utils.js'
 
+    const linkEl = ref(null)
     const vertEl = ref(null)
     const horizEl = ref(null)
     const subjEl = ref(null)
 
-    /* function showTree(className) { */
+    async function toggleTree(className) {
         /* console.log(`you clicked on the ${className} tree`) */
-    /* } */
+        if (vertEl.value.classList.contains("portfolio-tree-vert-show")) {
+            subjEl.value.forEach((el) => {
+                el.classList.remove('portfolio-tree-subject-show')
+                el.classList.add('portfolio-tree-subject-hidden')
+            })
+            await delay(1000)
+            horizEl.value.forEach((el) => {
+                el.classList.remove('portfolio-tree-horiz-show')
+                el.classList.add('portfolio-tree-horiz-hidden')
+            })
+            await delay(1000)
+            vertEl.value.classList.remove("portfolio-tree-vert-show")
+            vertEl.value.classList.add("portfolio-tree-vert-hidden")
+        }
+        else {
+            vertEl.value.classList.remove("portfolio-tree-vert-hidden")
+            vertEl.value.classList.add("portfolio-tree-vert-show")
+            await delay(1200)
+            horizEl.value.forEach((el) => {
+                el.classList.add('portfolio-tree-horiz-show')
+                el.classList.remove('portfolio-tree-horiz-hidden')
+            })
+            await delay(1000)
+            subjEl.value.forEach((el) => {
+                el.classList.remove('portfolio-tree-subject-hidden')
+                el.classList.add('portfolio-tree-subject-show')
+            })
+        }
+    }
 
     onMounted(async () => {
             await delay(1200)
@@ -19,6 +48,7 @@
             await delay(1000)
             subjEl.value.forEach((el) => {
                 el.classList.remove('portfolio-tree-subject-hidden')
+                el.classList.remove('displaynone')
                 el.classList.add('portfolio-tree-subject-show')
             })
     })
@@ -26,30 +56,24 @@
 
 <template>
     <div>
-            <div class="link-item link-item-scaled portfolio"
-            @click="showTree('portfolio')">portfolio</div>
+            <div ref="linkEl" class="link-item link-item-scaled portfolio"
+            @click="toggleTree('portfolio')">portfolio</div>
             <div class="portfolio-tree">
                 <div class="tree-container">
                     <div ref="vertEl" class="portfolio-tree-vert
                     portfolio-tree-vert-show"></div>
                      <div ref="horizEl" v-for="data in treeData"
                      class="portfolio-tree-horiz" :id="`portfolio-hbar-${data.id}`">
-                        <a ref="subjEl" class="tree-subject portfolio-tree-subject-hidden"
+                        <a ref="subjEl" class="tree-subject displaynone portfolio-tree-subject-hidden"
                         :id="`portfolio-subject-${data.id}`" target="_blank"
                         rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
                     </div>
                 </div>
             </div>
     </div>
-
-
 </template>
 
 <style>
-    .link-item-scaled {
-        transform: scale(1.03);
-    }
-
     .portfolio-tree-vert {
         position: relative;
         background-color : var(--hd-dark-blue);
@@ -91,12 +115,13 @@
 
     .portfolio-tree-subject-show {
         opacity: 95%;
+        visibility: visible;
         animation: portfolio-subject-show 1s ease-in-out;
     }
 
     .portfolio-tree-subject-hidden {
         opacity: 0%;
-        display: none;
+        visibility: hidden;
         animation: portfolio-subject-hidden 1s ease-in-out;
     }
 
@@ -144,6 +169,10 @@
         margin: -0rem 0rem 0rem 0.25rem;
     }
 
+    /* animations can't influence display, so utilized this */
+    .displaynone {
+        display: none;
+    }
 /* *********************
     ANIMATIONS
    *********************/
@@ -182,18 +211,22 @@
     @keyframes portfolio-subject-show {
         0% {
             opacity: 0%;
+            visibility: hidden;
         }
         100% {
             opacity: 95%;
+            visibility: visible;
         }
     }
 
     @keyframes portfolio-subject-hidden {
         0% {
             opacity: 95%;
+            visibility: visible;
         }
         100% {
             opacity: 0%;
+            visibility: hidden;
         }
     }
 

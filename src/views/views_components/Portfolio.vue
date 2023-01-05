@@ -13,9 +13,9 @@
 
     onMounted(async () => {
             await delay(1200)
-            horizEl.value.forEach((el) => {
+            horizEl.value.forEach((el) =>
                 el.classList.add('portfolio-tree-horiz-show')
-            })
+            )
             await delay(1000)
             subjEl.value.forEach((el) => {
                 el.classList.remove('portfolio-tree-subject-hidden')

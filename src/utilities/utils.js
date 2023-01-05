@@ -1,6 +1,4 @@
-function delay(ms) {
-    return new Promise(res => setTimeout(res, ms))
-}
+const delay = (ms) => new Promise(res => setTimeout(res, ms))
 
 async function toggleTree(vertEl, subjEl, horizEl, className) {
     if (vertEl.value.classList.contains(`${className}-tree-vert-show`)) {

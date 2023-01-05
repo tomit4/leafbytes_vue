@@ -8,9 +8,8 @@
     const horizEl = ref(null)
     const subjEl = ref(null)
 
-    function lclToggleTree() {
+    const lclToggleTree = () =>
         toggleTree(vertEl, subjEl, horizEl, 'portfolio')
-    }
 
     onMounted(async () => {
             await delay(1200)

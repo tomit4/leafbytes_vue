@@ -1,5 +1,5 @@
 <script setup>
-    import {RouterView} from "vue-router"
+    /* import {RouterView} from "vue-router" */
     import Nav from "./components/Nav.vue"
     import Intro from "./components/Intro.vue"
     import Body from "./components/Body.vue"
@@ -12,9 +12,7 @@
         <div class="logo"></div>
         <div class="circuits"></div>
         <Nav />
-        <Body>
-            <RouterView />
-        </Body>
+        <Body />
         <Foot />
     </div>
 </template>

@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from "vue-router"
 import App from "../App.vue"
 import Body from "../components/Body.vue"
 import TestView from "../views/TestView.vue"
+import HomeView from "../views/HomeView.vue"
 import NotFoundView from "../views/404View.vue"
 
 const router = createRouter({
@@ -9,8 +10,17 @@ const router = createRouter({
     routes: [
         {
             path: "/",
+            name: "root",
+            component: App,
+            redirect: "/home"
+        },
+        {
+            path: "/home",
             name: "home",
-            component: App
+            components: {
+                default: HomeView,
+                body: Body
+            }
         },
         {
             path: "/test",

@@ -9,9 +9,7 @@
                 <p class="article-header" id="home-header">leafbytes</p>
                 <p class="article-header3">web dev portfolio and blog</p>
                 <ul class="article-links">
-                    <li class="directories">
                         <Portfolio />
-                    </li>
                 </ul>
             </div>
         </div>

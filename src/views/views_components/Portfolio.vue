@@ -1,29 +1,44 @@
 <script setup>
+    import { ref, onMounted } from 'vue'
     /* import {RouterLink} from "vue-router" */
     import treeData from '../views_data/portfoliotree.json'
+    import { delay } from '../../utilities/utils.js'
+
+    function showTree(className) {
+        /* console.log(`you clicked on the ${className} tree`) */
+
+        /* navEl.value.classList.add('navbar-onscrollup') */
+    }
+
+    onMounted(async () => {
+        await delay(1000)
+        console.log('mounted after 1 sec')
+    })
 </script>
 
 <template>
     <div>
-        <div class="link-item portfolio" onclick="showTree('portfolio')">portfolio</div>
-        <div class="portfolio-tree">
-            <div class="tree-container">
-                <div class="portfolio-tree-vert portfolio-tree-vert-show"></div>
-                 <div v-for="data in treeData" class="portfolio-tree-horiz
-                portfolio-tree-horiz-show" :id="`portfolio-hbar-${data.id}`">
-                    <a class="tree-subject portfolio-tree-subject-show"
-                    :id="`portfolio-subject-${data.id}`" target="_blank"
-                    rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
+        <li class="directories">
+            <div class="link-item portfolio" @click="showTree('portfolio')">portfolio</div>
+            <div class="portfolio-tree">
+                <div class="tree-container">
+                    <div class="portfolio-tree-vert portfolio-tree-vert-hidden"></div>
+                     <div v-for="data in treeData" class="portfolio-tree-horiz
+                    portfolio-tree-horiz-hidden" :id="`portfolio-hbar-${data.id}`">
+                        <a class="tree-subject portfolio-tree-subject-hidden"
+                        :id="`portfolio-subject-${data.id}`" target="_blank"
+                        rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </li>
     </div>
 
 <!-- <router-link to="/test">test</router-link> -->
 
 </template>
 
-<style scoped>
+<style>
     .portfolio-tree-vert {
         position: relative;
         background-color : var(--hd-dark-blue);
@@ -121,7 +136,6 @@
 /* *********************
     ANIMATIONS
    *********************/
-
     @keyframes portfolio-show-vert-tree {
         from {
             height: 0;
@@ -172,7 +186,6 @@
         }
     }
 
-    /* crazy attempt to make retraction of tree smooth... */
     @keyframes hide-portfolio-tree {
         0% { visibility: visible; height: 0; margin-bottom: 2rem; }
         5% { visibility: visible; height: 0; margin-bottom: 1.9rem; }

@@ -1,13 +1,14 @@
 :root {
 
     --dark-blue: #004b77;
+    --dark-blue-90: #004b77e5;
     --light-blue: #baf6ff;
+    --light-blue-50: #c8edff7f;
     --bg-light-blue: #62a5bf;
+    --bg-light-blue-20: #62a5bf33;
     --bg-dark-blue: #2a7296;
     --bg-black: #252525;
-
-
-
+    --bg-dark-blue-70: #2a7296b3;
 
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;

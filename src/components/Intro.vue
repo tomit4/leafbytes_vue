@@ -37,7 +37,8 @@
 <style scoped>
     /* logo/title */
     .circuit-outer {
-        position: fixed;
+        /* position: fixed; */
+        position: absolute;
         background-image: linear-gradient(280deg, var(--bg-light-blue) 0%, var(--bg-dark-blue) 120%);
         z-index: 1;
         opacity: 70%;

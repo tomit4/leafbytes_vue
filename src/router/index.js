@@ -1,5 +1,6 @@
 import {createRouter, createWebHistory} from "vue-router"
-import Home from "../components/Home.vue"
+import App from "../App.vue"
+import Body from "../components/Body.vue"
 import TestView from "../views/TestView.vue"
 import NotFoundView from "../views/404View.vue"
 
@@ -9,12 +10,15 @@ const router = createRouter({
         {
             path: "/",
             name: "home",
-            component: Home
+            component: App
         },
         {
             path: "/test",
             name: "test",
-            component: TestView
+            components: {
+                default: TestView,
+                body: Body
+            }
         },
         {
             path: "/:catchall(.*)*",

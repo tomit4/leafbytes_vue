@@ -1,6 +1,9 @@
 <script setup>
     import { ref, onMounted } from 'vue'
+    import {RouterView} from "vue-router"
     import { delay } from '../utilities/utils.js'
+
+    /* import TestView from "../views/TestView.vue" */
 
     const showArticle = ref(false)
 
@@ -8,12 +11,13 @@
             await delay(6600)
             showArticle.value = true
     })
-
 </script>
 
 <template>
     <div v-if="showArticle">
-        <div class="article"></div>
+        <div class="article">
+            <RouterView />
+        </div>
     </div>
 </template>
 

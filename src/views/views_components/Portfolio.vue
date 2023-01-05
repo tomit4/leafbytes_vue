@@ -1,43 +1,15 @@
 <script setup>
     import { ref, onMounted } from 'vue'
     import treeData from '../views_data/portfoliotree.json'
-    import { delay } from '../../utilities/utils.js'
+    import { delay, toggleTree } from '../../utilities/utils.js'
 
     const linkEl = ref(null)
     const vertEl = ref(null)
     const horizEl = ref(null)
     const subjEl = ref(null)
 
-    async function toggleTree(className) {
-        /* console.log(`you clicked on the ${className} tree`) */
-        if (vertEl.value.classList.contains(`${className}-tree-vert-show`)) {
-            subjEl.value.forEach((el) => {
-                el.classList.remove(`${className}-tree-subject-show`)
-                el.classList.add(`${className}-tree-subject-hidden`)
-            })
-            await delay(1000)
-            horizEl.value.forEach((el) => {
-                el.classList.remove(`${className}-tree-horiz-show`)
-                el.classList.add(`${className}-tree-horiz-hidden`)
-            })
-            await delay(1000)
-            vertEl.value.classList.remove(`${className}-tree-vert-show`)
-            vertEl.value.classList.add(`${className}-tree-vert-hidden`)
-        }
-        else {
-            vertEl.value.classList.remove(`${className}-tree-vert-hidden`)
-            vertEl.value.classList.add(`${className}-tree-vert-show`)
-            await delay(1200)
-            horizEl.value.forEach((el) => {
-                el.classList.add(`${className}-tree-horiz-show`)
-                el.classList.remove(`${className}-tree-horiz-hidden`)
-            })
-            await delay(1000)
-            subjEl.value.forEach((el) => {
-                el.classList.remove(`${className}-tree-subject-hidden`)
-                el.classList.add(`${className}-tree-subject-show`)
-            })
-        }
+    async function lclToggleTree() {
+        toggleTree(vertEl, subjEl, horizEl, 'portfolio')
     }
 
     onMounted(async () => {
@@ -57,7 +29,7 @@
 <template>
     <div>
             <div ref="linkEl" class="link-item link-item-scaled portfolio"
-            @click="toggleTree('portfolio')">portfolio</div>
+            @click="lclToggleTree()">portfolio</div>
             <div class="portfolio-tree">
                 <div class="tree-container">
                     <div ref="vertEl" class="portfolio-tree-vert

@@ -14,11 +14,12 @@ async function toggleTree(vertEl, subjEl, horizEl, className) {
             el.classList.add(`${className}-tree-horiz-hidden`)
         })
         await delay(1000)
-        vertEl.value.classList.remove("${className}-tree-vert-show")
-        vertEl.value.classList.add("${className}-tree-vert-hidden")
-    } else {
-        vertEl.value.classList.remove("${className}-tree-vert-hidden")
-        vertEl.value.classList.add("${className}-tree-vert-show")
+        vertEl.value.classList.remove(`${className}-tree-vert-show`)
+        vertEl.value.classList.add(`${className}-tree-vert-hidden`)
+    }
+    else {
+        vertEl.value.classList.remove(`${className}-tree-vert-hidden`)
+        vertEl.value.classList.add(`${className}-tree-vert-show`)
         await delay(1200)
         horizEl.value.forEach((el) => {
             el.classList.add(`${className}-tree-horiz-show`)

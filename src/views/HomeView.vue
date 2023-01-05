@@ -1,5 +1,8 @@
 <script setup>
+    import { ref } from 'vue'
     import Portfolio from "./views_components/Portfolio.vue"
+
+    const dirEl = ref(null)
 </script>
 
 <template>
@@ -9,7 +12,9 @@
                 <p class="article-header" id="home-header">leafbytes</p>
                 <p class="article-header3">web dev portfolio and blog</p>
                 <ul class="article-links">
+                    <li ref="dirEl" class="directories">
                         <Portfolio />
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,6 +52,7 @@
         border-top: none;
         border-right: none;
     }
+
 
     .tree-subject {
         position: absolute;

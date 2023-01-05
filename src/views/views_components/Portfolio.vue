@@ -4,34 +4,43 @@
     import treeData from '../views_data/portfoliotree.json'
     import { delay } from '../../utilities/utils.js'
 
-    function showTree(className) {
-        /* console.log(`you clicked on the ${className} tree`) */
+    const vertEl = ref(null)
+    const horizEl = ref(null)
+    const subjEl = ref(null)
 
-        /* navEl.value.classList.add('navbar-onscrollup') */
-    }
+    /* function showTree(className) { */
+        /* console.log(`you clicked on the ${className} tree`) */
+    /* } */
 
     onMounted(async () => {
-        await delay(1000)
-        console.log('mounted after 1 sec')
+            await delay(1000)
+            horizEl.value.forEach((el) => {
+                el.classList.add('portfolio-tree-horiz-show')
+            })
+            await delay(1000)
+            subjEl.value.forEach((el) => {
+                el.classList.remove('portfolio-tree-subject-hidden')
+                el.classList.add('portfolio-tree-subject-show')
+            })
     })
 </script>
 
 <template>
     <div>
-        <li class="directories">
-            <div class="link-item portfolio" @click="showTree('portfolio')">portfolio</div>
+            <div class="link-item link-item-scaled portfolio"
+            @click="showTree('portfolio')">portfolio</div>
             <div class="portfolio-tree">
                 <div class="tree-container">
-                    <div class="portfolio-tree-vert portfolio-tree-vert-hidden"></div>
-                     <div v-for="data in treeData" class="portfolio-tree-horiz
-                    portfolio-tree-horiz-hidden" :id="`portfolio-hbar-${data.id}`">
-                        <a class="tree-subject portfolio-tree-subject-hidden"
+                    <div ref="vertEl" class="portfolio-tree-vert
+                    portfolio-tree-vert-show"></div>
+                     <div ref="horizEl" v-for="data in treeData"
+                     class="portfolio-tree-horiz" :id="`portfolio-hbar-${data.id}`">
+                        <a ref="subjEl" class="tree-subject portfolio-tree-subject-hidden"
                         :id="`portfolio-subject-${data.id}`" target="_blank"
                         rel="noopener noreferrer" :href="data.link">{{ data.title }}</a>
                     </div>
                 </div>
             </div>
-        </li>
     </div>
 
 <!-- <router-link to="/test">test</router-link> -->
@@ -39,6 +48,10 @@
 </template>
 
 <style>
+    .link-item-scaled {
+        transform: scale(1.03);
+    }
+
     .portfolio-tree-vert {
         position: relative;
         background-color : var(--hd-dark-blue);
@@ -60,7 +73,6 @@
     .portfolio-tree-horiz  {
         position: absolute;
         background-color : rgba(0, 44, 70, 1);
-        visibility: hidden;
         height: 0.15rem;
         left: -0.1rem;
     }
@@ -86,6 +98,7 @@
 
     .portfolio-tree-subject-hidden {
         opacity: 0%;
+        display: none;
         animation: portfolio-subject-hidden 1s ease-in-out;
     }
 

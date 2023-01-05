@@ -1,6 +1,5 @@
 <script setup>
     import { ref, onMounted } from 'vue'
-    /* import {RouterLink} from "vue-router" */
     import treeData from '../views_data/portfoliotree.json'
     import { delay } from '../../utilities/utils.js'
 
@@ -13,7 +12,7 @@
     /* } */
 
     onMounted(async () => {
-            await delay(1000)
+            await delay(1200)
             horizEl.value.forEach((el) => {
                 el.classList.add('portfolio-tree-horiz-show')
             })
@@ -43,7 +42,6 @@
             </div>
     </div>
 
-<!-- <router-link to="/test">test</router-link> -->
 
 </template>
 

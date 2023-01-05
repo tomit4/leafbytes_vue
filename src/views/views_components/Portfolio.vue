@@ -8,7 +8,7 @@
     const horizEl = ref(null)
     const subjEl = ref(null)
 
-    async function lclToggleTree() {
+    function lclToggleTree() {
         toggleTree(vertEl, subjEl, horizEl, 'portfolio')
     }
 

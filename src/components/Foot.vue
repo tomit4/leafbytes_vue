@@ -91,6 +91,7 @@
 
     .fade-in > * {
         visibility: visible;
+        margin: 0.75rem 1rem 0rem 1rem;
         animation: fadein 1s;
     }
 

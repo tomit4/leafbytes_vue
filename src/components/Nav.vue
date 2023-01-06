@@ -23,7 +23,7 @@
         iconElems.value.forEach((el) => {
             el.classList.add('fade-in')
             el.classList.remove('iconElems')
-            if (el.id == "home")
+            if (el.id === "home")
                 el.classList.add('scaled', 'clickScaled')
         })
      })
@@ -33,7 +33,6 @@
     <div>
         <nav>
             <div ref="navEl" class="navbar">
-                <div>
                     <div ref="iconElems" v-for="icon in icons"
                     class="iconElems icons" :id="icon.id">
                         <router-link
@@ -45,7 +44,6 @@
                         </router-link>
                     </div>
                 </div>
-            </div>
         </nav>
     </div>
 </template>
@@ -88,7 +86,7 @@
         align-items: center;
         z-index: 3;
         padding: 0.25rem;
-        margin: 0.1rem 1rem 0.25rem 1rem;
+        margin: 0.5rem 1rem 0rem 1rem;
         background: none;
         border: none;
         transform: translate(20%, -0%);

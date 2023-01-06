@@ -25,7 +25,7 @@
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
                     <button v-for="icon in icons"
-                    :aria-label="icon.ariabLabel" role="link"
+                    :aria-label="icon.ariaLabel" role="link"
                     class="footer-icons" :id="icon.id" v-html="icon.svg"
                     @click="test"></button>
                 </div>

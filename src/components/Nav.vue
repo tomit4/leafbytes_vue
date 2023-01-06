@@ -1,13 +1,39 @@
 <script setup>
     import { ref, onMounted } from 'vue'
+    /* import {RouterLink} from "vue-router" */
     import icons from './icons/navicons.json'
     import { delay } from '../utilities/utils.js'
 
     const navEl = ref(null)
     const iconElems = ref(null)
 
-    function test() {
-        console.log('button was clicked')
+    function scaleClick(id) {
+        iconElems.value.forEach((el) => {
+            if (el.classList.contains('scaled'))
+                el.classList.remove('scaled')
+            if (id === el.id)
+                el.classList.add('scaled', 'clickScaled')
+            else
+                el.classList.remove('clickScaled')
+        })
+    }
+
+    function scaleHover(id) {
+        iconElems.value.forEach((el) => {
+            if (!el.classList.contains('clickScaled'))
+                el.classList.remove('scaled')
+            if (id === el.id && !el.classList.contains('scaled'))
+                el.classList.add('scaled')
+        })
+    }
+
+    function scaleLeave(id) {
+        iconElems.value.forEach((el) => {
+            if (el.classList.contains('clickScaled'))
+                return
+            else if (id === el.id && el.classList.contains('scaled'))
+                el.classList.remove('scaled')
+        })
     }
 
     onMounted(async () => {
@@ -15,8 +41,10 @@
         navEl.value.classList.add('navbar-onscrollup')
         await delay(1500)
         iconElems.value.forEach((el) => {
-                el.classList.add('fade-in')
-                el.classList.remove('iconElems')
+            el.classList.add('fade-in')
+            el.classList.remove('iconElems')
+            if (el.id == "home")
+                el.classList.add('scaled', 'clickScaled')
         })
      })
 </script>
@@ -26,12 +54,13 @@
         <nav>
             <div ref="navEl" class="navbar">
                 <div>
+                    <!-- added complexity, this needs to be a router-link -->
                     <button ref="iconElems" class="iconElems icons" v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="navigation"
                     :id="icon.id" v-html="icon.svg"
-                    @click="test"
-                    @mouseover="$event.target.classList.add('scaled')"
-                    @mouseleave="$event.target.classList.remove('scaled')">
+                    @click="scaleClick(icon.id)"
+                    @mouseover="scaleHover(icon.id)"
+                    @mouseleave="scaleLeave(icon.id)">
                     </button>
                 </div>
             </div>
@@ -52,7 +81,6 @@
         opacity: 60%;
         width: 80vw;
         height: 0.25rem;
-        /* list-style: none; */
         top: 0%;
         display: flex;
         z-index: 2;
@@ -98,11 +126,9 @@
         animation: fadein 1s;
     }
 
-    /* set up scaling on both hover and click (click is harder) */
     .scaled {
         animation: scaleup .5s;
         transform: scale(1.25);
-        /* transform-origin: center; */
         transform-origin: bottom left;
     }
 
@@ -112,7 +138,6 @@
         }
         to {
             transform: scale(1.25);
-            /* transform-origin: center; */
             transform-origin: bottom left;
         }
     }

@@ -50,7 +50,7 @@
 <style>
     .blog-tree-vert {
         position: relative;
-        background-color : rgba(0, 44, 70, 1);
+        background-color : var(--hd-dark-blue);
         width: 0.20rem;
         margin: 0rem 0 0rem 0.25rem;
     }
@@ -69,10 +69,10 @@
 
     .blog-tree-horiz  {
         position: absolute;
-        background-color : rgba(0, 44, 70, 1);
+        background-color : var(--hd-dark-blue);
         visibility: hidden;
         width: 0rem;
-        height: 0.15rem;
+        height: 0.20rem;
     }
 
     .blog-tree-horiz-hidden {

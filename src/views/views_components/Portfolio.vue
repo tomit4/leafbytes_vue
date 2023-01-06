@@ -47,7 +47,8 @@
     .portfolio-tree-vert {
         position: relative;
         background-color : var(--hd-dark-blue);
-        width: 0.20rem;
+        width: 0.15rem;
+        margin: 0rem 0 0rem 0.20rem;
     }
 
     .portfolio-tree-vert-show {

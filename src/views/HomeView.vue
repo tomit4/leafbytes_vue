@@ -1,5 +1,4 @@
 <script setup>
-    import { ref } from 'vue'
     import Portfolio from "./views_components/Portfolio.vue"
     import Blog from "./views_components/Blog.vue"
 </script>
@@ -11,10 +10,10 @@
                 <p class="article-header" id="home-header">leafbytes</p>
                 <p class="article-header3">web dev portfolio and blog</p>
                 <ul class="article-links">
-                    <li ref="dirEl" class="directories">
+                    <li class="directories">
                         <Portfolio />
                     </li>
-                    <li ref="dirEl" class="directories">
+                    <li class="directories">
                         <Blog />
                     </li>
                 </ul>
@@ -68,12 +67,12 @@
     .tree-subject {
         /* visibility: hidden; */
         position: absolute;
-        color: rgba(0, 44, 70, 1);
+        color: var(--hd-dark-blue);
         text-decoration: none;
         font-weight: 600;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--white);
         opacity: 95%;
-        border: 3px solid rgba(0, 44, 70, 1);
+        border: 3px solid var(--hd-dark-blue);
         border-radius: 5px;
         border-right: none;
         border-top: none;

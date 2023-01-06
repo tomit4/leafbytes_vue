@@ -14,8 +14,10 @@
         await delay(5500)
         navEl.value.classList.add('navbar-onscrollup')
         await delay(1500)
-        iconElems.value.classList.add('fade-in')
-        iconElems.value.classList.remove('iconElems')
+        iconElems.value.forEach((el) => {
+                el.classList.add('fade-in')
+                el.classList.remove('iconElems')
+        })
      })
 </script>
 
@@ -23,11 +25,13 @@
     <div>
         <nav>
             <div ref="navEl" class="navbar">
-                <div ref="iconElems" class="iconElems">
-                    <button v-for="icon in icons"
+                <div>
+                    <button ref="iconElems" class="iconElems icons" v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="navigation"
-                    class="icons" :id="icon.id" v-html="icon.svg"
-                    @click="test">
+                    :id="icon.id" v-html="icon.svg"
+                    @click="test"
+                    @mouseover="$event.target.classList.add('scaled')"
+                    @mouseleave="$event.target.classList.remove('scaled')">
                     </button>
                 </div>
             </div>
@@ -64,7 +68,7 @@
         display: flex;
     }
 
-    .iconElems > * {
+    .iconElems {
         visibility: hidden;
     }
 
@@ -89,15 +93,28 @@
         animation: navbar-onscrollup-animation 1.25s ease-in;
     }
 
+    .fade-in {
+        visibility: visible;
+        animation: fadein 1s;
+    }
+
+    /* set up scaling on both hover and click (click is harder) */
     .scaled {
         animation: scaleup .5s;
         transform: scale(1.25);
-        transform-origin: center;
+        /* transform-origin: center; */
+        transform-origin: bottom left;
     }
 
-    .fade-in > * {
-        visibility: visible;
-        animation: fadein 1s;
+    @keyframes scaleup {
+        from {
+            transform: scale(1.0);
+        }
+        to {
+            transform: scale(1.25);
+            /* transform-origin: center; */
+            transform-origin: bottom left;
+        }
     }
 
 /* *********************

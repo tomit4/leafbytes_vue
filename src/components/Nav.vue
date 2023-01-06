@@ -89,17 +89,26 @@
         animation: navbar-onscrollup-animation 1.25s ease-in;
     }
 
+    .scaled {
+        animation: scaleup .5s;
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+
+    .fade-in > * {
+        visibility: visible;
+        animation: fadein 1s;
+    }
+
+/* *********************
+    ANIMATIONS
+***********************/
     @keyframes navbar-onscrollup-animation {
         0% { height: 0.25em; }
         20% { height: 0.65em; }
         50% { height: 1.25em; }
         70% { height: 1.9em; }
         100% { height: 2.5em; }
-    }
-
-    .fade-in > * {
-        visibility: visible;
-        animation: fadein 1s;
     }
 
     @keyframes fadein {

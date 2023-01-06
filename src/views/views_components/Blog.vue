@@ -7,7 +7,7 @@
     const linkEl = ref(null)
     const vertEl = ref(null)
     const horizEl = ref(null)
-    const subjEl = ref(null)
+    const subjEl = ref()
 
     const lclToggleTree = () =>
         toggleTree(vertEl, subjEl, horizEl, 'blog')
@@ -17,13 +17,10 @@
         horizEl.value.forEach((el) =>
             el.classList.add('blog-tree-horiz-show'))
         await delay(1000)
-        /* router-view doesn't give array as expected, is a proxy, little
-         * docs... */
-        console.log(subjEl.value)
-        /* subjEl.value.forEach((el) => { */
-            /* el.classList.remove('blog-tree-subject-hidden') */
-            /* el.classList.add('blog-tree-subject-show') */
-        /* }) */
+        subjEl.value.forEach((el) => {
+            el.classList.remove('blog-tree-subject-hidden')
+            el.classList.add('blog-tree-subject-show')
+        })
     })
 </script>
 
@@ -37,11 +34,12 @@
                 blog-tree-vert-show"></div>
                 <div ref="horizEl" v-for="data in treeData"
                 class="blog-tree-horiz" :id="`blog-hbar-${data.id}`">
-                    <router-link ref="subjEl"
-                        class="tree-subject blog-tree-subject-hidden"
-                        :id="`blog-subject-${data.id}`"
-                        :to="data.link">{{ data.title}}
-                    </router-link>
+                    <div ref="subjEl" class="blog-tree-subject-hidden">
+                        <router-link class="tree-subject"
+                            :id="`blog-subject-${data.id}`"
+                            :to="data.link">{{ data.title}}
+                        </router-link>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,6 +85,11 @@
         opacity: 95%;
         visibility: visible;
         animation: blog-subject-show 1s ease-in-out;
+    }
+
+    .blog-tree-subject-hidden {
+        opacity: 0%;
+        animation: blog-subject-hidden 1s ease-in-out;
     }
 
     #blog-subject-1 {

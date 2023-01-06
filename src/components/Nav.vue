@@ -1,6 +1,6 @@
 <script setup>
     import { ref, onMounted } from 'vue'
-    import {RouterLink} from "vue-router"
+    import {RouterLink} from 'vue-router'
     import icons from './icons/navicons.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
 
@@ -23,7 +23,7 @@
         iconElems.value.forEach((el) => {
             el.classList.add('fade-in')
             el.classList.remove('iconElems')
-            if (el.id === "home")
+            if (el.id === 'home')
                 el.classList.add('scaled', 'clickScaled')
         })
      })

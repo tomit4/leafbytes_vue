@@ -1,8 +1,8 @@
 <script setup>
-    import Portfolio from "./views_components/Portfolio.vue"
-    import Blog from "./views_components/Blog.vue"
-    import Dev from "./views_components/Dev.vue"
-    import Use from "./views_components/Use.vue"
+    import Portfolio from './views_components/Portfolio.vue'
+    import Blog from './views_components/Blog.vue'
+    import Dev from './views_components/Dev.vue'
+    import Use from './views_components/Use.vue'
 </script>
 
 <template>

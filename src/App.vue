@@ -1,9 +1,9 @@
 <script setup>
     /* import {RouterView} from "vue-router" */
-    import Intro from "./components/Intro.vue"
-    import Nav from "./components/Nav.vue"
-    import Body from "./components/Body.vue"
-    import Foot from "./components/Foot.vue"
+    import Intro from './components/Intro.vue'
+    import Nav from './components/Nav.vue'
+    import Body from './components/Body.vue'
+    import Foot from './components/Foot.vue'
 </script>
 
 <template>
@@ -19,10 +19,9 @@
 
 <style>
 /***********************
-* scrollbar styles
+* SCROLLBAR STYLING
 ***********************/
     /* chromium styling of scrollbar */
-
     *::-webkit-scrollbar {
         width: 3px;
     }
@@ -61,7 +60,7 @@
         scrollbar-color: var(--dark-blue) var(--light-blue);
     }
 
-/* background stylings */
+    /* background stylings */
     .circuits {
         background-image: url("./src/assets/svg/circuit_board_vector.svg");
         background-size: contain;

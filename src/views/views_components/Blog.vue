@@ -19,6 +19,7 @@
         await delay(1000)
         subjEl.value.forEach((el) => {
             el.classList.remove('blog-tree-subject-hidden')
+            el.classList.remove('displaynone')
             el.classList.add('blog-tree-subject-show')
         })
     })
@@ -34,7 +35,7 @@
                 blog-tree-vert-show"></div>
                 <div ref="horizEl" v-for="data in treeData"
                 class="blog-tree-horiz" :id="`blog-hbar-${data.id}`">
-                    <div ref="subjEl" class="blog-tree-subject-hidden">
+                    <div ref="subjEl" class="blog-tree-subject-hidden displaynone">
                         <router-link class="tree-subject"
                             :id="`blog-subject-${data.id}`"
                             :to="data.link">{{ data.title}}
@@ -72,6 +73,13 @@
         visibility: hidden;
         width: 0rem;
         height: 0.15rem;
+    }
+
+    .blog-tree-horiz-hidden {
+        opacity: 0%;
+        width: 0;
+        visibility: hidden;
+        animation: hide-horiz-tree 1s ease-in-out;
     }
 
     .blog-tree-horiz-show {

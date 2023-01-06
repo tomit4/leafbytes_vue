@@ -2,6 +2,7 @@
     import Portfolio from "./views_components/Portfolio.vue"
     import Blog from "./views_components/Blog.vue"
     import Dev from "./views_components/Dev.vue"
+    import Use from "./views_components/Use.vue"
 </script>
 
 <template>
@@ -19,6 +20,9 @@
                     </li>
                     <li class="directories">
                         <Dev />
+                    </li>
+                    <li class="directories">
+                        <Use />
                     </li>
                 </ul>
             </div>

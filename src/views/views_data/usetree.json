@@ -1,0 +1,52 @@
+[
+    {
+       "id": 1,
+       "link": "https://www.linuxquestions.org/questions",
+       "title": "linux questions forums"
+    },
+    {
+       "id": 2,
+       "link": "https://wiki.archlinux.org",
+       "title": "arch linux wiki"
+    },
+    {
+        "id": 3,
+        "link": "https://suckless.org",
+        "title": "suckless software"
+    },
+    {
+        "id": 4,
+        "link": "https://iconify.design/",
+        "title": "foss icons"
+    },
+    {
+       "id": 5,
+       "link": "https://gitlab.com/raphaelbastide/libre-foundries",
+       "title": "libre fonts"
+    },
+    {
+        "id": 6,
+        "link": "https://colorpicker.io/",
+        "title": "color conversions"
+    },
+    {
+       "id": 7,
+       "link": "https://prismjs.com",
+       "title": "prismjs code blocks"
+    },
+    {
+        "id": 8,
+        "link": "https://chat.openai.com",
+        "title": "openai's chatgpt"
+    },
+    {
+        "id": 9,
+        "link": "https://developer.mozilla.org",
+        "title": "mozilla dev resources"
+    },
+    {
+        "id": 10,
+        "link": "https://stackoverflow.com/",
+        "title": "stack overflow"
+    }
+]

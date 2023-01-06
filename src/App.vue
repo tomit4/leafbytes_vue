@@ -1,5 +1,4 @@
 <script setup>
-    /* import {RouterView} from "vue-router" */
     import Intro from './components/Intro.vue'
     import Nav from './components/Nav.vue'
     import Body from './components/Body.vue'

@@ -1,6 +1,6 @@
 <script setup>
     import { ref, onMounted } from 'vue'
-    import {RouterLink} from "vue-router"
+    import {RouterLink} from 'vue-router'
     import treeData from '../views_data/blogtree.json'
     import { delay, toggleTree } from '../../utilities/utils.js'
 

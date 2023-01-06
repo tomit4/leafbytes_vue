@@ -112,16 +112,6 @@
         transform-origin: bottom left;
     }
 
-    @keyframes scaleup {
-        from {
-            transform: scale(1.0);
-        }
-        to {
-            transform: scale(1.25);
-            transform-origin: bottom left;
-        }
-    }
-
 /* *********************
     ANIMATIONS
 ***********************/
@@ -144,4 +134,15 @@
             opacity: 80%;
         }
     }
+
+    @keyframes scaleup {
+        from {
+            transform: scale(1.0);
+        }
+        to {
+            transform: scale(1.25);
+            transform-origin: bottom left;
+        }
+    }
+
 </style>

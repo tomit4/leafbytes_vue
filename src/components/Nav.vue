@@ -1,6 +1,6 @@
 <script setup>
     import { ref, onMounted } from 'vue'
-    /* import {RouterLink} from "vue-router" */
+    import {RouterLink} from "vue-router"
     import icons from './icons/navicons.json'
     import { delay } from '../utilities/utils.js'
 
@@ -54,14 +54,16 @@
         <nav>
             <div ref="navEl" class="navbar">
                 <div>
-                    <!-- added complexity, this needs to be a router-link -->
-                    <button ref="iconElems" class="iconElems icons" v-for="icon in icons"
-                    :aria-label="icon.ariaLabel" role="navigation"
-                    :id="icon.id" v-html="icon.svg"
-                    @click="scaleClick(icon.id)"
-                    @mouseover="scaleHover(icon.id)"
-                    @mouseleave="scaleLeave(icon.id)">
-                    </button>
+                    <div ref="iconElems" v-for="icon in icons"
+                    class="iconElems icons" :id="icon.id">
+                        <router-link
+                        :aria-label="icon.ariaLabel" role="navigation"
+                        v-html="icon.svg" :to="icon.route"
+                        @click="scaleClick(icon.id)"
+                        @mouseover="scaleHover(icon.id)"
+                        @mouseleave="scaleLeave(icon.id)">
+                        </router-link>
+                    </div>
                 </div>
             </div>
         </nav>

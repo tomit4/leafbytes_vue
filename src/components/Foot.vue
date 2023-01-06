@@ -77,14 +77,6 @@
         animation: foot-onscrollup-animation 1.25s ease-in;
     }
 
-    @keyframes foot-onscrollup-animation {
-        0% { height: 0.5rem; }
-        20% { height: 0.85rem; }
-        50% { height: 1.75rem; }
-        70% { height: 2.25rem; }
-        100% { height: 2.5rem; }
-    }
-
     .iconElems > * {
         visibility: hidden;
     }
@@ -93,6 +85,23 @@
         visibility: visible;
         margin: 0.75rem 1rem 0rem 1rem;
         animation: fadein 1s;
+    }
+
+    .scaled {
+        animation: scaleup .5s;
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+
+/* *********************
+    ANIMATIONS
+***********************/
+    @keyframes foot-onscrollup-animation {
+        0% { height: 0.5rem; }
+        20% { height: 0.85rem; }
+        50% { height: 1.75rem; }
+        70% { height: 2.25rem; }
+        100% { height: 2.5rem; }
     }
 
     @keyframes fadein {

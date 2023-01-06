@@ -1,6 +1,7 @@
 <script setup>
     import Portfolio from "./views_components/Portfolio.vue"
     import Blog from "./views_components/Blog.vue"
+    import Dev from "./views_components/Dev.vue"
 </script>
 
 <template>
@@ -15,6 +16,9 @@
                     </li>
                     <li class="directories">
                         <Blog />
+                    </li>
+                    <li class="directories">
+                        <Dev />
                     </li>
                 </ul>
             </div>

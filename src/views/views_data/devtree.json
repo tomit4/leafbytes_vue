@@ -1,0 +1,22 @@
+[
+    {
+       "id": 1,
+       "link": "https://artixlinux.org",
+       "title": "artix linux"
+    },
+    {
+       "id": 2,
+       "link": "https://github.com/baskerville/bspwm",
+       "title": "bspwm window manager"
+    },
+    {
+        "id": 3,
+        "link": "https://neovim.io",
+        "title": "neovim text editor"
+    },
+    {
+        "id": 4,
+        "link": "https://espanso.org",
+        "title": "espanso text expander"
+    }
+]

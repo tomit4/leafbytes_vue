@@ -27,6 +27,7 @@
     .article-links {
         list-style: none;
         position: relative;
+        margin-top: -0.75rem;
     }
 
     .directories {
@@ -34,6 +35,7 @@
         font-size: 16px;
         color: var(--hd-dark-blue);
         margin: 1.25rem auto;
+        padding-top: 0.5rem;
         margin-left: -2.5rem;
         opacity: 70%;
     }

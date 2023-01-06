@@ -27,7 +27,7 @@
 <template>
     <div>
         <div ref="linkEl" class="link-item link-item-scaled dev"
-        @click="lclToggleTree()">dev</div>
+        @click="lclToggleTree()">dev tools</div>
         <div class="dev-tree">
             <div class="tree-container">
                 <div ref="vertEl" class="dev-tree-vert

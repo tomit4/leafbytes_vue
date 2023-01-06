@@ -1,6 +1,30 @@
 <script setup>
+    import { ref, onMounted } from 'vue'
     import {RouterLink} from "vue-router"
     import treeData from '../views_data/blogtree.json'
+    import { delay, toggleTree } from '../../utilities/utils.js'
+
+    const linkEl = ref(null)
+    const vertEl = ref(null)
+    const horizEl = ref(null)
+    const subjEl = ref(null)
+
+    const lclToggleTree = () =>
+        toggleTree(vertEl, subjEl, horizEl, 'blog')
+
+    onMounted(async () => {
+        await delay(1200)
+        horizEl.value.forEach((el) =>
+            el.classList.add('blog-tree-horiz-show'))
+        await delay(1000)
+        /* router-view doesn't give array as expected, is a proxy, little
+         * docs... */
+        console.log(subjEl.value)
+        /* subjEl.value.forEach((el) => { */
+            /* el.classList.remove('blog-tree-subject-hidden') */
+            /* el.classList.add('blog-tree-subject-show') */
+        /* }) */
+    })
 </script>
 
 <template>
@@ -12,9 +36,9 @@
                 <div ref="vertEl" class="blog-tree-vert
                 blog-tree-vert-show"></div>
                 <div ref="horizEl" v-for="data in treeData"
-                class="blog-tree-horiz blog-tree-horiz-show" :id="`blog-hbar-${data.id}`">
+                class="blog-tree-horiz" :id="`blog-hbar-${data.id}`">
                     <router-link ref="subjEl"
-                        class="tree-subject blog-tree-subject-show"
+                        class="tree-subject blog-tree-subject-hidden"
                         :id="`blog-subject-${data.id}`"
                         :to="data.link">{{ data.title}}
                     </router-link>
@@ -23,6 +47,7 @@
         </div>
     </div>
 </template>
+
 <style>
     .blog-tree-vert {
         position: relative;
@@ -61,8 +86,6 @@
     .blog-tree-subject-show {
         opacity: 95%;
         visibility: visible;
-        /* width: 5rem; */
-        /* background-color : white; */
         animation: blog-subject-show 1s ease-in-out;
     }
 
@@ -184,18 +207,22 @@
     @keyframes blog-subject-show {
         0% {
             opacity: 0%;
+            visibility: hidden;
         }
         100% {
             opacity: 95%;
+            visibility: visible;
         }
     }
 
     @keyframes blog-subject-hidden {
         0% {
             opacity: 95%;
+            visibility: visible;
         }
         100% {
             opacity: 0%;
+            visibility: hidden;
         }
     }
 </style>

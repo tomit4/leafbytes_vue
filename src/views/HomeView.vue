@@ -1,8 +1,7 @@
 <script setup>
     import { ref } from 'vue'
     import Portfolio from "./views_components/Portfolio.vue"
-
-    const dirEl = ref(null)
+    import Blog from "./views_components/Blog.vue"
 </script>
 
 <template>
@@ -14,6 +13,9 @@
                 <ul class="article-links">
                     <li ref="dirEl" class="directories">
                         <Portfolio />
+                    </li>
+                    <li ref="dirEl" class="directories">
+                        <Blog />
                     </li>
                 </ul>
             </div>
@@ -81,6 +83,11 @@
     .tree-container{
         max-width: 26rem;
         margin: 0 auto;
+    }
+
+    /* animations can't influence display, so utilized this */
+    .displaynone {
+        display: none;
     }
 
     @media (max-width: 31rem) {

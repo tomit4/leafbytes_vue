@@ -143,6 +143,7 @@
     .displaynone {
         display: none;
     }
+
 /* *********************
     ANIMATIONS
    *********************/

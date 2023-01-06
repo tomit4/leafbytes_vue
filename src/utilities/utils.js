@@ -32,4 +32,33 @@ async function toggleTree(vertEl, subjEl, horizEl, className) {
     }
 }
 
-export { delay, toggleTree }
+function scaleClick(id, iconElems) {
+    iconElems.value.forEach((el) => {
+        if (el.classList.contains('scaled'))
+            el.classList.remove('scaled')
+        if (id === el.id)
+            el.classList.add('scaled', 'clickScaled')
+        else
+            el.classList.remove('clickScaled')
+    })
+}
+
+function scaleHover(id, iconElems) {
+    iconElems.value.forEach((el) => {
+        if (!el.classList.contains('clickScaled'))
+            el.classList.remove('scaled')
+        if (id === el.id && !el.classList.contains('scaled'))
+            el.classList.add('scaled')
+    })
+}
+
+function scaleLeave(id, iconElems) {
+    iconElems.value.forEach((el) => {
+        if (el.classList.contains('clickScaled'))
+            return
+        else if (id === el.id && el.classList.contains('scaled'))
+            el.classList.remove('scaled')
+    })
+}
+
+export { delay, toggleTree, scaleClick, scaleHover, scaleLeave }

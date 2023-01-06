@@ -2,39 +2,19 @@
     import { ref, onMounted } from 'vue'
     import {RouterLink} from "vue-router"
     import icons from './icons/navicons.json'
-    import { delay } from '../utilities/utils.js'
+    import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
 
     const navEl = ref(null)
     const iconElems = ref(null)
 
-    function scaleClick(id) {
-        iconElems.value.forEach((el) => {
-            if (el.classList.contains('scaled'))
-                el.classList.remove('scaled')
-            if (id === el.id)
-                el.classList.add('scaled', 'clickScaled')
-            else
-                el.classList.remove('clickScaled')
-        })
-    }
+    const lclScaleClick = (id) =>
+        scaleClick(id, iconElems)
 
-    function scaleHover(id) {
-        iconElems.value.forEach((el) => {
-            if (!el.classList.contains('clickScaled'))
-                el.classList.remove('scaled')
-            if (id === el.id && !el.classList.contains('scaled'))
-                el.classList.add('scaled')
-        })
-    }
+    const lclScaleHover = (id) =>
+        scaleHover(id, iconElems)
 
-    function scaleLeave(id) {
-        iconElems.value.forEach((el) => {
-            if (el.classList.contains('clickScaled'))
-                return
-            else if (id === el.id && el.classList.contains('scaled'))
-                el.classList.remove('scaled')
-        })
-    }
+    const lclScaleLeave = (id) =>
+        scaleLeave(id, iconElems)
 
     onMounted(async () => {
         await delay(5500)
@@ -59,9 +39,9 @@
                         <router-link
                         :aria-label="icon.ariaLabel" role="navigation"
                         v-html="icon.svg" :to="icon.route"
-                        @click="scaleClick(icon.id)"
-                        @mouseover="scaleHover(icon.id)"
-                        @mouseleave="scaleLeave(icon.id)">
+                        @click="lclScaleClick(icon.id)"
+                        @mouseover="lclScaleHover(icon.id)"
+                        @mouseleave="lclScaleLeave(icon.id)">
                         </router-link>
                     </div>
                 </div>

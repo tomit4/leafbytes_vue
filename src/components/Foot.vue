@@ -6,10 +6,6 @@
     const footEl = ref(null)
     const iconElems = ref(null)
 
-    function test() {
-        console.log('button was clicked')
-    }
-
     onMounted(async () => {
         await delay(5500)
         footEl.value.classList.add('foot-onscrollup')
@@ -24,10 +20,11 @@
         <footer ref="footEl" class="foot">
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
-                    <button v-for="icon in icons"
+                    <a v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="link"
                     class="footer-icons" :id="icon.id" v-html="icon.svg"
-                    @click="test"></button>
+                    target="_blank" rel="noopener noreferrer"
+                    :href="icon.href"></a>
                 </div>
             </div>
         </footer>
@@ -56,7 +53,7 @@
 
     .footer-nav {
         display: flex;
-        margin: -0.25rem 1.5rem 0rem 0rem;
+        margin: 0.6rem 0rem 0rem 0rem;
         justify-content: center;
         align-items: center;
     }

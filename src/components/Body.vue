@@ -4,16 +4,31 @@
     import { delay } from '../utilities/utils.js'
 
     const showArticle = ref(false)
+    const article = ref(null)
+
+    let prevPos = 0
+    function onScroll() {
+        let curPos = article.value.scrollTop
+        if (curPos > prevPos) {
+            article.value.classList.remove('article-defaults')
+            article.value.classList.remove('article-onscrollup')
+            article.value.classList.add('article-onscrolldown')
+        } else if (curPos < prevPos) {
+            article.value.classList.remove('article-onscrolldown')
+            article.value.classList.add('article-onscrollup')
+        }
+        prevPos = curPos <= 0 ? 0 : curPos
+    }
 
     onMounted(async () => {
-            await delay(6600)
-            showArticle.value = true
+        await delay(6600)
+        showArticle.value = true
     })
 </script>
 
 <template>
     <div v-if="showArticle">
-        <div class="article">
+        <div v-on:scroll="onScroll" ref="article" class="article article-defaults">
             <RouterView />
         </div>
     </div>
@@ -22,31 +37,38 @@
 <style>
     .article {
         top: 50vh;
-        margin: -42vh auto auto auto;
         left: 0;
         right: 0;
         position: fixed;
         background-image: linear-gradient( 280deg, var(--bg-light-blue-20), var(--bg-dark-blue-70) 120% );
         width: 98vw;
         max-width: 1040px;
-        height: 83.5vh;
         border: 6px solid var(--dark-blue-90);
         border-radius: 5px;
         overflow-y: scroll;
         overscroll-behavior: none;
         overflow-x: hidden;
         scroll-behavior: smooth;
+    }
+
+    .article-defaults {
+        margin: -42vh auto auto auto;
+        height: 83.5vh;
         animation: dropdown 1s ease-in-out;
     }
 
-    @keyframes dropdown {
-        from {
-            height: 0vh;
-        }
-        to {
-            height: 85.5vh;
-        }
+    .article-onscrolldown {
+        margin: -48vh auto auto auto;
+        height: 96vh;
+        animation: article-onscrolldown-animation 1s ease-in-out;
     }
+
+    .article-onscrollup {
+        margin: -42vh auto auto auto;
+        height: 83.5vh;
+        animation: article-onscrollup-animation 1s ease-in-out;
+    }
+
     .article-body {
         padding: 0.25rem;
         max-width: 840px;
@@ -57,7 +79,7 @@
 
     .article-entire {
         opacity: 100%;
-        animation: article-made-visible 1.5s ease-in-out;
+        animation: article-made-visible 3s ease-in-out;
     }
 
     .leafbytes-body {
@@ -99,5 +121,44 @@
 
     #home-header {
         padding-top: 0.75rem;
+    }
+
+/**********************
+  ANIMATIONS
+**********************/
+    @keyframes dropdown {
+        from {
+            height: 0vh;
+        }
+        to {
+            height: 85.5vh;
+        }
+    }
+
+    @keyframes article-made-visible {
+        from {opacity: 0%;}
+        to {opacity: 100%;}
+    }
+
+    @keyframes article-onscrolldown-animation {
+        from {
+            margin: -42vh auto auto auto;
+            height: 83.5vh;
+        }
+        to {
+            margin: -48vh auto auto auto;
+            height: 96vh;
+        }
+    }
+
+    @keyframes article-onscrollup-animation {
+        from {
+            margin: -48vh auto auto auto;
+            height: 94vh;
+        }
+        to {
+            margin: -42vh auto auto auto;
+            height: 83.5vh;
+        }
     }
 </style>

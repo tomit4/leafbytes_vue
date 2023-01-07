@@ -35,10 +35,9 @@
         border: 3px solid var(--dark-blue);
     }
 
-/* *********************
+/***********************
 * MAIN STYLES
 ***********************/
-
     html {
         background-color: #252525;
     }
@@ -100,5 +99,4 @@
             opacity: 40%;
         }
     }
-
 </style>

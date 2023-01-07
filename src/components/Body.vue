@@ -2,10 +2,14 @@
     import { ref, onMounted } from 'vue'
     import {RouterView} from "vue-router"
     import { delay } from '../utilities/utils.js'
+    import Nav from './Nav.vue'
+    import Foot from './Foot.vue'
 
+    console.log(emit)
     const showArticle = ref(false)
     const article = ref(null)
 
+    let scrollDown
     let prevPos = 0
     function onScroll() {
         let curPos = article.value.scrollTop
@@ -13,9 +17,11 @@
             article.value.classList.remove('article-defaults')
             article.value.classList.remove('article-onscrollup')
             article.value.classList.add('article-onscrolldown')
+            scrollDown = true
         } else if (curPos < prevPos) {
             article.value.classList.remove('article-onscrolldown')
             article.value.classList.add('article-onscrollup')
+            scrollDown = false
         }
         prevPos = curPos <= 0 ? 0 : curPos
     }
@@ -27,10 +33,14 @@
 </script>
 
 <template>
-    <div v-if="showArticle">
-        <div v-on:scroll="onScroll" ref="article" class="article article-defaults">
-            <RouterView />
+    <div>
+        <Nav />
+        <div v-if="showArticle">
+            <div @scroll="onScroll" ref="article" class="article article-defaults">
+                <RouterView />
+            </div>
         </div>
+        <Foot />
     </div>
 </template>
 

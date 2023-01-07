@@ -1,8 +1,6 @@
 <script setup>
     import Intro from './components/Intro.vue'
-    import Nav from './components/Nav.vue'
     import Body from './components/Body.vue'
-    import Foot from './components/Foot.vue'
 </script>
 
 <template>
@@ -10,7 +8,6 @@
         <Intro />
         <div class="logo"></div>
         <div class="circuits"></div>
-        <Nav />
         <Body />
         <Foot />
     </div>

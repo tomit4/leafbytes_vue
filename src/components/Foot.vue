@@ -1,10 +1,16 @@
 <script setup>
     import { ref, onMounted } from 'vue'
     import icons from './icons/footericons.json'
+    import sun from './icons/sunicon.json'
+    import moon from './icons/moonicon.json'
     import { delay } from '../utilities/utils.js'
 
     const footEl = ref(null)
     const iconElems = ref(null)
+
+    function test() {
+        console.log('test button')
+    }
 
     onMounted(async () => {
         await delay(5500)
@@ -20,11 +26,13 @@
         <footer ref="footEl" class="foot">
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
+                    <button @click="test" id="sun" v-html="sun[0].svg"></button>
                     <a v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="link"
                     class="footer-icons" :id="icon.id" v-html="icon.svg"
                     target="_blank" rel="noopener noreferrer"
                     :href="icon.href"></a>
+                    <button @click="test" id="moon" v-html="moon[0].svg"></button>
                 </div>
             </div>
         </footer>
@@ -32,6 +40,12 @@
 </template>
 
 <style scoped>
+    #moon,
+    #sun {
+        background: none;
+        border: none;
+    }
+
     button {
         cursor: pointer;
     }
@@ -53,7 +67,6 @@
 
     .footer-nav {
         display: flex;
-        margin: 0.6rem 0rem 0rem 0rem;
         justify-content: center;
         align-items: center;
     }

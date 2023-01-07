@@ -5,11 +5,9 @@
     import Nav from './Nav.vue'
     import Foot from './Foot.vue'
 
-    console.log(emit)
     const showArticle = ref(false)
     const article = ref(null)
 
-    let scrollDown
     let prevPos = 0
     function onScroll() {
         let curPos = article.value.scrollTop
@@ -17,11 +15,9 @@
             article.value.classList.remove('article-defaults')
             article.value.classList.remove('article-onscrollup')
             article.value.classList.add('article-onscrolldown')
-            scrollDown = true
         } else if (curPos < prevPos) {
             article.value.classList.remove('article-onscrolldown')
             article.value.classList.add('article-onscrollup')
-            scrollDown = false
         }
         prevPos = curPos <= 0 ? 0 : curPos
     }

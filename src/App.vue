@@ -9,7 +9,6 @@
         <div class="logo"></div>
         <div class="circuits"></div>
         <Body />
-        <Foot />
     </div>
 </template>
 

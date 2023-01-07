@@ -8,8 +8,10 @@
     const horizEl = ref(null)
     const subjEl = ref(null)
 
-    const lclToggleTree = () =>
+    const lclToggleTree = () => {
+        linkEl.value.classList.toggle('link-item-scaled')
         toggleTree(vertEl, subjEl, horizEl, 'dev')
+    }
 
     onMounted(async () => {
         await delay(1200)

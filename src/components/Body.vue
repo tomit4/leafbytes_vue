@@ -65,6 +65,7 @@
     }
 
     .article-header {
+        user-select: none;
         color: var(--white);
         opacity: 65%;
         background-color: var(--hd-dark-blue);
@@ -80,6 +81,7 @@
     }
 
     .article-header3 {
+        user-select: none;
         color: var(--white);
         opacity: 65%;
         background-color: var(--hd-dark-blue);

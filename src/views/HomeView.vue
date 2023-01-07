@@ -48,6 +48,7 @@
     }
 
     .link-item {
+        user-select: none;
         color: var(--hd-dark-blue);
         background-color: var(--white);
         opacity: 95%;
@@ -70,10 +71,11 @@
 
     .link-item:hover {
         cursor: pointer;
+        transform: scale(1.05, 1.05);
     }
 
     .tree-subject {
-        /* visibility: hidden; */
+        user-select: none;
         position: absolute;
         color: var(--hd-dark-blue);
         text-decoration: none;
@@ -87,6 +89,10 @@
         width: auto;
         padding: 0.1rem 0 0 0.3rem;
         white-space: nowrap;
+    }
+
+    .tree-subject:hover {
+        transform: scale(1.05, 1.05);
     }
 
     .tree-container{

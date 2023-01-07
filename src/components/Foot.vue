@@ -6,10 +6,16 @@
     import { delay } from '../utilities/utils.js'
 
     const footEl = ref(null)
+    const footLi = ref(null)
     const iconElems = ref(null)
 
     function test() {
         console.log('test button')
+    }
+
+    function scaleUp(id) {
+        console.log(`scaleup with id of ${id}`)
+        /* footLi.value[0].classList.add('scaled') */
     }
 
     onMounted(async () => {
@@ -26,13 +32,14 @@
         <footer ref="footEl" class="foot">
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
-                    <button @click="test" id="sun" v-html="sun[0].svg"></button>
-                    <a v-for="icon in icons"
+                    <button @click="test" class="scaled" id="sun" v-html="sun[0].svg"></button>
+                    <a ref="footLi" v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="link"
                     class="footer-icons" :id="icon.id" v-html="icon.svg"
                     target="_blank" rel="noopener noreferrer"
+                    @mouseover="scaleUp(icon.id)"
                     :href="icon.href"></a>
-                    <button @click="test" id="moon" v-html="moon[0].svg"></button>
+                    <button @click="test" class="scaled" id="moon" v-html="moon[0].svg"></button>
                 </div>
             </div>
         </footer>
@@ -44,6 +51,23 @@
     #sun {
         background: none;
         border: none;
+    }
+
+    .scaled:hover {
+        background-color: red;
+        animation: scaleup .5s;
+        transform: scale(1.25);
+        transform-origin: center;
+    }
+
+    @keyframes scaleup {
+        from {
+            transform: scale(1.0);
+        }
+        to {
+            transform: scale(1.25);
+            transform-origin: center;
+        }
     }
 
     button {
@@ -87,7 +111,7 @@
         animation: foot-onscrollup-animation 1.25s ease-in;
     }
 
-    .iconElems > * {
+    .iconElems {
         visibility: hidden;
     }
 
@@ -95,22 +119,6 @@
         visibility: visible;
         margin: 0.75rem 1rem 0rem 1rem;
         animation: fadein 1s;
-    }
-
-    .scaled {
-        animation: scaleup .5s;
-        transform: scale(1.25);
-        transform-origin: center;
-    }
-
-    @keyframes scaleup {
-        from {
-            transform: scale(1.0);
-        }
-        to {
-            transform: scale(1.25);
-            transform-origin: center;
-        }
     }
 
 /* *********************

@@ -6,16 +6,10 @@
     import { delay } from '../utilities/utils.js'
 
     const footEl = ref(null)
-    const footLi = ref(null)
     const iconElems = ref(null)
 
     function test() {
         console.log('test button')
-    }
-
-    function scaleUp(id) {
-        console.log(`scaleup with id of ${id}`)
-        /* footLi.value[0].classList.add('scaled') */
     }
 
     onMounted(async () => {
@@ -33,11 +27,10 @@
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
                     <button @click="test" class="scaled" id="sun" v-html="sun[0].svg"></button>
-                    <a ref="footLi" v-for="icon in icons"
+                    <a v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="link"
-                    class="footer-icons" :id="icon.id" v-html="icon.svg"
+                    class="scaled" :id="icon.id" v-html="icon.svg"
                     target="_blank" rel="noopener noreferrer"
-                    @mouseover="scaleUp(icon.id)"
                     :href="icon.href"></a>
                     <button @click="test" class="scaled" id="moon" v-html="moon[0].svg"></button>
                 </div>
@@ -49,29 +42,19 @@
 <style scoped>
     #moon,
     #sun {
-        background: none;
         border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .scaled {
+        display: inline-block;
     }
 
     .scaled:hover {
-        background-color: red;
-        animation: scaleup .5s;
-        transform: scale(1.25);
+        transform: scale(1.25, 1.25);
         transform-origin: center;
-    }
-
-    @keyframes scaleup {
-        from {
-            transform: scale(1.0);
-        }
-        to {
-            transform: scale(1.25);
-            transform-origin: center;
-        }
-    }
-
-    button {
-        cursor: pointer;
+        animation: scaleup .5s;
     }
 
     .foot {
@@ -98,12 +81,6 @@
     .footer-icons {
         justify-content: center;
         align-items: center;
-        margin: 0.75rem 1.1rem 0rem 1.8rem;
-        height: 1.25rem;
-        width: 1.25rem;
-        background: none;
-        border: none;
-        transform: translate(20%, -0%);
     }
 
     .foot-onscrollup {
@@ -141,6 +118,16 @@
         to {
             visibility: visible;
             opacity: 80%;
+        }
+    }
+
+    @keyframes scaleup {
+        from {
+            transform: scale(1.0);
+        }
+        to {
+            transform: scale(1.25, 1.25);
+            transform-origin: center;
         }
     }
 </style>

@@ -108,7 +108,7 @@
 
     .scaled {
         animation: scaleup .5s;
-        transform: scale(1.25);
+        transform: scale(1.25, 1.25);
         transform-origin: bottom left;
     }
 
@@ -137,10 +137,10 @@
 
     @keyframes scaleup {
         from {
-            transform: scale(1.0);
+            transform: scale(1.0, 1.0);
         }
         to {
-            transform: scale(1.25);
+            transform: scale(1.25, 1.25);
             transform-origin: bottom left;
         }
     }

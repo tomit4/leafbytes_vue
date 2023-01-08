@@ -39,7 +39,7 @@
                 <RouterView />
             </div>
         </div>
-        <Foot />
+        <Foot :scrolldownprop="scrolldownProperty" />
     </div>
 </template>
 

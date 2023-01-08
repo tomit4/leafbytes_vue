@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, onMounted } from 'vue'
+    import { ref, watch, defineProps, onMounted } from 'vue'
     import icons from './icons/footericons.json'
     import sun from './icons/sunicon.json'
     import moon from './icons/moonicon.json'
@@ -7,6 +7,28 @@
 
     const footEl = ref(null)
     const iconElems = ref(null)
+
+    const props = defineProps({
+        scrolldownprop: {
+            type: Boolean,
+        }
+    })
+
+    watch(() => props.scrolldownprop, async (isScrollingDown) => {
+        if (isScrollingDown) {
+            footEl.value.classList.remove('foot-onscrollup')
+            footEl.value.classList.add('foot-onscrolldown')
+            iconElems.value.classList.add('fade-out')
+            iconElems.value.classList.remove('fade-in')
+        } else {
+            footEl.value.classList.remove('foot-onscrolldown')
+            footEl.value.classList.add('foot-onscrollup')
+            await delay(1200)
+            iconElems.value.classList.add('fade-in')
+            iconElems.value.classList.remove('fade-out')
+        }
+    })
+
 
     function test() {
         console.log('test button')
@@ -49,6 +71,7 @@
 
     .scaled {
         display: inline-block;
+        margin: 0.75rem 1rem 0rem 1rem;
     }
 
     .scaled:hover {
@@ -85,7 +108,13 @@
 
     .foot-onscrollup {
         height: 2.5rem;
-        animation: foot-onscrollup-animation 1.25s ease-in;
+        animation: foot-onscrollup-animation 1.2s ease-in;
+    }
+
+    .foot-onscrolldown {
+        height: 0.5rem;
+        border: none;
+        animation: foot-onscrolldown-animation 1s ease-in;
     }
 
     .iconElems {
@@ -94,8 +123,12 @@
 
     .fade-in > * {
         visibility: visible;
-        margin: 0.75rem 1rem 0rem 1rem;
         animation: fadein 1s;
+    }
+
+    .fade-out > * {
+        visibility: hidden;
+        animation: fadeout 1s;
     }
 
 /* *********************
@@ -109,6 +142,14 @@
         100% { height: 2.5rem; }
     }
 
+    @keyframes foot-onscrolldown-animation {
+        0% { height: 2.3rem; }
+        20% { height: 2.3rem; }
+        50% { height: 1.7rem; }
+        70% { height: 1.1rem; }
+        100% { height: 0.5rem; }
+    }
+
     @keyframes fadein {
         from {
             visibility: hidden;
@@ -118,6 +159,15 @@
         to {
             visibility: visible;
             opacity: 80%;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 80%;
+        }
+        to {
+            opacity: 0%;
         }
     }
 

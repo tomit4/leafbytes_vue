@@ -1,8 +1,14 @@
 <script setup>
-    import { ref, onMounted } from 'vue'
+    import { ref, watch, defineProps, onMounted } from 'vue'
     import {RouterLink} from 'vue-router'
     import icons from './icons/navicons.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
+
+    const props = defineProps({
+        scrolldownprop: {
+            type: Boolean,
+        }
+    })
 
     const navEl = ref(null)
     const iconElems = ref(null)
@@ -15,6 +21,25 @@
 
     const lclScaleLeave = (id) =>
         scaleLeave(id, iconElems)
+
+    watch(() => props.scrolldownprop, async (isScrollingDown) => {
+        if (isScrollingDown) {
+            iconElems.value.forEach((el) => {
+                el.classList.add('fade-out')
+                el.classList.remove('fade-in')
+            })
+            navEl.value.classList.remove('navbar-onscrollup')
+            navEl.value.classList.add('navbar-onscrolldown')
+        } else {
+            navEl.value.classList.remove('navbar-onscrolldown')
+            navEl.value.classList.add('navbar-onscrollup')
+            await delay(1200)
+            iconElems.value.forEach((el) => {
+                el.classList.remove('fade-out')
+                el.classList.add('fade-in')
+            })
+        }
+    })
 
     onMounted(async () => {
         await delay(5500)
@@ -101,9 +126,19 @@
         animation: navbar-onscrollup-animation 1.25s ease-in;
     }
 
+    .navbar-onscrolldown {
+        height: 0;
+        animation: navbar-onscrolldown-animation 1s ease-in;
+    }
+
     .fade-in {
         visibility: visible;
         animation: fadein 1s;
+    }
+
+    .fade-out {
+        visibility: hidden;
+        animation: fadeout 1s;
     }
 
     .scaled {
@@ -123,6 +158,14 @@
         100% { height: 2.5em; }
     }
 
+    @keyframes navbar-onscrolldown-animation {
+        0% { height: 2.5rem; }
+        20% { height: 1.5rem; }
+        50% { height: 1.0rem; }
+        70% { height: 0.5rem; }
+        100% { height: 0; }
+    }
+
     @keyframes fadein {
         from {
             visibility: hidden;
@@ -132,6 +175,15 @@
         to {
             visibility: visible;
             opacity: 80%;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 80%;
+        }
+        to {
+            opacity: 0%;
         }
     }
 

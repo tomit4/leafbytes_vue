@@ -1,10 +1,11 @@
 <script setup>
     import { ref, onMounted } from 'vue'
-    import {RouterView} from "vue-router"
+    import {RouterView} from 'vue-router'
     import { delay } from '../utilities/utils.js'
     import Nav from './Nav.vue'
     import Foot from './Foot.vue'
 
+    let scrolldownProperty = ref(null)
     const showArticle = ref(false)
     const article = ref(null)
 
@@ -15,9 +16,11 @@
             article.value.classList.remove('article-defaults')
             article.value.classList.remove('article-onscrollup')
             article.value.classList.add('article-onscrolldown')
+            scrolldownProperty.value = true
         } else if (curPos < prevPos) {
             article.value.classList.remove('article-onscrolldown')
             article.value.classList.add('article-onscrollup')
+            scrolldownProperty.value = false
         }
         prevPos = curPos <= 0 ? 0 : curPos
     }
@@ -30,7 +33,7 @@
 
 <template>
     <div>
-        <Nav />
+        <Nav :scrolldownprop="scrolldownProperty" />
         <div v-if="showArticle">
             <div @scroll="onScroll" ref="article" class="article article-defaults">
                 <RouterView />

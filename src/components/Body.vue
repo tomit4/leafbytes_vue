@@ -5,7 +5,7 @@
     import Nav from './Nav.vue'
     import Foot from './Foot.vue'
 
-    let scrolldownProperty = ref(null)
+    const scrolldownProperty = ref(null)
     const showArticle = ref(false)
     const article = ref(null)
 

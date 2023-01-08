@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, watch, defineProps, onMounted } from 'vue'
+    import { ref, watch, onMounted } from 'vue'
     import icons from './icons/footericons.json'
     import sun from './icons/sunicon.json'
     import moon from './icons/moonicon.json'

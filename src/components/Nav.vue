@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, watch, defineProps, onMounted } from 'vue'
+    import { ref, watch, onMounted } from 'vue'
     import {RouterLink} from 'vue-router'
     import icons from './icons/navicons.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'

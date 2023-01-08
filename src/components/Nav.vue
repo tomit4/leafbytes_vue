@@ -4,12 +4,6 @@
     import icons from './icons/navicons.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
 
-    const props = defineProps({
-        scrolldownprop: {
-            type: Boolean,
-        }
-    })
-
     const navEl = ref(null)
     const iconElems = ref(null)
 
@@ -21,6 +15,12 @@
 
     const lclScaleLeave = (id) =>
         scaleLeave(id, iconElems)
+
+    const props = defineProps({
+        scrolldownprop: {
+            type: Boolean,
+        }
+    })
 
     watch(() => props.scrolldownprop, async (isScrollingDown) => {
         if (isScrollingDown) {

@@ -129,6 +129,21 @@
         border-radius: 0px 0px 7px 7px;
     }
 
+    .article-header4 {
+        color: rgba(255, 255, 255, 1);
+        opacity: 65%;
+        background-color: rgba(0, 44, 70, 1);
+        font-family: HussarBold;
+        font-size: 14px;
+        max-width: 350px;
+        height: 2.1rem;
+        margin-bottom: -0.5rem;
+        /* margin-left: 2rem; */
+        padding: 0.5rem;
+        border: 1px solid rgba(0, 44, 70, 1);
+        border-radius: 7px 7px 0px 0px;
+    }
+
     #home-header {
         padding-top: 0.75rem;
     }

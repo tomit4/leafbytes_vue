@@ -1,0 +1,21 @@
+[
+    {
+        "blogs": [
+            {
+                "id": 1,
+                "href": "https://unixsheikh.com",
+                "tag": "UnixSheikh"
+            },
+            {
+                "id": 2,
+                "href": "https://bugswriter.com",
+                "tag": "BugsWriter"
+            },
+            {
+                "id": 3,
+                "href": "https://paritybit.ca/blog",
+                "tag": "ParityBit"
+            }
+        ]
+    }
+]

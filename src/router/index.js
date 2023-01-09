@@ -1,10 +1,9 @@
 import {createRouter, createWebHistory} from "vue-router"
 import App from "../App.vue"
 import Body from "../components/Body.vue"
-import TestView from "../views/TestView.vue"
-import TestView2 from "../views/TestView2.vue"
 import TestView3 from "../views/TestView3.vue"
 import ContactView from "../views/ContactView.vue"
+import AboutView from "../views/AboutView.vue"
 import HomeView from "../views/HomeView.vue"
 import NotFoundView from "../views/404View.vue"
 
@@ -34,10 +33,10 @@ const router = createRouter({
             }
         },
         {
-            path: "/test2",
-            name: "test2",
+            path: "/about",
+            name: "about",
             components: {
-                default: TestView2,
+                default: AboutView,
                 body: Body
             }
         },

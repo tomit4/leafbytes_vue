@@ -84,11 +84,12 @@
         margin: 0.5rem 0.4rem;
         border-radius: 5px;
         background-color: var(--light-blue-50);
+        z-index: 0;
     }
 
     .article-entire {
         opacity: 100%;
-        animation: article-made-visible 3s ease-in-out;
+        animation: article-made-visible 1s ease-in-out;
     }
 
     .leafbytes-body {
@@ -130,6 +131,41 @@
 
     #home-header {
         padding-top: 0.75rem;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    /* image related stylings */
+    img {
+        border: 4px solid #004b77;
+        border-radius: 5px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        font-family: LiberationMono;
+        font-size: 14px;
+        font-weight: 900;
+        color: #004b77;
+        text-align: center;
+    }
+
+    .article-content {
+        font-family: LiberationMono;
+        font-size: 0.96rem;
+        font-weight: 600;
+        color: #004b77;
+        line-height: 1.4rem;
+        margin: 0.5rem 0.5rem;
+        /* z-index: -1; */
+    }
+
+    .article-outside-links {
+        font-weight: 900;
+        text-decoration: none;
     }
 
 /**********************

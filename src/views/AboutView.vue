@@ -1,0 +1,134 @@
+<template>
+    <div>
+        <div class="article-entire">
+            <div class="leafbytes-body">
+                <p class="article-header" id="home-header">about</p>
+                <p class="article-header3">a brief autobiography</p>
+                <div class="article-body">
+                    <figure>
+                        <img
+                            id="me"
+                            src="../assets/img/me.webp"
+                            alt="An Image of the Author, Brian Hayes"
+                            title="Author Image"
+                            loading="lazy"
+                        />
+                        <figcaption>A Picture of Me, circa 2018</figcaption>
+                    </figure>
+                    <p class="article-content">
+                        Hello and Welcome, Traveler!
+                    </p>
+                    <p class="article-content">
+                        This being my first blog post ever, I suppose it is best to do a brief introduction into who I
+                        am and what this is all about. My name is Brian Hayes, I am 39 years old, and am currently in
+                        the process of slowly but surely learning more and more about the world of Computers and
+                        Computer Science, with a focus on web development and software development with the goal of
+                        making a career change as a Web Developer.
+                    </p>
+                    <p class="article-content">
+                        Prior to this, I have worked as a Barista, a Teacher's Assistant, a Graphic Designer, and a
+                        Hotel Concierge. I have a Bachelor's of Fine Arts in Illustration from The Art Center College
+                        of Design in Pasadena.
+                    </p>
+                    <p class="article-content">
+                        I have always been what would call a "power user" when it comes to computers, but until about
+                        two years ago, if you showed me a line of code, I would have scratched my head in confusion
+                        (I still do, albeit not as often).
+                    </p>
+                    <p class="article-content">
+                        The purpose of this blog is to document my opinion and knowledge on computer-related subjects
+                        that have and continue to strike my interest to this day.
+                    </p>
+                    <p class="article-content">
+                        My earliest memory of interacting with a computer was when I was in the second grade, and
+                        seeing a green colored MS-DOS command line open. By following the teacher's instructions, I
+                        recall playing very basic games on this computer but being relatively uninterested at the time.
+                    </p>
+                    <p class="article-content">
+                        Prior to the internet becoming a household name, at around 11 or 12 years of age, I remember my
+                        mother investing in a digital typewriter, which had the wonderful feature of being able to
+                        write text before printing it, so that one could edit one's typos without having to utilize
+                        white out on the page. A few years later the desktop computer would become a necessity in the
+                        home, as the internet had finally arrived on the worldwide scene, and changed everything.
+                    </p>
+                    <p class="article-content">
+                        I quickly became enthralled with the user friendliness of Windows (at this time I believe it
+                        was Windows 95). I was heavily active in the early days of internet. I was an avid user of
+                        AIM, ICQ, Yahoo, and played text-based role-playing games known as MUDs.
+                    </p>
+                    <p class="article-content">
+                        Eventually video games would take over the focus of my youth, as JRPGs became a passion of
+                        mine that lasted nearly a decade, and certainly consumed my high school years.
+                    </p>
+                    <p class="article-content">
+                        When I arrived at college, computers played a pivotal role as my major was Illustration (and
+                        Animation prior to that). I went to college during an interesting period of change for the
+                        academic institutions, as they had only half-way evolved and embraced computer technology.
+                        As an Illustration Major, I spent more time mixing paint and copying Renaissance Drawings than
+                        I did studying Adobe Photoshop or Illustrator (software which, while greatly improved
+                        currently, I still have issues with when compared with traditional mediums). That said, I
+                        became familiar with the basics of Photoshop (and a bit of Illustrator) which served my needs
+                        for making personal work.
+                    </p>
+                    <p class="article-content">
+                        When I graduated from college, I had little direction about where to go next. All I knew was
+                        that I needed to make money and I did what so many in the creative fields did, I went to work
+                        at a cafe, specifically Starbucks. The majority of my life has been working low level minimum
+                        wage jobs that have been rewarding in many respects, and many would say I had wasted my time
+                        learning the arts because of the lack of lucrative opportunites, but I honestly will never
+                        regret it. The skills I have are very valuable to me and if I could do it all over again,
+                        knowing what I know now, I still would not change a single moment of it.
+                    </p>
+                    <p class="article-content">
+                        I lived in Los Angeles for eighteen years; making art, cycling, reading and studying, taking
+                        up the sport of handball... I have taken up many interests in my life. Two years ago, I landed
+                        a job as a concierge for a small hotel in Downtown Los Angeles. It was about as good a job as
+                        I had ever had. I eventually became their full time night auditor, which gave me the time to
+                        focus on yet another obsession, and I decided it was time to study something that I knew would
+                        probably take the rest of my life and I expect it to. I decided, after literally years of
+                        debate, to try my hand at learning how to code, and by extension, learn everything I could
+                        about Computers.
+                    </p>
+                    <p class="article-content">
+                        When I say this decision took years just to make, I mean it. I was avidly involved in the
+                        Handball community at this time. Coaching, refereeing, playing two to three times a week and
+                        training both physically and mentally for it. I had never played sports as a kid, and so my
+                        aim to become as good as I could would probably never end. The choice to walk away and study
+                        coding was a hard one. I knew I only studied one thing at a time and that this would be no
+                        different. I had been dedicated to the sport of Handball for eight years, but it, like art,
+                            was a love that would never become a profession.
+                    </p>
+                    <p class="article-content">
+                        My best friend and long term roommate at the time had at this point been a professional, self
+                        taught, JavaScript developer for four years. He had taught himself how to code, made
+                        professional contacts within the field of software development, and had landed a lucrative six
+                        figure a year paying job. After he landed this job, he had encouraged me to start to learn
+                        JavaScript as well. He handed me the book <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=sr_1_1?keywords=eloquent+javascript">Eloquent JavaScript</a>, by Marijn Haverbeke, and after
+                        working through about four chapters of exercises, decided it wasn't for me. I got easily
+                        frustrated at not understanding the syntax, and decided to simply continue pursuing my
+                        beloved sport.
+                    </p>
+                    <p class="article-content">
+                        Roughly four years later, with my Night Audit Job secure, I decided it was time to give
+                        computer programming another chance. I gave up Handball, and began devoting all my waking
+                        hours to either learning how to code, learning about Linux, or performing my duties at my
+                        job.
+                    </p>
+                    <p class="article-content">
+                        I am still in the midst of this journey. Perhaps obviously, I am looking to acquire a Junior
+                        Web Developer posititon, a career change that many are attempting to go through at this time.
+                        I have since quit my Night Auditor position and moved to Battle Ground,
+                        Washington to be closer to my family.
+                    </p>
+                    <p class="article-content">
+                        Computers, and by extension, computer programming has, for me, become another obsession,
+                        another love, another chapter in my life. This blog is meant to document, at least in some
+                        small part, my attempts to wade through the vast subjects of Web Development, Computers,
+                        and Computer Science. I invite anyone interested in my meanderings to follow along.
+                    </p>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </div>
+    </div>
+</template>

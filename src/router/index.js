@@ -4,6 +4,7 @@ import Body from "../components/Body.vue"
 import TestView from "../views/TestView.vue"
 import TestView2 from "../views/TestView2.vue"
 import TestView3 from "../views/TestView3.vue"
+import ContactView from "../views/ContactView.vue"
 import HomeView from "../views/HomeView.vue"
 import NotFoundView from "../views/404View.vue"
 
@@ -25,10 +26,10 @@ const router = createRouter({
             }
         },
         {
-            path: "/test",
-            name: "test",
+            path: "/contact",
+            name: "contact",
             components: {
-                default: TestView,
+                default: ContactView,
                 body: Body
             }
         },

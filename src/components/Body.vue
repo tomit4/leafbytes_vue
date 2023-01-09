@@ -81,7 +81,7 @@
     .article-body {
         padding: 0.25rem;
         max-width: 840px;
-        margin: 0.5rem auto;
+        margin: 0.5rem 0.4rem;
         border-radius: 5px;
         background-color: var(--light-blue-50);
     }

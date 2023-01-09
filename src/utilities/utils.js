@@ -43,7 +43,10 @@ function scaleClick(id, iconElems) {
     })
 }
 
-function scaleHover(id, iconElems) {
+function scaleHover(id, iconElems, rssEl) {
+    if (id === 'rss') {
+        rssEl.value.classList.add('scaled')
+    }
     iconElems.value.forEach((el) => {
         if (!el.classList.contains('clickScaled'))
             el.classList.remove('scaled')
@@ -52,13 +55,16 @@ function scaleHover(id, iconElems) {
     })
 }
 
-function scaleLeave(id, iconElems) {
+function scaleLeave(id, iconElems, rssEl) {
+    if (id === 'rss') {
+        rssEl.value.classList.remove('scaled')
+    }
     iconElems.value.forEach((el) => {
         if (el.classList.contains('clickScaled'))
             return
         else if (id === el.id && el.classList.contains('scaled'))
             el.classList.remove('scaled')
-    })
+        })
 }
 
 export { delay, toggleTree, scaleClick, scaleHover, scaleLeave }

@@ -2,19 +2,21 @@
     import { ref, watch, onMounted } from 'vue'
     import {RouterLink} from 'vue-router'
     import icons from './icons/navicons.json'
+    import rss from './icons/rss.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
 
     const navEl = ref(null)
     const iconElems = ref(null)
+    const rssEl = ref(null)
 
     const lclScaleClick = (id) =>
         scaleClick(id, iconElems)
 
     const lclScaleHover = (id) =>
-        scaleHover(id, iconElems)
+        scaleHover(id, iconElems, rssEl)
 
     const lclScaleLeave = (id) =>
-        scaleLeave(id, iconElems)
+        scaleLeave(id, iconElems, rssEl)
 
     const props = defineProps({
         scrolldownprop: {
@@ -51,6 +53,8 @@
             if (el.id === 'home')
                 el.classList.add('scaled', 'clickScaled')
         })
+        rssEl.value.classList.add('fade-in')
+        rssEl.value.classList.remove('iconElems')
      })
 </script>
 
@@ -68,6 +72,12 @@
                         @mouseleave="lclScaleLeave(icon.id)">
                         </router-link>
                     </div>
+                    <a ref="rssEl" class="iconElems icons" :id="rss[0].id"
+                    :aria-label="rss[0].ariaLabel"
+                    :href="rss[0].href"
+                    @mouseover="lclScaleHover(rss[0].id)"
+                    @mouseleave="lclScaleLeave(rss[0].id)"
+                    v-html="rss[0].svg"></a>
                 </div>
         </nav>
     </div>
@@ -117,8 +127,9 @@
         transform: translate(20%, -0%);
     }
 
-    #link {
-        width: 1.5rem;
+    #rss {
+        width: 2rem;
+        margin-bottom: 0.25rem;
     }
 
     .navbar-onscrollup {

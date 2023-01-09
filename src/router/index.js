@@ -1,10 +1,10 @@
 import {createRouter, createWebHistory} from "vue-router"
 import App from "../App.vue"
 import Body from "../components/Body.vue"
-import TestView3 from "../views/TestView3.vue"
 import ContactView from "../views/ContactView.vue"
 import AboutView from "../views/AboutView.vue"
 import HomeView from "../views/HomeView.vue"
+import LinksView from "../views/LinksView.vue"
 import NotFoundView from "../views/404View.vue"
 
 const router = createRouter({
@@ -41,10 +41,10 @@ const router = createRouter({
             }
         },
         {
-            path: "/test3",
-            name: "test3",
+            path: "/links",
+            name: "links",
             components: {
-                default: TestView3,
+                default: LinksView,
                 body: Body
             }
         },

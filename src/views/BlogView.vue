@@ -15,14 +15,14 @@
 
     .article-quotes {
         font-family: LiberationMono;
-        color: rgba(255, 255, 255, 1);
+        color: var(--white);
         opacity: 65%;
         max-width: 600px;
         margin: 0 auto;
-        background-color: rgba(0, 44, 70, 1);
+        background-color: var(--hd-dark-blue);
         font-size: 0.9rem;
         font-weight: 600;
-        border: 1px solid rgba(0, 44, 70, 1);
+        border: 1px solid var(--hd-dark-blue);
         border-radius: 5px;
         padding: 1rem;
         text-align: center;
@@ -31,7 +31,7 @@
 
     .blockquote-links {
         text-decoration: none;
-        color: #ffffff;
+        color: var(--white);
     }
 
     .article-lists {
@@ -43,7 +43,7 @@
         font-family: LiberationMono;
         font-size: 1rem;
         font-weight: 600;
-        color: #004b77;
+        color: var(--dark-blue);
         z-index: -1;
     }
 </style>

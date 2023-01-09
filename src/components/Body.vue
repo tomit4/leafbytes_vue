@@ -107,7 +107,7 @@
         width: 80vw;
         max-width: 400px;
         margin: 0.5rem auto;
-        padding: 0.5rem 0.25rem 0rem 0rem;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
         border: 1px solid var(--hd-dark-blue);
         border-radius: 7px 7px 2px 2px;
     }

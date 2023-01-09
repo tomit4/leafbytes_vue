@@ -148,7 +148,7 @@
         font-size: 0.96rem;
         font-weight: 600;
         color: var(--dark-blue);
-        line-height: 1.4rem;
+        line-height: 1.2rem;
         margin: 1rem;
     }
 

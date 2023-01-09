@@ -30,6 +30,8 @@
                 el.classList.add('fade-out')
                 el.classList.remove('fade-in')
             })
+            rssEl.value.classList.add('fade-out')
+            rssEl.value.classList.remove('fade-in')
             navEl.value.classList.remove('navbar-onscrollup')
             navEl.value.classList.add('navbar-onscrolldown')
         } else {
@@ -40,6 +42,8 @@
                 el.classList.remove('fade-out')
                 el.classList.add('fade-in')
             })
+            rssEl.value.classList.remove('fade-out')
+            rssEl.value.classList.add('fade-in')
         }
     })
 

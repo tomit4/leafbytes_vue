@@ -138,7 +138,6 @@
         max-width: 350px;
         height: 2.1rem;
         margin-bottom: -0.5rem;
-        /* margin-left: 2rem; */
         padding: 0.5rem;
         border: 1px solid var(--hd-dark-blue);
         border-radius: 7px 7px 0px 0px;
@@ -167,16 +166,15 @@
         background: transparent;
     }
 
-    figure {
-        text-align: center;
-    }
-
-    /* image related stylings */
     img {
         border: 4px solid var(--dark-blue);
         border-radius: 5px;
         display: flex;
         margin: 0 auto;
+    }
+
+    figure {
+        text-align: center;
     }
 
     figcaption {

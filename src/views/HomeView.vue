@@ -106,6 +106,11 @@
         display: none;
     }
 
+    .spacer {
+        height: 5rem;
+        background: transparent;
+    }
+
     @media (max-width: 31rem) {
         .tree-container {
             max-width: 85vw;

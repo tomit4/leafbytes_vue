@@ -81,7 +81,7 @@
     .article-body {
         padding: 0.25rem;
         max-width: 840px;
-        margin: 0.5rem 0.4rem;
+        margin: 0.5rem auto;
         border-radius: 5px;
         background-color: var(--light-blue-50);
         z-index: 0;
@@ -132,7 +132,7 @@
     .article-header4 {
         color: rgba(255, 255, 255, 1);
         opacity: 65%;
-        background-color: rgba(0, 44, 70, 1);
+        background-color: var(--hd-dark-blue);
         font-family: HussarBold;
         font-size: 14px;
         max-width: 350px;
@@ -140,12 +140,31 @@
         margin-bottom: -0.5rem;
         /* margin-left: 2rem; */
         padding: 0.5rem;
-        border: 1px solid rgba(0, 44, 70, 1);
+        border: 1px solid var(--hd-dark-blue);
         border-radius: 7px 7px 0px 0px;
+    }
+
+    .article-content {
+        font-family: LiberationMono;
+        font-size: 0.96rem;
+        font-weight: 600;
+        color: var(--dark-blue);
+        line-height: 1.4rem;
+        margin: 1rem;
+    }
+
+    .article-outside-links {
+        font-weight: 900;
+        text-decoration: none;
     }
 
     #home-header {
         padding-top: 0.75rem;
+    }
+
+    .spacer {
+        height: 5rem;
+        background: transparent;
     }
 
     figure {
@@ -154,7 +173,7 @@
 
     /* image related stylings */
     img {
-        border: 4px solid #004b77;
+        border: 4px solid var(--dark-blue);
         border-radius: 5px;
         display: flex;
         margin: 0 auto;
@@ -164,29 +183,10 @@
         font-family: LiberationMono;
         font-size: 14px;
         font-weight: 900;
-        color: #004b77;
+        color: var(--dark-blue);
         text-align: center;
     }
 
-    .article-content {
-        font-family: LiberationMono;
-        font-size: 0.96rem;
-        font-weight: 600;
-        color: #004b77;
-        line-height: 1.4rem;
-        margin: 0.5rem 0.5rem;
-        /* z-index: -1; */
-    }
-
-    .article-outside-links {
-        font-weight: 900;
-        text-decoration: none;
-    }
-
-    .spacer {
-        height: 5rem;
-        background: transparent;
-    }
 /**********************
   ANIMATIONS
 **********************/

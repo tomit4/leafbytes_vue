@@ -7,6 +7,9 @@ import HomeView from "../views/HomeView.vue"
 import LinksView from "../views/LinksView.vue"
 import NotFoundView from "../views/404View.vue"
 
+import BlogView from "../views/BlogView.vue"
+import Article_01 from "../views/views_articles/Article_01.vue"
+
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -47,6 +50,20 @@ const router = createRouter({
                 default: LinksView,
                 body: Body
             }
+        },
+        {
+            path: "/blog/:id",
+            components: {
+                default: BlogView,
+                body: Body
+            },
+            children: [
+                {
+                    path: '',
+                    name: 'one-with-the-keyboard',
+                    component: Article_01
+                }
+            ]
         },
         {
             path: "/:catchall(.*)*",

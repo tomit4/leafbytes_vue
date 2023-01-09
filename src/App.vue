@@ -1,13 +1,13 @@
 <script setup>
     import Intro from './components/Intro.vue'
     import Body from './components/Body.vue'
+    import Background from './components/Background.vue'
 </script>
 
 <template>
     <div>
         <Intro />
-        <div class="logo"></div>
-        <div class="circuits"></div>
+        <Background />
         <Body />
     </div>
 </template>
@@ -35,15 +35,14 @@
 * MAIN STYLES
 ***********************/
     html {
-        background-color: #252525;
+        background-color: var(--bg-black);
     }
 
-    html, body {
+    body {
         background-image: linear-gradient(280deg, var(--dark-blue) 0%, var(--light-blue) 120%);
         background-repeat: no-repeat;
         min-height: 100vh;
         width: 100%;
-        /* max-width: 1440px; */
         max-width: 1920px;
         margin: 0 auto;
         padding: 0;
@@ -52,47 +51,5 @@
 
         /* mozilla firefox styling of scrollbar */
         scrollbar-color: var(--dark-blue) var(--light-blue);
-    }
-
-    /* background stylings */
-    .circuits {
-        background-image: url("./src/assets/svg/circuit_board_vector.svg");
-        background-size: contain;
-        background-position: center center;
-        width: 98vw;
-        max-width: 1920px;
-        margin: 0 auto;
-        height: 98vh;
-        opacity: 25%;
-        overflow: hidden;
-    }
-
-    .logo {
-        background-image: url('./src/assets/svg/logo2.svg');
-        width: 90vw;
-        max-width: 520px;
-        max-height: 920px;
-        height: 77vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        position: fixed;
-        top: 53vh;
-        left: 50vw;
-        opacity: 40%;
-        transform: translate(-49%, -58%);
-        margin: 1rem auto;
-        animation: logofadein 3s ease-in-out;
-    }
-
-    @keyframes logofadein {
-        from {
-            visibility: hidden;
-            opacity: 0;
-        }
-        to {
-            visibility: visible;
-            opacity: 40%;
-        }
     }
 </style>

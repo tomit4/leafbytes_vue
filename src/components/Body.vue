@@ -168,6 +168,10 @@
         text-decoration: none;
     }
 
+    .spacer {
+        height: 5rem;
+        background: transparent;
+    }
 /**********************
   ANIMATIONS
 **********************/

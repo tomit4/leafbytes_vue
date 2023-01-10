@@ -9,6 +9,7 @@ import NotFoundView from "../views/404View.vue"
 import BlogView from "../views/BlogView.vue"
 import Article_01 from "../views/views_articles/Article_01.vue"
 import Article_02 from "../views/views_articles/Article_02.vue"
+import Article_03 from "../views/views_articles/Article_03.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,6 +60,11 @@ const router = createRouter({
                     path: 'command-line',
                     name: 'command-line',
                     component: Article_02
+                },
+                {
+                    path: 'why-use-linux',
+                    name: 'why-use-linux',
+                    component: Article_03
                 },
             ]
         },

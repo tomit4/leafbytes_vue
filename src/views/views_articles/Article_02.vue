@@ -1,12 +1,17 @@
 <script setup>
 import { onMounted } from 'vue'
 import Prism from "prismjs"
+
 onMounted(() => { Prism.highlightAll() })
 </script>
 
 <template>
     <div>
         <div class="article-entire">
+            <div class="intro-header">
+                <router-link class="next-btn" to="/blog/one-with-the-keyboard"></router-link>
+                <router-link class="prev-btn" to="/blog/one-with-the-keyboard"></router-link>
+            </div>
             <p class="article-header">command line</p>
             <p class="article-header3">getting comfy in the shell</p>
             <div class="article-body">

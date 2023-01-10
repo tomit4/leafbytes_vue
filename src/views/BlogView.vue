@@ -9,9 +9,118 @@
 </template>
 
 <style>
+    .article-header {
+        user-select: none;
+        color: var(--white);
+        opacity: 65%;
+        background-color: var(--hd-dark-blue);
+        font-family: HussarBold;
+        font-size: 24px;
+        text-align: center;
+        width: 80vw;
+        max-width: 400px;
+        margin: 0.5rem auto;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+        border: 1px solid var(--hd-dark-blue);
+        border-radius: 7px 7px 2px 2px;
+    }
+
+    .article-header3 {
+        user-select: none;
+        color: var(--white);
+        opacity: 65%;
+        background-color: var(--hd-dark-blue);
+        font-family: HussarBold;
+        font-size: 16px;
+        text-align: center;
+        width: 80vw;
+        max-width: 400px;
+        height: 2.1rem;
+        margin: -0.5rem auto 0rem auto;
+        padding-bottom: 0.5rem;
+        border: 1px solid var(--hd-dark-blue);
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    .article-header4 {
+        color: rgba(255, 255, 255, 1);
+        opacity: 65%;
+        background-color: var(--hd-dark-blue);
+        font-family: HussarBold;
+        font-size: 14px;
+        max-width: 350px;
+        height: 2.1rem;
+        margin-bottom: -0.5rem;
+        padding: 0.5rem;
+        border: 1px solid var(--hd-dark-blue);
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .article-content {
+        font-family: LiberationMono;
+        font-size: 0.96rem;
+        font-weight: 600;
+        color: var(--dark-blue);
+        line-height: 1.2rem;
+        margin: 1rem;
+    }
+
+    .article-outside-links {
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    #home-header {
+        padding-top: 0.75rem;
+    }
+
     .header-images {
         margin: 1rem auto 0.5rem auto;
         max-width: 300px;
+    }
+
+    .intro-header {
+        align-items: flex-right;
+        position: absolute;
+        width: 98vw;
+        height: 8vh;
+    }
+
+    .prev-btn {
+        display: flex;
+        position: sticky;
+        content: url("../assets/svg/triangle-left.svg");
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 0.25rem;
+        opacity: 70%;
+        background-color: rgba(0, 44, 70, 1);
+        border: 0px solid rgba(0, 44, 70, 1);
+        border-radius: 4px;
+        top: 2rem;
+        left: 0.5vw;
+    }
+
+    .next-btn {
+        display: flex;
+        content: url("../assets/svg/triangle-right.svg");
+        position: sticky;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 0.25rem;
+        opacity: 70%;
+        background-color: rgba(0, 44, 70, 1);
+        border: 0px solid rgba(0, 44, 70, 1);
+        border-radius: 4px;
+        top: 2rem;
+        right: 0.5vw;
+        float: right;
+    }
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     .article-quotes {
@@ -70,4 +179,8 @@
         margin: 0.25rem auto 0 auto;
     }
 
+    .spacer {
+        height: 5rem;
+        background: transparent;
+    }
 </style>

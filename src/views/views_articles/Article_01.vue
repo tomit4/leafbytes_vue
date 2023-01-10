@@ -1,6 +1,9 @@
 <template>
     <div>
         <div class="article-entire">
+            <div class="intro-header">
+                <router-link class="next-btn" to="/blog/command-line"></router-link>
+            </div>
             <p class="article-header">one with the keyboard</p>
             <p class="article-header3">a necessary prerequisite</p>
             <div class="article-body">
@@ -137,3 +140,6 @@
         <div class="spacer"></div>
     </div>
 </template>
+
+<style scoped>
+</style>

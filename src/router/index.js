@@ -10,6 +10,7 @@ import BlogView from "../views/BlogView.vue"
 import Article_01 from "../views/views_articles/Article_01.vue"
 import Article_02 from "../views/views_articles/Article_02.vue"
 import Article_03 from "../views/views_articles/Article_03.vue"
+import Article_04 from "../views/views_articles/Article_04.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +66,11 @@ const router = createRouter({
                     path: 'why-use-linux',
                     name: 'why-use-linux',
                     component: Article_03
+                },
+                {
+                    path: 'musings-on-vim',
+                    name: 'musings-on-vim',
+                    component: Article_04
                 },
             ]
         },

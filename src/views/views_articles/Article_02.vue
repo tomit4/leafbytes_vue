@@ -1,3 +1,10 @@
+<script setup>
+import { onMounted } from 'vue'
+import Prism from "prismjs"
+
+onMounted(() => { Prism.highlightAll() })
+</script>
+
 <template>
     <div>
         <div class="article-entire">
@@ -129,8 +136,7 @@
                 <p class="article-content">
                     Now, all of these tools are great, but lack luster by comparison to your standard Graphical User Interface (GUI) programs that most users interact with on their desktops. The power of the shell isn't in that it can execute programs (although that is its main purpose), it is its ability to chain together and redirect and manipulate the input and output of various programs to yield a desired result...that's right, the BASH shell is a scripting language, which with the use of various operators can chain together to manipulate textual inputs and outputs. Take this simple example:
                 </p>
-                <pre><code class="language-bash">[~]$ echo 'this text is inputted from the command line' \
-> from_t        he_command_line.txt</code></pre>
+                <pre><code class="language-bash">[~]$ echo 'this text is inputted from the command line' from_the_command_line.txt</code></pre>
                 <p class="article-content">
                     Here we simultaneously created a file called 'from_the_command_line.txt' and wrote the text 'this text is inputted from the command line' into it. If we then inspect the contents of this file using cat:
                 </p>

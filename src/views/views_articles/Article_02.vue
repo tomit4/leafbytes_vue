@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
 import Prism from "prismjs"
-
 onMounted(() => { Prism.highlightAll() })
 </script>
 
@@ -69,7 +68,6 @@ onMounted(() => { Prism.highlightAll() })
                         <li>(Linux/BSD - Look up which Terminal Emulator your distribution uses by default and open it)</li>
                     </ul>
                 </p>
-                <!-- <pre><code class="language-bash">touch article-{1-100}.html</code></pre> -->
                 <p class="article-content">
                     You will be presented with a simple black, amber, or blue colored window with a prompt ending in either % or $ (ZSH uses %, BASH uses $). There is also usually a rectangular cursor indicating the shell is awaiting input from you. Typing just anything into the terminal and getting error messages gets old quick, so let's explore our first command, ls:
                 </p>

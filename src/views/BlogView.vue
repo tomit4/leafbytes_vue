@@ -10,7 +10,8 @@
 
 <style>
     .header-images {
-        max-width: 350px;
+        margin: 1rem auto 0.5rem auto;
+        max-width: 300px;
     }
 
     .article-quotes {
@@ -18,7 +19,7 @@
         color: var(--white);
         opacity: 65%;
         max-width: 600px;
-        margin: 0 auto;
+        margin: 1rem auto 1rem auto;
         background-color: var(--hd-dark-blue);
         font-size: 0.9rem;
         font-weight: 600;
@@ -38,7 +39,7 @@
         display: block;
         justify-content: left;
         align-items: left;
-        margin-left: -2rem;
+        margin-left: -1rem;
         list-style: none;
         font-family: LiberationMono;
         font-size: 1rem;
@@ -46,4 +47,27 @@
         color: var(--dark-blue);
         z-index: -1;
     }
+
+    img {
+        border: 4px solid var(--dark-blue);
+        border-radius: 5px;
+        display: flex;
+        margin: 0 0.5rem 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figcaption {
+        font-family: LiberationMono;
+        font-size: 14px;
+        font-weight: 900;
+        color: var(--dark-blue);
+        text-align: center;
+        margin: 0.25rem auto 0 auto;
+    }
+
 </style>

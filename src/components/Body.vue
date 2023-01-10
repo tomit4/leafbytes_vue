@@ -166,25 +166,6 @@
         background: transparent;
     }
 
-    img {
-        border: 4px solid var(--dark-blue);
-        border-radius: 5px;
-        display: flex;
-        margin: 0 auto;
-    }
-
-    figure {
-        text-align: center;
-    }
-
-    figcaption {
-        font-family: LiberationMono;
-        font-size: 14px;
-        font-weight: 900;
-        color: var(--dark-blue);
-        text-align: center;
-    }
-
 /**********************
   ANIMATIONS
 **********************/

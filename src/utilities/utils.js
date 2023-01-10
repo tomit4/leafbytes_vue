@@ -43,9 +43,12 @@ function scaleClick(id, iconElems) {
     })
 }
 
-function scaleHover(id, iconElems, rssEl) {
+function scaleHover(id, iconElems, rssEl, contactEl) {
     if (id === 'rss') {
         rssEl.value.classList.add('scaled')
+    }
+    if (id === 'contact') {
+        contactEl.value.classList.add('scaled')
     }
     iconElems.value.forEach((el) => {
         if (!el.classList.contains('clickScaled'))
@@ -55,9 +58,12 @@ function scaleHover(id, iconElems, rssEl) {
     })
 }
 
-function scaleLeave(id, iconElems, rssEl) {
+function scaleLeave(id, iconElems, rssEl, contactEl) {
     if (id === 'rss') {
         rssEl.value.classList.remove('scaled')
+    }
+    if (id === 'contact') {
+        contactEl.value.classList.remove('scaled')
     }
     iconElems.value.forEach((el) => {
         if (el.classList.contains('clickScaled'))

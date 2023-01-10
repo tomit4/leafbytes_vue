@@ -2,21 +2,23 @@
     import { ref, watch, onMounted } from 'vue'
     import {RouterLink} from 'vue-router'
     import icons from './icons/navicons.json'
+    import contact from './icons/contact.json'
     import rss from './icons/rss.json'
     import { delay, scaleClick, scaleHover, scaleLeave } from '../utilities/utils.js'
 
     const navEl = ref(null)
     const iconElems = ref(null)
     const rssEl = ref(null)
+    const contactEl = ref(null)
 
     const lclScaleClick = (id) =>
         scaleClick(id, iconElems)
 
     const lclScaleHover = (id) =>
-        scaleHover(id, iconElems, rssEl)
+        scaleHover(id, iconElems, rssEl, contactEl)
 
     const lclScaleLeave = (id) =>
-        scaleLeave(id, iconElems, rssEl)
+        scaleLeave(id, iconElems, rssEl, contactEl)
 
     const props = defineProps({
         scrolldownprop: {
@@ -30,6 +32,8 @@
                 el.classList.add('fade-out')
                 el.classList.remove('fade-in')
             })
+            contactEl.value.classList.add('fade-out')
+            contactEl.value.classList.remove('fade-in')
             rssEl.value.classList.add('fade-out')
             rssEl.value.classList.remove('fade-in')
             navEl.value.classList.remove('navbar-onscrollup')
@@ -42,6 +46,8 @@
                 el.classList.remove('fade-out')
                 el.classList.add('fade-in')
             })
+            contactEl.value.classList.remove('fade-out')
+            contactEl.value.classList.add('fade-in')
             rssEl.value.classList.remove('fade-out')
             rssEl.value.classList.add('fade-in')
         }
@@ -57,6 +63,8 @@
             if (el.id === 'home')
                 el.classList.add('scaled', 'clickScaled')
         })
+        contactEl.value.classList.add('fade-in')
+        contactEl.value.classList.remove('iconElems')
         rssEl.value.classList.add('fade-in')
         rssEl.value.classList.remove('iconElems')
      })
@@ -66,6 +74,12 @@
     <div>
         <nav>
             <div ref="navEl" class="navbar">
+                    <a ref="contactEl" class="iconElems icons" :id="contact[0].id"
+                    :aria-label="contact[0].ariaLabel"
+                    :href="contact[0].href"
+                    @mouseover="lclScaleHover(contact[0].id)"
+                    @mouseleave="lclScaleLeave(contact[0].id)"
+                    v-html="contact[0].svg"></a>
                     <div ref="iconElems" v-for="icon in icons"
                     class="iconElems icons" :id="icon.id">
                         <router-link

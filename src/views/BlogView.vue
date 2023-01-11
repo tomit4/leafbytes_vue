@@ -75,8 +75,11 @@
     }
 
     .header-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 1rem auto 0.5rem auto;
-        max-width: 300px;
+        width: clamp(300px, 100vw, 90%);
     }
 
     .intro-header {
@@ -162,8 +165,6 @@
         border-radius: 5px;
         display: flex;
         margin: 0 0.5rem 0 auto;
-        width: 100%;
-        height: 100%;
     }
 
     figure {
@@ -176,7 +177,37 @@
         font-weight: 900;
         color: var(--dark-blue);
         text-align: center;
-        margin: 0.25rem auto 0 auto;
+        width: clamp(15rem, 90%, 50rem);
+        margin: 0.25rem auto 0.25rem auto;
+    }
+
+    .inter-article-links,
+    .footnotes-links {
+        color: var(--hd-mid-blue);
+    }
+
+    .inter-article-links,
+    .return-caret:hover,
+    .footnotes-links:hover {
+        cursor: pointer;
+    }
+
+    .footnotes{
+        font-family: LiberationMono;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--dark-blue);
+        line-height: 1.2rem;
+        list-style: none;
+    }
+
+    .footnote-container {
+        margin-left: -2rem;
+    }
+
+    .footnote-href {
+        text-decoration: none;
+        color: var(--hd-mid-blue);
     }
 
     .spacer {

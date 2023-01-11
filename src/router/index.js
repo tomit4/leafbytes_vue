@@ -11,6 +11,7 @@ import Article_01 from "../views/views_articles/Article_01.vue"
 import Article_02 from "../views/views_articles/Article_02.vue"
 import Article_03 from "../views/views_articles/Article_03.vue"
 import Article_04 from "../views/views_articles/Article_04.vue"
+import Article_05 from "../views/views_articles/Article_05.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,6 +72,11 @@ const router = createRouter({
                     path: 'musings-on-vim',
                     name: 'musings-on-vim',
                     component: Article_04
+                },
+                {
+                    path: 'the-keys-that-bind',
+                    name: 'the-keys-that-bind',
+                    component: Article_05
                 },
             ]
         },

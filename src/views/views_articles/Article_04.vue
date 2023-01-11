@@ -12,7 +12,7 @@ onMounted(() => { Prism.highlightAll() })
                 <router-link class="prev-btn" to="why-use-linux"></router-link>
             </div>
                 <p class="article-header">musings on vim</p>
-                <p class="article-header3">one text editor to rule them all</p>
+                <p class="article-header3">one editor to rule them all</p>
             <div class="article-body">
                 <figure>
                     <img

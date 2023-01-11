@@ -8,7 +8,7 @@ onMounted(() => { Prism.highlightAll() })
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="musings-on-vim"></router-link>
+                <router-link class="next-btn" to="ortholinear-keyboards"></router-link>
                 <router-link class="prev-btn" to="musings-on-vim"></router-link>
             </div>
             <p class="article-header">the keys that bind</p>

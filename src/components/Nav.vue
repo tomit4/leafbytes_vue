@@ -101,7 +101,8 @@
         border: 4px solid var(--dark-blue);
         border-radius: 8px;
         opacity: 60%;
-        width: 80vw;
+        width: 85vw;
+        /* max-width: */
         height: 0.25rem;
         top: 0%;
         display: flex;

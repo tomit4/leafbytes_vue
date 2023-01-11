@@ -157,6 +157,14 @@
         text-decoration: none;
     }
 
+    .header-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto 0.5rem auto;
+        width: clamp(250px, 80vw, 90%);
+    }
+
     #home-header {
         padding-top: 0.75rem;
     }

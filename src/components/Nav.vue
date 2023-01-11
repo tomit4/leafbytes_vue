@@ -101,14 +101,14 @@
         border: 4px solid var(--dark-blue);
         border-radius: 8px;
         opacity: 60%;
-        width: 85vw;
+        width: 87vw;
         /* max-width: */
         height: 0.25rem;
         top: 0%;
         display: flex;
         z-index: 2;
         justify-content: center;
-        padding: 0rem 1.5rem 0rem 1rem;
+        padding: 0rem 1.3rem 0rem 1rem;
         max-width: 1240px;
         margin: 0.25rem auto;
         left: 0;
@@ -136,10 +136,14 @@
     }
 
     #rss {
-        width: 2rem;
+        width: 1.5rem;
         margin-bottom: 0.25rem;
     }
 
+    #contact {
+        transform: scale(1.1);
+        margin-bottom: 0.25rem;
+    }
     .navbar-onscrollup {
         height: 2.5em;
         animation: navbar-onscrollup-animation 1.25s ease-in;

@@ -15,10 +15,10 @@
         scaleClick(id, iconElems)
 
     const lclScaleHover = (id) =>
-        scaleHover(id, iconElems, rssEl, contactEl)
+        scaleHover(id, iconElems)
 
     const lclScaleLeave = (id) =>
-        scaleLeave(id, iconElems, rssEl, contactEl)
+        scaleLeave(id, iconElems)
 
     const props = defineProps({
         scrolldownprop: {
@@ -32,10 +32,6 @@
                 el.classList.add('fade-out')
                 el.classList.remove('fade-in')
             })
-            contactEl.value.classList.add('fade-out')
-            contactEl.value.classList.remove('fade-in')
-            rssEl.value.classList.add('fade-out')
-            rssEl.value.classList.remove('fade-in')
             navEl.value.classList.remove('navbar-onscrollup')
             navEl.value.classList.add('navbar-onscrolldown')
         } else {
@@ -46,14 +42,11 @@
                 el.classList.remove('fade-out')
                 el.classList.add('fade-in')
             })
-            contactEl.value.classList.remove('fade-out')
-            contactEl.value.classList.add('fade-in')
-            rssEl.value.classList.remove('fade-out')
-            rssEl.value.classList.add('fade-in')
         }
     })
 
     onMounted(async () => {
+        iconElems.value.push(rssEl.value, contactEl.value)
         await delay(5500)
         navEl.value.classList.add('navbar-onscrollup')
         await delay(1500)
@@ -63,10 +56,6 @@
             if (el.id === 'home')
                 el.classList.add('scaled', 'clickScaled')
         })
-        contactEl.value.classList.add('fade-in')
-        contactEl.value.classList.remove('iconElems')
-        rssEl.value.classList.add('fade-in')
-        rssEl.value.classList.remove('iconElems')
      })
 </script>
 

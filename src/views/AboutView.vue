@@ -7,6 +7,7 @@
                 <div class="article-body">
                     <figure>
                         <img
+                            class="header-images"
                             id="me"
                             src="../assets/img/me.webp"
                             alt="An Image of the Author, Brian Hayes"

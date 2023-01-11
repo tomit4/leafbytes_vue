@@ -165,6 +165,7 @@
         border-radius: 5px;
         display: flex;
         margin: 0 0.5rem 0 auto;
+        width: 90vw;
     }
 
     figure {

@@ -79,7 +79,7 @@
         justify-content: center;
         align-items: center;
         margin: 1rem auto 0.5rem auto;
-        width: clamp(300px, 100vw, 90%);
+        width: clamp(250px, 80vw, 90%);
     }
 
     .intro-header {

@@ -17,7 +17,6 @@
                 <figure>
                     <img
                         class="header-images"
-                        id="olkb"
                         src="../../assets/img/espanso_logo.webp"
                         alt="An image of the espanso logo"
                         title="An image of the espanso logo"

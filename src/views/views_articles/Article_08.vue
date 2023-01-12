@@ -414,7 +414,7 @@ console.log("this is my second line of code to commit");
                    <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                    href="https://github.com/jesseduffield/lazygit">
                    lazygit</a>, <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
-                   href="https://github.com/cli/cli">Github's officlal CLI tool</a>, and for those of you
+                   href="https://github.com/cli/cli">Github's offical CLI tool</a>, and for those of you
                    who use Vim, there is
                    <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                    href="https://github.com/tpope/vim-fugitive"> Vim-Fugitive</a>.

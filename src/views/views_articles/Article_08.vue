@@ -36,7 +36,7 @@
                 <p class="article-content">
                     Whether working in Data Science, Software/Web Development, or even if one is
                     just a modern Power User of Computers in general, one is probably at least
-                    somewhat familiar with the git version control system, or at least with the now
+                    somewhat familiar with the Git version control system, or at least with the now
                     infamous hosting service, Github.
                 </p>
                 <p class="article-content">

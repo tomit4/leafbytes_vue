@@ -338,9 +338,16 @@
                     discovered this amazing tool.
                 </p>
                 <p class="article-content">
-                    To cap things off, I'll share with you the simple sdir shell script below.
+                    To cap things off, I'll share with you the simple sdir shell
+                    script below (as well as this <a class="article-outside-links" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://raw.githubusercontent.com/tomit4/notes/main/scripts/sdir">link
+                    on my github</a>).
                     Additionally, I'll provide you with some lines of lua code that when put into
-                    your Neovim configuration files, will return you to wherever you last saved in
+                    your <a class="article-outside-links" target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/tomit4/notes/tree/main/.config/nvim">
+                    Neovim configuration files</a>, will return you to wherever you last saved in
                     your files (this works incredibly well with the aforementioned sdir script and
                     espanso aliases, as I simply return to the exactly directory, file, and
                     place in that file I left off on simply by typing ";rr" into the command

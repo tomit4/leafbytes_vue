@@ -14,6 +14,7 @@ import Article_04 from "../views/views_articles/Article_04.vue"
 import Article_05 from "../views/views_articles/Article_05.vue"
 import Article_06 from "../views/views_articles/Article_06.vue"
 import Article_07 from "../views/views_articles/Article_07.vue"
+import Article_08 from "../views/views_articles/Article_08.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -89,6 +90,11 @@ const router = createRouter({
                     path: 'espanso-text-expander',
                     name: 'espanso-text-expander',
                     component: Article_07
+                },
+                {
+                    path: 'git-basics',
+                    name: 'git-basics',
+                    component: Article_08
                 },
             ]
         },

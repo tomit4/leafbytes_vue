@@ -8,7 +8,7 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="ortholinear-keyboards"></router-link>
+                <router-link class="next-btn" to="git-basics"></router-link>
                 <router-link class="prev-btn" to="ortholinear-keyboards"></router-link>
             </div>
             <p class="article-header">espanso</p>
@@ -143,7 +143,6 @@
                 <figure>
                     <img
                         class="header-images"
-                        id="etcher-example"
                         src="../../assets/img/espanso_example.gif"
                         alt="Demonstration of Basic Usage of Espanso"
                         title="Demonstration of Basic Usage of Espanso"

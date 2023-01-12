@@ -36,8 +36,8 @@
     },
     {
        "id": 8,
-       "link": "/test2",
-       "title": "what's init part 2"
+       "link": "/blog/git-basics",
+       "title": "git basics: version control"
     },
     {
        "id": 9,

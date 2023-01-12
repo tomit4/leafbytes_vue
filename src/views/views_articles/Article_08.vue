@@ -355,8 +355,7 @@ console.log("this is my second line of code to commit");
                 <h4 class="article-header4">Git Log And Reverting Back</h4>
                 <p class="article-content">
                     You can see changes pushed to your Git repository locally by
-                    invoking Git's builtin
-                    log
+                    invoking Git's builtin log:
                     <pre><code class="language-bash">[ ~]$ git log</code></pre>
                 </p>
                 <p class="article-content">

@@ -153,7 +153,7 @@
                     There are various default examples showing its various usage, and indeed, if
                     you look towards the bottom of the example text expansions, you'll see the ":ip"
                     example, which includes a very similar command to my ip alias:
-                    <pre><code class="language-yaml">
+                    <pre><code v-pre class="language-yaml">
 # Returns public ip address
 - trigger: ":ip"
   replace: "{{output}}"

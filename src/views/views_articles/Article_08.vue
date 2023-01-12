@@ -206,7 +206,7 @@
                     Continuing on, let's add some basic files to our repository. While we do have
                     our "hello.js" file, it's always a good practice to have a README.md file in our
                     repository. Github will present this README to anyone who navigates to your
-                    project via Github, and it's just good practice to provide some basic
+                    project via Github, and it's generally a good idea to provide some basic
                     documentation about our project to those who take a look at it. Let's create a
                     very basic README.md via the command line per the suggestion on Github like so:
                     <pre><code class="language-bash">[ ~]$ echo "# my_awesome_js_project" >> README.md</code></pre>

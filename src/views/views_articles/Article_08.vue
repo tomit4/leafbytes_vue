@@ -62,16 +62,15 @@
                 </p>
                 <p class="article-content">
                     Git was originally developed by Linus Torvalds in 2005. Torvalds, as I mentioned
-                    earlier, is the creator and current maintainer of the Linux Kernel. Linux itself
-                    was created prior to a standardized version control system, and indeed in its
+                    earlier, is the creator and current maintainer of the Linux Kernel. Linux in its
                     initial days of distribution, was passed around by software enthusiasts using
                     floppy disks and later on CD-ROMs. Updates to the Linux Kernel in the early days
                     were distributed via email mailing lists. The emails included files known as "patches",
-                    which included the differing lines of code which were either added, removed, or
+                    which provided the differing lines of code which were either added, removed, or
                     altered in the pre-existing code base. While some form of version control had been a part of
                     software development since the early 1960s, concurrent version systems would
                     become the standard for decades starting in 1975, which would later be overtaken
-                    by Apache's Subversion system, and finally in the early late 1990s, distributed
+                    by Apache's Subversion system, and finally in the late 1990s, distributed
                     revision control systems would come to dominate the preferred versioning control
                     system by the majority of software developers.
                 </p>
@@ -79,19 +78,19 @@
                     BitKeeper was the first of these distributed version control systems, and was a
                     boon to the Linux Kernel development team, who adopted a beta version of
                     Bitkeeper in 1999. There was some controversy surrounding the use of BitKeeper,
-                    which at the time was a piece of proprietary software, which many
-                    within the Linux community felt was in conflict with the principles
-                    under which Linux was founded. In April of 2005, BitKeeper's founding company,
-                    BitMover, announced that it would stop rpoviding a version of BitKeeper
-                    free of charge to the community. Linus Torvalds then decided to take a couple of
-                    weeks off from development on the Linux Kernel to create a new distributed
-                    version control system which he later called "Git", after the British slang for
-                    a "stupid person."
+                    which at the time was a piece of proprietary software, and many
+                    within the Linux community felt that this was in conflict with the principles
+                    under which Linux was founded. In April of 2005, BitMover
+                    (owner of BitKeeper) announced that it would stop providing
+                    a free version of thir software to the community. Linus Torvalds then decided
+                    to take a couple of weeks off from development on the Linux Kernel to create a
+                    new distributed version control system which he later called
+                    "Git", named after the British slang for a "stupid person."
                 </p>
                 <p class="article-content">
                     Although originally not intended to be a full-blown version control system, Git
-                    eventually became more than just a simple handful of scripts, and is the
-                    preferred version control system by the majority of software developers today.
+                    eventually became more than just a simple handful of
+                    scripts, and is now utilized by the majority of software developers today.
                 </p>
                 <h4 class="article-header4">What Is Version Control?</h4>
                 <p class="article-content">
@@ -106,8 +105,8 @@
                     As I covered in the introduction, in the early days there wasn't a very easy way
                     to do this. You emailed a patch file to an email mailing list, and everyone who
                     utilized your software had to be subscribed to that mailing list and manually
-                    patch the files themselves (oftentimes this process was automated via makefiles
-                    or bash scripts). Thank goodness today we have distributed version control
+                    patch the files themselves (oftentimes this process was partially automated via
+                    makefiles or bash scripts). Thank goodness today we have distributed version control
                     systems like Git that largely make this process incredibly easy by comparison.
                 </p>
                 <h4 class="article-header4">Why Version Control is So Important</h4>
@@ -136,7 +135,7 @@
                 <p class="article-content">
                     In the morning you return to your project only to find that this new feature has
                     broken a different part of your program. You accidentally didn't
-                    compartmentalize the features, resulting in spaghetti code, it'll take you two
+                    compartmentalize the features, resulting in spaghetti code. It'll take you two
                     days to remove all the code you wrote yesterday, and the chance of introducing a
                     bug during this refactor is high. If only you could just roll back time and go
                     back...to a previous version.
@@ -145,7 +144,7 @@
                     This simple example is but one of the many reasons why version control is so
                     important to software development, and doesn't even include the benefits when
                     working with multiple developers on a single project. So how would this scenario
-                    play out had you used git? Let's take a look on how to do that in the next
+                    play out had you used Git? Let's take a look on how to do that in the next
                     section.
                 </p>
                 <h4 class="article-header4">Getting Started On Github</h4>
@@ -154,7 +153,7 @@
                     <pre><code class="language-javascript">console.log("hello");</code></pre>
                 </p>
                 <p class="article-content">
-                    We save our file, 'hello.js,', but this time we decide to use git to save our
+                    We save our file, 'hello.js,', but this time we decide to use Git to save our
                     progress on Github. I won't be covering how to set up a Github account, but here
                     is <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                     href="https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account">
@@ -174,7 +173,7 @@
                 <figure>
                     <img
                         class="header-images"
-                        src="../../assets/img/ss_github_01.png"
+                        src="../../assets/img/ss_github_03.png"
                         alt="Initial Github Repository Page"
                         title="Initial Github Repository Page"
                         cite="screenshot"
@@ -185,12 +184,12 @@
                 <p class="article-content">
                     While you could technically start creating files and pushing them
                     to Github using their GUI interface here in the browser, that was
-                    never the intended way of working with git, which is a command line tool.
+                    never the intended way of working with Git, which is a command line tool.
                 </p>
                 <p class="article-content">
                     So, returning to our initial example, we have a 'hello.js' file, in a project
                     directory under the same name as our project name from before,
-                    "my_awesome_js_project". Let's initialize a git repository inside of this
+                    "my_awesome_js_project". Let's initialize a Git repository inside of this
                     directory by typing into the terminal:
                     <pre><code class="language-bash">[ ~]$ git init</code></pre>
                 </p>
@@ -215,7 +214,7 @@
                 <p class="article-content">
                     This will create a simple header in a README.md file, which you should now see in
                     your "my_awesome_js_project" directory alongside your "hello.js" file. Now let's
-                    use git to add these files to the repository.
+                    use Git to add these files to the repository.
                     <pre><code class="language-bash">[ ~]$ git add README.md hello.js</code></pre>
                 </p>
                 <p class="article-content">
@@ -291,9 +290,9 @@
                 <p class="article-content">
                     Excellent, you have successfully instantiated your first Github repository. Now,
                     on the surface, this can appear just like a glorified backup system, and while
-                    Git can be used as a backup system, it's major feature is as a version control
-                    system. Let's add some code to our "hello.js" file to demonstrate. Open up the
-                    "hello.js" file in your favorite text editor and add the following line after
+                    Git can be used for backups, the main feature of using Git
+                    is for version control. Let's add some code to our "hello.js" file to demonstrate.
+                    Open up the "hello.js" file in your favorite text editor and add the following line after
                     our initial console.log call:
                     <pre><code class="language-javascript">
 console.log("hello");
@@ -302,11 +301,12 @@ console.log("this is my second line of code to commit");
                 </p>
                 <p class="article-content">
                     Any good piece of version control software will immediately recognize this
-                    change to your code. You can confirm this by running a status check via git:
+                    change to your code. You can confirm this by running a
+                    status check via Git:
                     <pre><code class="language-bash">[ ~]$ git status</code></pre>
                 </p>
                 <p class="article-content">
-                    Upon entering this command, git will now provide you with a brief summary of the
+                    Upon entering this command, Git will now provide you with a brief summary of the
                     changes to your project. In this case we have "modified hello.js". We have yet
                     to have add our changed files, commit our changes with a brief message
                     about what we did, and finally push our changes up to our repository, so let's do that now:
@@ -320,8 +320,8 @@ console.log("this is my second line of code to commit");
                 </p>
                 <p class="article-content">
                     Here, I'd like to provide a brief word on best practices regarding commit
-                    messages. A good commit message should be short, concise pieces of documentation
-                    that inform others working on the project (or just your future self) of what changes
+                    messages. A good commit message should be a short, concise pieces of documentation
+                    that informs others working on the project (or just your future self) of what changes
                     were made. These messages should be descriptive enough to cover a specific change
                     that was made, without being overly verbose (less than 50 characters is a good
                     rule of thumb when writing commit messages).
@@ -354,12 +354,13 @@ console.log("this is my second line of code to commit");
                 </p>
                 <h4 class="article-header4">Git Log And Reverting Back</h4>
                 <p class="article-content">
-                    You can see changes pushed to your git repository locally by invoking git's builtin
+                    You can see changes pushed to your Git repository locally by
+                    invoking Git's builtin
                     log
                     <pre><code class="language-bash">[ ~]$ git log</code></pre>
                 </p>
                 <p class="article-content">
-                    Invoking git log will show you the history of project for every commit you make.
+                    Invoking git log will show you the history of the project for every commit you make.
                     This output is useful should you wish to revert back to one of your previous
                     commits, or simply wish to review the history of a project.
                     Since you only currently have two commits, let's cover how to simply revert back
@@ -385,7 +386,7 @@ console.log("this is my second line of code to commit");
                 <p class="article-content">
                     Keep in mind that using --force is considered to be somewhat overbearing, and
                     you should always heavily consider the ramifications of using this option on a
-                    collaberative project, as you can accidentally overwrit other contributors' code.
+                    collaberative project, as you can accidentally overwrite other contributors' code.
                     This is why when working on non-trivial projects it is always a good idea to
                     <a class="article-outside-links"
                     target="_blank" rel="noopener noreferrer"
@@ -397,10 +398,10 @@ console.log("this is my second line of code to commit");
                     Whatever your preferences regarding text editors, desktop environments, or
                     operating systems, using Git as a version control system is an essential skill
                     for the modern day software developer. Even though there are other version
-                    control systems out there, Git has become ubiquitous with that aspect of
-                    software development. It is essential that if you are just starting out with
+                    control systems out there, Git has become ubiquitous with
+                    version control. It is essential that if you are just starting out with
                     software development that you become familiar with Git and its many features, as
-                    they become a part of your daily workflow.
+                    they will inevitably become a part of your daily workflow.
                 </p>
                 <p class="article-content">
                     As an aside, there are far more features of Git than what is covered here in

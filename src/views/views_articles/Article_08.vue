@@ -173,7 +173,7 @@
                 <figure>
                     <img
                         class="header-images"
-                        src="../../assets/img/ss_github_03.png"
+                        src="../../assets/img/ss_github_01.png"
                         alt="Initial Github Repository Page"
                         title="Initial Github Repository Page"
                         cite="screenshot"
@@ -278,7 +278,7 @@
                 <figure>
                     <img
                         class="header-images"
-                        src="../../assets/img/ss_github_04.png"
+                        src="../../assets/img/ss_github_02.png"
                         alt="Initial Repository Instantiation Page"
                         title="Initial Repository Instantiation Page"
                         cite="screenshot"
@@ -339,7 +339,7 @@ console.log("this is my second line of code to commit");
                 <figure>
                     <img
                         class="header-images"
-                        src="../../assets/img/ss_github_05.png"
+                        src="../../assets/img/ss_github_03.png"
                         alt="Github repository now shows updated changes"
                         title="Github repository now shows updated changes"
                         cite="screenshot"

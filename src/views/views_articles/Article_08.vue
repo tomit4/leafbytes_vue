@@ -57,7 +57,7 @@
                     probably due to the extensive history of Linux, and I didn't wish for that
                     article to turn into more a history lesson than a beginner's installation
                     tutorial. While it is not my intention to do so with this article either, I feel
-                    that git's history is far more easy to cover, as it is a more recently developed
+                    that Git's history is far more easy to cover, as it is a more recently developed
                     piece of software and has a far shorter timeline to cover.
                 </p>
                 <p class="article-content">

@@ -2,7 +2,7 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="the-keys-that-bind"></router-link>
+                <router-link class="next-btn" to="espanso-text-expander"></router-link>
                 <router-link class="prev-btn" to="the-keys-that-bind"></router-link>
             </div>
             <p class="article-header">ortholinear keyboards</p>

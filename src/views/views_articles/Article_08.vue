@@ -82,7 +82,7 @@
                     within the Linux community felt that this was in conflict with the principles
                     under which Linux was founded. In April of 2005, BitMover
                     (owner of BitKeeper) announced that it would stop providing
-                    a free version of thir software to the community. Linus Torvalds then decided
+                    a free version of their software to the community. Linus Torvalds then decided
                     to take a couple of weeks off from development on the Linux Kernel to create a
                     new distributed version control system which he later called
                     "Git", named after the British slang for a "stupid person."

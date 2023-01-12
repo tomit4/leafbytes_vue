@@ -147,12 +147,11 @@
                         cite="screenshot"
                         loading="lazy"
                     />
-                    <figcaption>Spawning New Terminals Using Our New Keybinding</figcaption>
-                    <figcaption>Typing :espanso will immediately convert the text to "Hi There!"</figcaption>
+                    <figcaption>Typing ":espanso" immediately converts the text to "Hi There!"</figcaption>
                 </figure>
                 <p class="article-content">
                     There are various default examples showing its various usage, and indeed, if
-                    youlook towards the bottom of the example text expansions, you'll see the ":ip"
+                    you look towards the bottom of the example text expansions, you'll see the ":ip"
                     example, which includes a very similar command to my ip alias:
                     <pre><code class="language-yaml">
 # Returns public ip address
@@ -223,7 +222,7 @@
                 </p>
                 <p class="article-content">
                     Okay, so what about use outside of the terminal? Well in writing any website,
-                    any good web developer will be typing either "127.0.0.1:" or "localhost:" alot,
+                    any good web developer will be typing either "127.0.0.1:" or "localhost:" a lot,
                     right? Well how about this one?:
                     <pre><code class="language-yaml">
 - trigger: ";loc"
@@ -299,7 +298,7 @@
                 </p>
                 <p class="article-content">
                     Originally, rdir was a shell script that looked for the existence of the $sdoc,
-                    and if it existed would call nvim on it, and if it didn't, would simply
+                    and if it existed, would call nvim on it, and if it didn't, would simply
                     navigate to the saved directory $sdir. This worked for some time, but I wanted
                     to be able to save a different directory to this dotfile and seemlessly return
                     to it, and the built-in command "cd", doesn't work in shell scripts. I thought
@@ -333,7 +332,7 @@
                     explored in this article. If one looks over the documentation in more detail,
                     one will find a myriad of other useful tips more in-depth than the ones I have
                     presented here, so please take the time to check out their great documentation.
-                    Now that I utlize espanso in my work-flow, I can't really imagine working without it.
+                    Now that I utilize espanso in my work-flow, I can't really imagine working without it.
                     It's like the last puzzle piece to my keyboard-centric work flow was filled in when I
                     discovered this amazing tool.
                 </p>

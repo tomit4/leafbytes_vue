@@ -19,9 +19,9 @@
                         class="header-images"
                         id="olkb"
                         src="../../assets/img/espanso_logo.webp"
-                        alt="An image of a 40% Planck OrthoLinear Keyboard"
-                        title="A 40% Planck Ortholinear Keyboard"
-                        cite="https://commons.wikimedia.org"
+                        alt="An image of the espanso logo"
+                        title="An image of the espanso logo"
+                        cite="https://github.com/espanso/espanso/blob/dev/images/icongreensmall.png"
                         loading="lazy"
                     />
                 <figcaption>The Espanso Logo</figcaption>

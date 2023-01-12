@@ -43,10 +43,10 @@
                     As a beginning software/web developer, I often find myself overwhelmed by the sheer
                     vastness of the amount of tools available, and the intrinsically complicated
                     ecosystem in which modern software development takes place. There are few pieces
-                    of software on which there is ubiquitous standard in place like there is with
-                    git. In this article, I will attempt to introduce the git version control system
+                    of software on which there is a ubiquitous standard in place like there is with
+                    Git. In this article, I will attempt to introduce the Git version control system
                     and its most basic features. The intended audience of this article is a complete beginner to
-                    git. Thusly, this article will not cover some of git's more in-depth features,
+                    Git. Thusly, this article will not cover some of Git's more in-depth features,
                     but please take a look at the provided links for more documentation at the
                     end.
                 </p>

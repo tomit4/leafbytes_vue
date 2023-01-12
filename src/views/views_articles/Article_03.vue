@@ -1,7 +1,7 @@
 <script setup>
-import { onMounted } from 'vue'
-import Prism from "prismjs"
-onMounted(() => { Prism.highlightAll() })
+    import { onMounted } from 'vue'
+    import Prism from "prismjs"
+    onMounted(() => { Prism.highlightAll() })
 </script>
 
 <template>

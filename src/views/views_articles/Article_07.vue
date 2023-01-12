@@ -49,7 +49,7 @@
                     JavaScript, as well as some generic coding shortcuts. At one point my friend had
                     pointed me in the direction of a new text expander written in rust known as
                     espanso, and today it has become a regular part of my workflow. Whether it be a
-                    part of the command line, neovim, or my browser, I utilize espanso in nearly
+                    part of the command line, Neovim, or my browser, I utilize espanso in nearly
                     every aspect of my workflow now, and I felt it was worthwhile to cover in
                     detail.
                 </p>
@@ -98,8 +98,9 @@
                     leave <a class="article-outside-links" target="_blank"
                     rel="noopener noreferrer" href="https://espanso.org/">this link</a> to the official
                     website for you to peruse. There are many other text expanders out there, but espanso
-                    is open source and OS-agnostic. Additionally it is written in rust, which is known to
-                    provide fast applications. It is the only text expander I have used, so I cannot speak
+                    is open source and OS-agnostic. Additionally it is written in rust, which is known
+                    provide fast applications when utilized by a capable
+                    programmer. It is the only text expander I have used, so I cannot speak
                     to how it compares to others, but the aforementioned features, along with my own
                     positive experiences utilizing the program is enough for me to not investigate
                     the alternatives at the time of this writing. Should you wish to install espanso
@@ -110,13 +111,13 @@
                 <p class="article-content">
                     Using espanso is very simple. For example once you have the daemon running (see
                     the <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
-                    href="https://espanso.org/docs/get-started/">documentation</a>, you can check your ip
+                    href="https://espanso.org/docs/get-started/">documentation</a>), you can check your ip
                     address simply by typing in any application:
                 <pre><code class="language-bash">[~]$ :ip</code></pre>
                 </p>
                 <p class="article-content">
                     This will expand out to display your ip! Of course, one could easily see this
-                    using the command line, prior to using the command line I had created bash alias
+                    using command line, prior to using espanso, I had created a bash alias
                     to do just that (and admittedly it gives more information):
                     <pre><code class="language-bash">[~]$ alias ipaddr="curl ifconfig.me/all.json | jq"</code></pre>
                 </p>
@@ -124,8 +125,11 @@
                     Now, if this was all espanso ever did, I'd say the program was trivial and this
                     article wouldn't even exist. The power of espanso is not in its out of the box
                     settings, but rather in its simple config file. On Linux, this configuration
-                    file can be found in ~/.config/.config/espanso/match/base.yml. Here, you will find
-                    the default text expansions under the section "match":
+                    file can be found in:
+                    <pre><code class="language-bash">~/.config/.config/espanso/match/base.yml</code></pre>
+                </p>
+                <p class="article-content">
+                    Here, you will find the default text expansions under the section "match":
                     <pre><code class="language-yaml">
  matches:
    # Simple text replacement
@@ -150,8 +154,9 @@
                     <figcaption>Typing ":espanso" immediately converts the text to "Hi There!"</figcaption>
                 </figure>
                 <p class="article-content">
-                    There are various default examples showing its various usage, and indeed, if
-                    you look towards the bottom of the example text expansions, you'll see the ":ip"
+                    There are various default examples showing espanso's
+                    utility. If you look towards the bottom of the
+                    example text expansions, you'll see the ":ip"
                     example, which includes a very similar command to my ip alias:
                     <pre><code v-pre class="language-yaml">
 # Returns public ip address
@@ -185,9 +190,10 @@
                     useful this could be.
                 </p>
                 <p class="article-content">
-                    Within JavaScript, there are many times one can find themselves writing various
-                    words or series of code blocks over and over again, here a few examples of what
-                    I have written to occasionally speed this up:
+                    Within JavaScript (or any programming language), there are
+                    many times one can find themselves writing various words or
+                    series of code blocks over and over again, here a few examples
+                    of what I have written to occasionally speed this up:
                     <pre><code class="language-yaml">
 - trigger: ";for"
   replace: "for (;;) {}"
@@ -232,20 +238,21 @@
                 <p class="article-content">
                     Again, many of these seem trivial on the surface, and you might even be rolling
                     your eyes reading this thinking "Really? You can't be bothered to type out nine
-                    characters vs four?" Indeed, time savings rarely come up to typing out only a
-                    few less characters, but one of the powers of vim is its ability to accomplish
+                    characters vs four?" I'll admit time savings rarely come up to typing out only a
+                    few less characters, but one of the powers of Vim is its ability to accomplish
                     more with less keystrokes, and when used in its entirety, I'd argue that no one
                     using the classic keybindings available in the majority of non-modal text
                     editors can accomplish the same speed of workflow as those who use some form of
-                    modal text editing. Espanso moves these cumulative time savings out into any
-                    application where typing is its main interface!
+                    modal text editing. Espanso moves these cumulative time savings into any
+                    application where typing is a part of its interface!
                 </p>
                 <p class="article-content">
-                    Let's move onto another use for espanso. I'm a big fan of using duckduckgo's
-                    bangs. If you're unaware of bangs, check out the
+                    Let's move onto another use for espanso. I'm a big fan of
+                    using DuckDuckgo's bangs. If you're unaware of bangs, check out the
                     <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
-                    href="https://duckduckgo.com/bangs">website</a>. Essentially, if one has duckduckgo as
-                    their default search engine (or searx, which has this feature too), one can
+                    href="https://duckduckgo.com/bangs">website</a>.
+                    Essentially, if one has DuckDuckgo as their default search engine
+                    (or searx, which has this feature too), one can
                     simply enter into your search/url bar: !yt and any other words typed after that
                     will be directly searched in youtube. There are a multitude of these bangs
                     available and I'd encourage you to take a look at what is available. There are,
@@ -259,12 +266,12 @@
                 </p>
                 <p class="article-content">
                     Note my decision to use the exclamation point instead of the semicolon here, in
-                    order to keep with the consistencies of duckduckgo's bang syntax. When I type
+                    order to keep with the consistencies of DuckDuckgo's bang syntax. When I type
                     "!ody" into my url, this immediately expands to "https://odysee.com/$/search?q="
                     and I can now type in my search query. This is even more efficient on the
-                    utilized network than duckduckgo's bangs as it never even queries duckduckgo before
-                    re-routing to the requested page. I also use this same technique for other sites,
-                    like Quetre, a non-Javascript front-end for Quora:
+                    utilized network than DuckDuckgo's bangs as it never even
+                    queries DuckDuckgo before re-routing to the requested page. I also use this same
+                    technique for other sites, like Quetre, a non-Javascript front-end for Quora:
                     <pre><code class="language-yaml">
 - trigger: "!que"
   replace: "https://qr.vern.cc/search?q="
@@ -286,7 +293,8 @@
                     For a while, I had been writing and rewriting a simple shell script that would save my
                     current working directory. Additionally the script would take an optional
                     argument of a file which would be utilized by a separate script or alias that
-                    would return me immediately to when invoked. So, for example, if I wanted to save
+                    would return me immediately to the saved directory and open
+                    the specified file when invoked. So, for example, if I wanted to save
                     my current directory with a file I was working on, I could call the script like so:
                     <pre><code class="language-bash">[~]$ sdir myfile.txt</code></pre>
                 </p>
@@ -348,10 +356,9 @@
                     href="https://github.com/tomit4/notes/tree/main/.config/nvim">
                     Neovim configuration files</a>, will return you to wherever you last saved in
                     your files (this works incredibly well with the aforementioned sdir script and
-                    espanso aliases, as I simply return to the exactly directory, file, and
+                    espanso aliases, as I simply return to the exact directory, file, and
                     place in that file I left off on simply by typing ";rr" into the command
                     line). Enjoy, and please do check out espanso, it's a great project!
-
                     <pre><code class="language-bash">
 #!/bin/bash
 # sdir.sh
@@ -366,7 +373,7 @@ sdoc="${1:-''}"
 set +o noclobber
 
 # define and create .sdrc file
-sdrc="$HOME/.config/sdir".sdrc
+sdrc="$HOME/.config/sdir/".sdrc
 if [[ ! -f "$sdrc" ]]; then
     /usr/bin/touch "$sdrc"
 fi

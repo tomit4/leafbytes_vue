@@ -15,6 +15,7 @@ import Article_05 from "../views/views_articles/Article_05.vue"
 import Article_06 from "../views/views_articles/Article_06.vue"
 import Article_07 from "../views/views_articles/Article_07.vue"
 import Article_08 from "../views/views_articles/Article_08.vue"
+import Article_09 from "../views/views_articles/Article_09.vue"
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -95,6 +96,11 @@ const router = createRouter({
                     path: 'git-basics',
                     name: 'git-basics',
                     component: Article_08
+                },
+                {
+                    path: 'the-readme',
+                    name: 'the-readme',
+                    component: Article_09
                 },
             ]
         },

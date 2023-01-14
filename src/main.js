@@ -7,6 +7,8 @@ import 'prismjs/components/prism-bash.js'
 import 'prismjs/components/prism-yaml.js'
 import 'prismjs/components/prism-lua.js'
 import 'prismjs/components/prism-javascript.js'
+import 'prismjs/components/prism-markdown.js'
+import 'prismjs/components/prism-cshtml.js'
 
 import './assets/main.css'
 

@@ -8,7 +8,6 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="git-basics"></router-link>
                 <router-link class="prev-btn" to="git-basics"></router-link>
             </div>
             <p class="article-header">the readme</p>

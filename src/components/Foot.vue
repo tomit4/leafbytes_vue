@@ -29,8 +29,20 @@
         }
     })
 
-    function test() {
-        console.log('test button')
+    function setLight() {
+        if (window.matchMedia('(prefers-color-scheme: dark)')){
+            document.body.setAttribute("data-theme", "light")
+        } else {
+            return
+        }
+    }
+
+    function setDark() {
+        if (window.matchMedia('(prefers-color-scheme: light)')){
+            document.body.setAttribute("data-theme", "dark")
+        } else {
+            return
+        }
     }
 
     onMounted(async () => {
@@ -47,13 +59,13 @@
         <footer ref="footEl" class="foot">
             <div class="footer-nav">
                 <div ref="iconElems" class="iconElems">
-                    <button @click="test" class="scaled" id="sun" v-html="sun[0].svg"></button>
+                    <button @click="setLight" class="scaled" id="sun" v-html="sun[0].svg"></button>
                     <a v-for="icon in icons"
                     :aria-label="icon.ariaLabel" role="link"
                     class="scaled" :id="icon.id" v-html="icon.svg"
                     target="_blank" rel="noopener noreferrer"
                     :href="icon.href"></a>
-                    <button @click="test" class="scaled" id="moon" v-html="moon[0].svg"></button>
+                    <button @click="setDark" class="scaled" id="moon" v-html="moon[0].svg"></button>
                 </div>
             </div>
         </footer>

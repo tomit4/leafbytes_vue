@@ -1,7 +1,20 @@
 <script setup>
+    import { onMounted } from 'vue'
     import Intro from './components/Intro.vue'
     import Body from './components/Body.vue'
     import Background from './components/Background.vue'
+
+    function checkColorPref() {
+        if (window.matchMedia('(prefers-color-scheme: dark)')) {
+            document.body.setAttribute("data-theme", "dark")
+        } else {
+            document.body.setAttribute("data-theme", "light")
+        }
+    }
+
+    onMounted(() => {
+        checkColorPref()
+    })
 </script>
 
 <template>

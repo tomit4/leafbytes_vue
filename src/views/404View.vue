@@ -56,7 +56,7 @@
         color: var(--white);
         opacity: 80%;
         z-index: 2;
-        top: 4vh;
+        top: 30%;
         margin: 0 auto;
     }
 
@@ -72,7 +72,7 @@
         color: var(--white);
         z-index: 2;
         opacity: 80%;
-        top: 9vh;
+        top: 55%;
     }
 
 /* *********************

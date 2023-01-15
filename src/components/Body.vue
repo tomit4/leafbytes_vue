@@ -87,6 +87,10 @@
         z-index: 0;
     }
 
+    .article-body > * {
+        cursor: default;
+    }
+
     .article-entire {
         opacity: 100%;
         animation: article-made-visible 1s ease-in-out;

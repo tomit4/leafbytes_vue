@@ -25,19 +25,18 @@
         <div class="current right"></div>
         <div class="current bottom-right"></div>
         <div class="circuit-inner"></div>
-        <div ref="leafbytesEl" class="leafbytes">
+        <span ref="leafbytesEl" class="leafbytes">
             <p>LeafBytes</p>
-        </div>
-        <div ref="subtitleEl" class="subtitle">
+        </span>
+        <span ref="subtitleEl" class="subtitle">
             <p>Web Development</p>
-        </div>
+        </span>
     </div>
 </template>
 
 <style scoped>
     /* logo/title */
     .circuit-outer {
-        /* position: fixed; */
         position: absolute;
         background-image: linear-gradient(280deg, var(--bg-light-blue) 0%, var(--bg-dark-blue) 120%);
         z-index: 1;
@@ -123,30 +122,49 @@
     .leafbytes,
     .subtitle {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-self: center;
         position: fixed;
         font-family: entsans;
         color: white;
         z-index: 2;
         opacity: 0%;
+        margin: 0 auto;
         transform: translate(-50%, -50%);
-        text-shadow: 5px 4px 0px rgba(0, 75, 119, 0.7);
+        text-shadow: 5px 4px 0px var(--dark-blue-70);
     }
 
     .leafbytes {
         font-size: clamp(250%, 1rem, 300%);
-        top: 47.5%;
+        position: absolute;
+        top: 42.5%;
         left: 51.25%;
     }
 
     .subtitle {
-        top: 52%;
+        top: 72%;
         left: 51.25%;
+        position: absolute;
         white-space: nowrap;
         font-size: clamp(110%, 1rem, 150%);
     }
 
+    .loadtitlefade {
+        animation: loadintitlefromfade 1.5s ease-in;
+        opacity: 65%;
+        visibility: visible;
+    }
+
+    .loadtitlefadeout {
+        animation: fadeouttitle 1.5s ease-in;
+        opacity: 0%;
+        visibility: hidden;
+    }
+
+/***********************
+    ANIMATIONS
+***********************/
     @keyframes zap1 {
         0% {
             width: 0;
@@ -183,12 +201,6 @@
         }
     }
 
-    .loadtitlefade {
-        animation: loadintitlefromfade 1.5s ease-in;
-        opacity: 65%;
-        visibility: visible;
-    }
-
     @keyframes loadintitlefromfade{
        from {
             opacity: 0;
@@ -198,12 +210,6 @@
             opacity: 65%;
             visibility: visible;
        }
-    }
-
-    .loadtitlefadeout {
-        animation: fadeouttitle 1.5s ease-in;
-        opacity: 0%;
-        visibility: hidden;
     }
 
     @keyframes fadeouttitle {

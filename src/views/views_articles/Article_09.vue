@@ -1,6 +1,7 @@
 <script setup>
     import { onMounted } from 'vue'
     import Prism from "prismjs"
+    import prvbtn from '../views_data/prevbtn.json'
     onMounted(() => { Prism.highlightAll() })
 </script>
 
@@ -8,7 +9,9 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="prev-btn" to="git-basics"></router-link>
+                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                to="/blog/git-basics"
+                v-html="prvbtn[0].svg"></router-link>
             </div>
             <p class="article-header">the readme</p>
             <p class="article-header3">documentation for beginners</p>

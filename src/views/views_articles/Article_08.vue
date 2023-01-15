@@ -1,6 +1,8 @@
 <script setup>
     import { onMounted } from 'vue'
     import Prism from "prismjs"
+    import nxtbtn from '../views_data/nextbtn.json'
+    import prvbtn from '../views_data/prevbtn.json'
     onMounted(() => { Prism.highlightAll() })
 </script>
 
@@ -8,8 +10,12 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="the-readme"></router-link>
-                <router-link class="prev-btn" to="espanso-text-expander"></router-link>
+                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                to="/blog/espanso-text-expander"
+                v-html="prvbtn[0].svg"></router-link>
+                <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
+                to="/blog/the-readme"
+                v-html="nxtbtn[0].svg"></router-link>
             </div>
             <p class="article-header">git basics</p>
             <p class="article-header3">understanding version control</p>

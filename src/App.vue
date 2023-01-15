@@ -51,6 +51,14 @@
         background-color: var(--bg-black);
     }
 
+/* body { */
+    /* background-image: linear-gradient( */
+        /* 280deg, */
+        /* #39738c, */
+        /* #194a66 */
+    /* ); */
+
+
     body {
         background-image: linear-gradient(280deg, var(--dark-blue) 0%, var(--light-blue) 120%);
         background-repeat: no-repeat;

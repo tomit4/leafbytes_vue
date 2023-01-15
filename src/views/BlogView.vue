@@ -43,7 +43,7 @@
     }
 
     .article-header4 {
-        color: rgba(255, 255, 255, 1);
+        color: var(--white);
         opacity: 65%;
         background-color: var(--hd-dark-blue);
         font-family: HussarBold;
@@ -93,13 +93,12 @@
     .prev-btn {
         display: flex;
         position: sticky;
-        content: url("../assets/svg/triangle-left.svg");
         width: 1.25rem;
         height: 1.25rem;
         padding: 0.25rem;
         opacity: 70%;
-        background-color: rgba(0, 44, 70, 1);
-        border: 0px solid rgba(0, 44, 70, 1);
+        background-color: var(--hd-dark-blue);
+        border: 0px solid var(--hd-dark-blue);
         border-radius: 4px;
         top: 2rem;
         left: 0.5vw;
@@ -107,18 +106,22 @@
 
     .next-btn {
         display: flex;
-        content: url("../assets/svg/triangle-right.svg");
         position: sticky;
         width: 1.25rem;
         height: 1.25rem;
         padding: 0.25rem;
         opacity: 70%;
-        background-color: rgba(0, 44, 70, 1);
-        border: 0px solid rgba(0, 44, 70, 1);
+        background-color: var(--hd-dark-blue);
+        border: 0px solid var(--hd-dark-blue);
         border-radius: 4px;
         top: 2rem;
         right: 0.5vw;
         float: right;
+    }
+
+    .prev-btn > *,
+    .next-btn > * {
+        padding-bottom: 0.2rem;
     }
 
     .prev-btn:hover,

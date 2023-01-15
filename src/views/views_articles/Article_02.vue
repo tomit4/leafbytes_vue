@@ -1,6 +1,8 @@
 <script setup>
     import { onMounted } from 'vue'
     import Prism from "prismjs"
+    import nxtbtn from '../views_data/nextbtn.json'
+    import prvbtn from '../views_data/prevbtn.json'
     onMounted(() => { Prism.highlightAll() })
 </script>
 
@@ -8,8 +10,12 @@
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="/blog/why-use-linux"></router-link>
-                <router-link class="prev-btn" to="/blog/one-with-the-keyboard"></router-link>
+                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                to="/blog/one-with-the-keyboard"
+                v-html="prvbtn[0].svg"></router-link>
+                <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
+                to="/blog/why-use-linux"
+                v-html="nxtbtn[0].svg"></router-link>
             </div>
             <p class="article-header">command line</p>
             <p class="article-header3">getting comfy in the shell</p>

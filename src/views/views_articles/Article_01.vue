@@ -1,8 +1,13 @@
+<script setup>
+import nxtbtn from '../views_data/nextbtn.json'
+</script>
+
 <template>
     <div>
         <div class="article-entire">
             <div class="intro-header">
-                <router-link class="next-btn" to="/blog/command-line"></router-link>
+                <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn" to="/blog/command-line"
+                v-html="nxtbtn[0].svg"></router-link>
             </div>
             <p class="article-header">one with the keyboard</p>
             <p class="article-header3">a necessary prerequisite</p>

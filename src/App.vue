@@ -51,16 +51,8 @@
         background-color: var(--bg-black);
     }
 
-/* body { */
-    /* background-image: linear-gradient( */
-        /* 280deg, */
-        /* #39738c, */
-        /* #194a66 */
-    /* ); */
-
-
     body {
-        background-image: linear-gradient(280deg, var(--dark-blue) 0%, var(--light-blue) 120%);
+        background-image: linear-gradient(280deg, var(--wall-strt-grd) 0%, var(--wall-end-grd) 120%);
         background-repeat: no-repeat;
         min-height: 100vh;
         width: 100%;

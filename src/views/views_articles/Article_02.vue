@@ -22,7 +22,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="bash"
                         src="../../assets/img/Bash_Logo_Colored.webp"
                         alt="An Image of the Bash Logo"

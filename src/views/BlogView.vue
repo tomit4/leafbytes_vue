@@ -76,12 +76,8 @@
         padding-top: 0.75rem;
     }
 
-    .header-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem auto 0.5rem auto;
-        width: clamp(250px, 80vw, 90%);
+    .intro-image {
+        width: clamp(250px, 80vw, 350px);
     }
 
     .intro-header {
@@ -168,9 +164,8 @@
     img {
         border: 4px solid var(--dark-blue);
         border-radius: 5px;
-        display: flex;
-        margin: 0 0.5rem 0 auto;
-        width: 90vw;
+        margin: 0 auto;
+        width: clamp(250px, 80vw, 800px);
     }
 
     figure {

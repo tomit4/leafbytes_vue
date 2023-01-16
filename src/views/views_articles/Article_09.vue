@@ -18,7 +18,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         src="../../assets/img/markdown_logo.webp"
                         alt="An image of the markdown logo"
                         title="An image of the markdown logo"

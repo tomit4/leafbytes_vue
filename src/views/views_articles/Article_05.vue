@@ -22,7 +22,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="i3_logo"
                         src="../../assets/img/i3_logo.webp"
                         alt="The i3 Logo"

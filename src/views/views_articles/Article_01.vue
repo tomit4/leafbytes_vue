@@ -14,7 +14,7 @@ import nxtbtn from '../views_data/nextbtn.json'
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="home_row"
                         src="../../assets/img/home-row.webp"
                         alt="A Picture of the Home Row Keyboard Position"

@@ -22,7 +22,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         src="../../assets/img/git_logo.webp"
                         alt="An image of the git logo"
                         title="An image of the git logo"

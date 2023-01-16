@@ -22,7 +22,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="vim_logo"
                         src="../../assets/img/vim.webp"
                         alt="The Vim Logo"

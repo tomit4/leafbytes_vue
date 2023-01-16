@@ -19,7 +19,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="olkb"
                         src="../../assets/img/OLKB_Planck.webp"
                         alt="An image of a 40% Planck OrthoLinear Keyboard"

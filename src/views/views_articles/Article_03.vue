@@ -22,7 +22,7 @@
             <div class="article-body">
                 <figure>
                     <img
-                        class="header-images"
+                        class="header-images intro-image"
                         id="linux_mint_desktop"
                         src="../../assets/img/linux_mint.webp"
                         alt="A Screenshot of the Linux Mint MATE Desktop"

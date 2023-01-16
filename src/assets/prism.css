@@ -10,7 +10,7 @@ pre[class*='language-'] {
     background: 0 0;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 900;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -48,9 +48,11 @@ pre[class*='language-'] {
 pre[class*='language-'] {
     background: var(--pr-bg);
     border: 3px solid var(--pr-bg-border);
+    font-weight: 900;
     opacity: 65%;
 }
 :not(pre) > code[class*='language-'] {
+    font-weight: 900;
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
@@ -60,9 +62,11 @@ pre[class*='language-'] {
 .token.doctype,
 .token.prolog {
     color: var(--pr-tk-prolog);
+    font-weight: 900;
 }
 .token.punctuation {
     color: var(--pr-tk-punc);
+    font-weight: 900;
 }
 .token.namespace {
     opacity: 0.7;
@@ -73,10 +77,12 @@ pre[class*='language-'] {
 .token.symbol,
 .token.tag {
     color: var(--pr-tk-tag);
+    font-weight: 900;
 }
 .token.boolean,
 .token.number {
     color: var(--pr-tk-numb);
+    font-weight: 900;
 }
 .token.attr-name,
 .token.builtin,
@@ -85,6 +91,7 @@ pre[class*='language-'] {
 .token.selector,
 .token.string {
     color: var(--pr-tk-string);
+    font-weight: 900;
 }
 .language-css .token.string,
 .style .token.string,
@@ -93,23 +100,27 @@ pre[class*='language-'] {
 .token.url,
 .token.variable {
     color: var(--pr-tk-var);
+    font-weight: 900;
 }
 .token.atrule,
 .token.attr-value,
 .token.class-name,
 .token.function {
     color: var(--pr-tk-func);
+    font-weight: 900;
 }
 .token.keyword {
     color: var(--pr-tk-keyw);
+    font-weight: 900;
 }
 .token.important,
 .token.regex {
     color: var(--pr-tk-regex);
+    font-weight: 900;
 }
 .token.bold,
 .token.important {
-    font-weight: 700;
+    font-weight: 900;
 }
 .token.italic {
     font-style: italic;

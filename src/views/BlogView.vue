@@ -50,8 +50,7 @@
         font-size: 14px;
         max-width: 350px;
         height: 2.1rem;
-        margin-bottom: -0.5rem;
-        margin-left: 0.4rem;
+        margin: 0.75rem 1rem -0.5rem 1rem;
         padding: 0.5rem;
         border: 1px solid var(--hd-dark-blue);
         border-radius: 7px 7px 0px 0px;

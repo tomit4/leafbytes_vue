@@ -22,6 +22,8 @@
 
     --title-clr: #ffffffff;
     --title-shdw: #0004b77b2;
+
+    --link-clr: #0066cc;
 }
 
 [data-theme='dark'] {
@@ -46,6 +48,8 @@
 
     --title-clr: #c5e8ff;
     --title-shdw: #222f48;
+
+    --link-clr: #cca700;
 }
 
 /* *********************

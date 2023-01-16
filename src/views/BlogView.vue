@@ -69,6 +69,7 @@
     .article-outside-links {
         font-weight: 900;
         text-decoration: none;
+        color: var(--link-clr);
     }
 
     #home-header {

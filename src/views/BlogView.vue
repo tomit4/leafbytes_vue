@@ -85,7 +85,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         left: 50%;
     }
 
@@ -134,7 +134,7 @@
     }
 
     #first_nxt_btn {
-        margin-top: 2.15rem;
+        margin-top: 1.75rem;
     }
 
     .article-quotes {

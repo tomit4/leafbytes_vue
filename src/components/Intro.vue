@@ -127,12 +127,12 @@
         align-self: center;
         position: fixed;
         font-family: entsans;
-        color: white;
+        color: var(--title-clr);
         z-index: 2;
         opacity: 0%;
         margin: 0 auto;
         transform: translate(-50%, -50%);
-        text-shadow: 5px 4px 0px var(--dark-blue-70);
+        text-shadow: 5px 4px 0px var(--title-shdw);
     }
 
     .leafbytes {

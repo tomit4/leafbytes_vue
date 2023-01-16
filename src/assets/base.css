@@ -19,6 +19,9 @@
 
     --wall-strt-grd: #004b77;
     --wall-end-grd: #baf6ff;
+
+    --title-clr: #ffffffff;
+    --title-shdw: #0004b77b2;
 }
 
 [data-theme='dark'] {
@@ -40,6 +43,9 @@
 
     --wall-strt-grd: #39738c;
     --wall-end-grd: #194a66;
+
+    --title-clr: #c5e8ff;
+    --title-shdw: #222f48;
 }
 
 /* *********************

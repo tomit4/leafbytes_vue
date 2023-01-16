@@ -198,41 +198,7 @@ pre[class*='language-'].line-numbers > code {
     opacity: 0.7;
 }
 
-/***********************
- * MEDIA QUERIES
- ***********************/
-/* 320 x 640 */
-@media (min-width: 20rem) {
-    pre[class*='language-'] {
-        margin: 0.5em 0.75rem;
-        font-size: 14px;
-    }
-}
-
-/* 360 x 800 */
-@media (min-width: 22.5rem) {
-    pre[class*='language-'] {
-        margin: 0.5em 0.6rem;
-    }
-}
-
-/* 800 x 360 */
-@media (min-width: 50rem) {
-    pre[class*='language-'] {
-        margin: 0.5em 5.25rem;
-    }
-}
-
-/* 926 x 428 */
-@media (min-width: 57rem) {
-    pre[class*='language-'] {
-        margin: 0.5em 9rem;
-    }
-}
-
-/* fullscreen desktop */
-@media (min-width: 1920px) and (min-height: 980px) {
-    pre[class*='language-'] {
-        margin: 0.5em 12rem;
-    }
+pre[class*='language-'] {
+    margin: 0 auto;
+    width: clamp(80%, 70vw, 80%)
 }

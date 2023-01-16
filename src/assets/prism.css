@@ -200,5 +200,6 @@ pre[class*='language-'].line-numbers > code {
 
 pre[class*='language-'] {
     margin: 0 auto;
+    font-size: clamp(0.88rem, 1vw, 0.94rem);
     width: clamp(80%, 70vw, 80%)
 }

@@ -59,10 +59,10 @@
 
     .article-content {
         font-family: LiberationMono;
-        font-size: 0.96rem;
+        font-size: clamp(0.92rem, 1vw, 0.96rem);
         font-weight: 600;
         color: var(--dark-blue);
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         margin: 1rem;
     }
 
@@ -144,8 +144,8 @@
         max-width: 600px;
         margin: 1rem auto 1rem auto;
         background-color: var(--hd-dark-blue);
-        font-size: 0.9rem;
-        font-weight: 600;
+        font-size: clamp(0.92rem, 1vw, 0.98rem);
+        font-weight: 400;
         border: 1px solid var(--hd-dark-blue);
         border-radius: 5px;
         padding: 1rem;

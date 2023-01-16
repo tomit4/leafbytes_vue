@@ -8,10 +8,12 @@
 <template>
     <div>
         <div class="article-entire">
-            <div class="intro-header">
-                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
-                to="/blog/git-basics"
-                v-html="prvbtn[0].svg"></router-link>
+            <div class="intro-container">
+                <div class="intro-header">
+                    <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                    to="/blog/git-basics"
+                    v-html="prvbtn[0].svg"></router-link>
+                </div>
             </div>
             <p class="article-header">the readme</p>
             <p class="article-header3">documentation for beginners</p>

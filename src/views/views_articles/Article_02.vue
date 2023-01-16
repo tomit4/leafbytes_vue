@@ -9,13 +9,15 @@
 <template>
     <div>
         <div class="article-entire">
-            <div class="intro-header">
-                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
-                to="/blog/one-with-the-keyboard"
-                v-html="prvbtn[0].svg"></router-link>
-                <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
-                to="/blog/why-use-linux"
-                v-html="nxtbtn[0].svg"></router-link>
+            <div class="intro-container">
+                <div class="intro-header">
+                    <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                    to="/blog/one-with-the-keyboard"
+                    v-html="prvbtn[0].svg"></router-link>
+                    <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
+                    to="/blog/why-use-linux"
+                    v-html="nxtbtn[0].svg"></router-link>
+                </div>
             </div>
             <p class="article-header">command line</p>
             <p class="article-header3">getting comfy in the shell</p>

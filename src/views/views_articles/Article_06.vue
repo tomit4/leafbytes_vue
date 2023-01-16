@@ -6,13 +6,15 @@
 <template>
     <div>
         <div class="article-entire">
-            <div class="intro-header">
-                <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
-                to="/blog/the-keys-that-bind"
-                v-html="prvbtn[0].svg"></router-link>
-                <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
-                to="/blog/espanso-text-expander"
-                v-html="nxtbtn[0].svg"></router-link>
+            <div class="intro-container">
+                <div class="intro-header">
+                    <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
+                    to="/blog/the-keys-that-bind"
+                    v-html="prvbtn[0].svg"></router-link>
+                    <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
+                    to="/blog/espanso-text-expander"
+                    v-html="nxtbtn[0].svg"></router-link>
+                </div>
             </div>
             <p class="article-header">ortholinear keyboards</p>
             <p class="article-header3">they're just better</p>

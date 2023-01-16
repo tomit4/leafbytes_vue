@@ -80,16 +80,25 @@
         width: clamp(250px, 80vw, 350px);
     }
 
-    .intro-header {
-        align-items: flex-right;
+    .intro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        width: 98vw;
+        margin-top: 2rem;
+        left: 50%;
+    }
+
+    .intro-header {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: clamp(10vw, 95vw, 460px);
         height: 8vh;
     }
 
     .prev-btn {
         display: flex;
-        position: sticky;
         width: 1.25rem;
         height: 1.25rem;
         padding: 0.25rem;
@@ -97,13 +106,11 @@
         background-color: var(--hd-dark-blue);
         border: 0px solid var(--hd-dark-blue);
         border-radius: 4px;
-        top: 2rem;
-        left: 0.5vw;
+        margin-top: 1.75rem;
     }
 
     .next-btn {
         display: flex;
-        position: sticky;
         width: 1.25rem;
         height: 1.25rem;
         padding: 0.25rem;
@@ -111,8 +118,7 @@
         background-color: var(--hd-dark-blue);
         border: 0px solid var(--hd-dark-blue);
         border-radius: 4px;
-        top: 2rem;
-        right: 0.5vw;
+        margin-top: -1.25rem;
         float: right;
     }
 
@@ -125,6 +131,10 @@
     .next-btn:hover {
         cursor: pointer;
         transform: scale(1.1);
+    }
+
+    #first_nxt_btn {
+        margin-top: 2.15rem;
     }
 
     .article-quotes {

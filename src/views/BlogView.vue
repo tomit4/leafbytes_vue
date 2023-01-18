@@ -93,7 +93,7 @@
         align-items: center;
         position: absolute;
         width: clamp(10vw, 95vw, 460px);
-        height: 8vh;
+        height: 9vh;
     }
 
     .prev-btn {
@@ -130,10 +130,6 @@
     .next-btn:hover {
         cursor: pointer;
         transform: scale(1.1);
-    }
-
-    #first_nxt_btn {
-        margin-top: 1.75rem;
     }
 
     .article-quotes {
@@ -218,6 +214,10 @@
     .footnote-href {
         text-decoration: none;
         color: var(--hd-mid-blue);
+    }
+
+    .visibility-hidden {
+        visibility: hidden;
     }
 
     .spacer {

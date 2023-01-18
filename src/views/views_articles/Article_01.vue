@@ -7,8 +7,9 @@ import nxtbtn from '../views_data/nextbtn.json'
         <div class="article-entire">
             <div class="intro-container">
                 <div class="intro-header">
+                    <router-link class="prev-btn visibility-hidden" to=""></router-link>
                     <router-link :aria-label="nxtbtn[0].ariaLabel"
-                    class="next-btn" id="first_nxt_btn" to="/blog/command-line"
+                    class="next-btn" to="/blog/command-line"
                     v-html="nxtbtn[0].svg"></router-link>
                 </div>
             </div>
@@ -148,6 +149,3 @@ import nxtbtn from '../views_data/nextbtn.json'
         <div class="spacer"></div>
     </div>
 </template>
-
-<style scoped>
-</style>

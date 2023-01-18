@@ -13,6 +13,7 @@
                     <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
                     to="/blog/git-basics"
                     v-html="prvbtn[0].svg"></router-link>
+                    <router-link class="next-btn visibility-hidden" to=""></router-link>
                 </div>
             </div>
             <p class="article-header">the readme</p>

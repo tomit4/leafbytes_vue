@@ -6,6 +6,7 @@
     --dark-blue: #004b77;
     --dark-blue-90: #004b77e5;
     --dark-blue-70: #004b77b2;
+    --dark-blue-50: #004b777f;
     --light-blue: #baf6ff;
     --light-blue-50: #c8edff7f;
     --bg-light-blue: #62a5bf;
@@ -21,7 +22,7 @@
     --wall-end-grd: #baf6ff;
 
     --title-clr: #ffffffff;
-    --title-shdw: #004b77;
+    --title-shdw: #0e2939;
 
     --link-clr: #0066cc;
 
@@ -44,11 +45,12 @@
     --dark-blue: #9ad7ff;
     --dark-blue-90: #9ad7ffe5;
     --dark-blue-70: #9ad7ffb2;
+    --dark-blue-50: #092c6e7f;
     --light-blue: #39738c;
     --light-blue-50: #222f48bf;
-    /* --bg-light-blue: #62a5bf; */
+    --bg-light-blue: #4b8aa1;
     /* --bg-light-blue-20: #62a5bf33; */
-    /* --bg-dark-blue: #2a7296; */
+    --bg-dark-blue: #264567;
     /* --bg-dark-blue-70: #2a7296b3; */
 
     --hd-dark-blue: #9ad7ff;

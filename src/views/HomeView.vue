@@ -1,4 +1,5 @@
 <script setup>
+    import homeleaf from "./views_data/home_leaf.json"
     /* add a fade effect for square */
     /* add circle animations inside of square */
     /* make square clickable */
@@ -8,7 +9,9 @@
 <template>
     <div>
         <div class="container">
-            <div class="square glowbeat"></div>
+            <div class="square glowbeat">
+                <div class="leaf-icon" v-html="homeleaf[0].svg"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -31,6 +34,14 @@
 
     .glowbeat {
         animation: glowing 1s ease-in-out infinite alternate;
+    }
+
+    .leaf-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0.75rem;
+        left: 0.25rem;
     }
 
     @keyframes glowing {

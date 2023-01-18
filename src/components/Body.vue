@@ -166,7 +166,7 @@
         justify-content: center;
         align-items: center;
         margin: 1rem auto 0.5rem auto;
-        width: clamp(250px, 80vw, 90%);
+        width: clamp(250px, 350px, 90%);
     }
 
     #home-header {

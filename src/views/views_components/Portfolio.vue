@@ -68,8 +68,7 @@
     .portfolio-tree-horiz  {
         position: absolute;
         background-color : var(--hd-dark-blue);
-        height: 0.15rem;
-        left: -0.1rem;
+        height: 0.2rem;
     }
 
     .portfolio-tree-horiz-show {

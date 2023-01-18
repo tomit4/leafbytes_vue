@@ -43,18 +43,10 @@
 [data-theme='dark'] {
     --dark-blue: #9ad7ff;
     --dark-blue-90: #9ad7ffe5;
-    /* --dark-blue-70: #9ad7ffb2; */
-    /* --light-blue: #baf6ff; */
     --light-blue: #39738c;
     --light-blue-50: #222f48bf;
-    /* --bg-light-blue: #62a5bf; */
-    /* --bg-light-blue-20: #62a5bf33; */
-    /* --bg-dark-blue: #2a7296; */
-    /* --bg-black: #252525; */
-    /* --bg-dark-blue-70: #2a7296b3; */
 
     --hd-dark-blue: #9ad7ff;
-    /* --hd-mid-blue: #0066cc; */
     --white: #222f48;
 
     --wall-strt-grd: #39738c;

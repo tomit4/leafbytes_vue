@@ -8,7 +8,7 @@
 <template>
     <div>
         <div class="container">
-            <div class="square beating"></div>
+            <div class="square glowbeat"></div>
         </div>
     </div>
 </template>
@@ -24,12 +24,12 @@
     .square {
         width: 6rem;
         height: 6rem;
-        border: 6px solid var(--dark-blue-70);
+        border: 5px solid var(--dark-blue-70);
         background-color: var(--light-blue-50);
         border-radius: 5px;
     }
 
-    .beating {
+    .glowbeat {
         animation: glowing 1s ease-in-out infinite alternate;
     }
 

@@ -1,7 +1,4 @@
 <script setup>
-    /* add circle animations inside of square */
-    /* make square clickable */
-    /* onclick, square renders more circuitry animation leading to project links */
     import { ref, onMounted } from "vue"
     import { delay } from "../utilities/utils"
     import homeleaf from "./views_data/home_leaf.json"
@@ -32,11 +29,14 @@
 <template>
     <div>
         <div ref="containEl" class="container visibility-hidden">
+        <!-- <div ref="containEl" class="container"> -->
             <div ref="accUpEl" class="accent-upper"></div>
             <div ref="squareEl" class="square glowbeat" @click="renderCards">
                 <div ref="leafEl" class="leaf-icon" v-html="homeleaf[0].svg"></div>
             </div>
             <div ref="accLowEl" class="accent-lower"></div>
+            <!-- card will hold project gifs. animations displaying projects-->
+            <!-- <div class="card"></div> -->
         </div>
     </div>
 </template>
@@ -112,6 +112,16 @@
     .collapse {
         height: 0;
         animation: collapse-it 1s ease-in;
+    }
+
+    .card {
+        /* the widths and height will need clamping once some project content is made */
+        width: 18rem;
+        height: 35rem;
+        bottom: 14rem;
+        background-color: var(--light-blue-50);
+        border: 5px solid var(--dark-blue-90);
+        border-radius: 5px;
     }
 
 /***********************

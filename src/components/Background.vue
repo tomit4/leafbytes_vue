@@ -8,7 +8,8 @@
 <style scoped>
     /* background stylings */
     .circuits {
-        background-image: url("../src/assets/svg/circuit_board_vector.svg");
+        /* background-image: url("../src/assets/svg/circuit_board_vector.svg"); */
+        background-image: url("./circuit_board_vector.svg");
         background-size: contain;
         background-position: center center;
         width: 98vw;
@@ -20,7 +21,8 @@
     }
 
     .logo {
-        background-image: url('../src/assets/svg/logo2.svg');
+        /* background-image: url('../src/assets/svg/logo2.svg'); */
+        background-image: url('./logo2.svg');
         width: 90vw;
         max-width: 520px;
         max-height: 920px;

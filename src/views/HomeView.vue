@@ -1,17 +1,28 @@
 <script setup>
-    import homeleaf from "./views_data/home_leaf.json"
-    /* add a fade effect for square */
     /* add circle animations inside of square */
     /* make square clickable */
     /* onclick, square renders more circuitry animation leading to project links */
+    import { ref, onMounted } from "vue"
+    import { delay } from "../utilities/utils"
+    import homeleaf from "./views_data/home_leaf.json"
+
+    const containEl = ref(null)
+
+    onMounted(async () => {
+        await delay(1200)
+        containEl.value.classList.add('fade-in')
+        containEl.value.classList.remove('visibility-hidden')
+    })
 </script>
 
 <template>
     <div>
-        <div class="container">
+        <div ref="containEl" class="container visibility-hidden">
+            <div class="accent-upper"></div>
             <div class="square glowbeat">
                 <div class="leaf-icon" v-html="homeleaf[0].svg"></div>
             </div>
+            <div class="accent-lower"></div>
         </div>
     </div>
 </template>
@@ -44,18 +55,72 @@
         left: 0.25rem;
     }
 
-    @keyframes glowing {
-      0% {
-        box-shadow: 0 0 0px var(--white), 0 0 2.5px var(--white), 0 0 7.5px #baf6ff, 0 0 12.5px #baf6ff, 0 0 17.5px #baf6ff, 0 0 22.5px #baf6ff, 0 0 27.5px #baf6ff;
-        transform: scale(0.98)
-      }
+    .accent-upper,
+    .accent-lower {
+        display: flex;
+        position: absolute;
+        /* needs new css var */
+        border: 5px solid var(--dark-blue-70);
+        border-radius: 3px;
+        background-color: transparent;
+        width: 7.25rem;
+        height: 1rem;
+    }
 
-      25% { transform: scale(0.98) }
-      50% { transform: scale(1.02) }
-      75% { transform: scale(0.98) }
-      100% {
-        box-shadow: 0 0 2.5px var(--white), 0 0 7.5px #86c8f1, 0 0 12.5px #86c8f1, 0 0 17.5px #86c8f1, 0 0 22.5px #86c8f1, 0 0 27.5px #86c8f1, 0 0 32.5px #86c8f1;
-        transform: scale(0.98)
-      }
+    .accent-upper {
+        bottom: 5.75rem;
+        border-bottom: none;
+    }
+
+    .accent-lower {
+        top: 5.75rem;
+        border-top: none;
+    }
+
+    .visibility-hidden {
+        visibility: hidden;
+    }
+
+    .fade-in {
+        visibility: visible;
+        animation: fadein 1.2s ease-in;
+    }
+
+    @keyframes glowing {
+        0% {
+          box-shadow: 0 0 0px var(--white),
+                      0 0 2.5px var(--white),
+                      0 0 7.5px #baf6ff,
+                      0 0 12.5px #baf6ff,
+                      0 0 17.5px #baf6ff,
+                      0 0 22.5px #baf6ff,
+                      0 0 27.5px #baf6ff;
+          transform: scale(0.98)
+        }
+        25% { transform: scale(0.98) }
+        50% { transform: scale(1.02) }
+        75% { transform: scale(0.98) }
+        100% {
+          box-shadow: 0 0 2.5px var(--white),
+                      0 0 7.5px #86c8f1,
+                      0 0 12.5px #86c8f1,
+                      0 0 17.5px #86c8f1,
+                      0 0 22.5px #86c8f1,
+                      0 0 27.5px #86c8f1,
+                      0 0 32.5px #86c8f1;
+          transform: scale(0.98)
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            visibility: hidden;
+            opacity: 0%;
+
+        }
+        to {
+            visibility: visible;
+            opacity: 100%;
+        }
     }
 </style>

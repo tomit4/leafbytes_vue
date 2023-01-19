@@ -7,6 +7,20 @@
     import homeleaf from "./views_data/home_leaf.json"
 
     const containEl = ref(null)
+    const squareEl = ref(null)
+    const leafEl = ref(null)
+    const accUpEl = ref(null)
+    const accLowEl = ref(null)
+
+    async function renderCards() {
+        accUpEl.value.classList.add('fade-out')
+        accLowEl.value.classList.add('fade-out')
+        await delay(1000)
+        squareEl.value.classList.add('collapse')
+        leafEl.value.classList.add('fade-out')
+        await delay(1200)
+        squareEl.value.classList.add('fade-out')
+    }
 
     onMounted(async () => {
         await delay(1200)
@@ -18,11 +32,11 @@
 <template>
     <div>
         <div ref="containEl" class="container visibility-hidden">
-            <div class="accent-upper"></div>
-            <div class="square glowbeat">
-                <div class="leaf-icon" v-html="homeleaf[0].svg"></div>
+            <div ref="accUpEl" class="accent-upper"></div>
+            <div ref="squareEl" class="square glowbeat" @click="renderCards">
+                <div ref="leafEl" class="leaf-icon" v-html="homeleaf[0].svg"></div>
             </div>
-            <div class="accent-lower"></div>
+            <div ref="accLowEl" class="accent-lower"></div>
         </div>
     </div>
 </template>
@@ -43,8 +57,12 @@
         border-radius: 5px;
     }
 
+    .square:hover {
+        cursor: pointer;
+    }
+
     .glowbeat {
-        animation: glowing 1s ease-in-out infinite alternate;
+        animation: glowing-beating 1s ease-in-out infinite alternate;
     }
 
     .leaf-icon {
@@ -86,7 +104,20 @@
         animation: fadein 1.2s ease-in;
     }
 
-    @keyframes glowing {
+    .fade-out {
+        visibility: hidden;
+        animation: fadeout 1s ease-in;
+    }
+
+    .collapse {
+        height: 0;
+        animation: collapse-it 1s ease-in;
+    }
+
+/***********************
+    ANIMATIONS
+***********************/
+    @keyframes glowing-beating {
         0% {
           box-shadow: 0 0 0px var(--white),
                       0 0 2.5px var(--white),
@@ -121,6 +152,26 @@
         to {
             visibility: visible;
             opacity: 100%;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            visibility: visible;
+            opacity: 100%;
+        }
+        to {
+            visibility: hidden;
+            opacity: 0%;
+        }
+    }
+
+    @keyframes collapse-it {
+        from {
+            height: 6rem;
+        }
+        to {
+            height: 0;
         }
     }
 </style>

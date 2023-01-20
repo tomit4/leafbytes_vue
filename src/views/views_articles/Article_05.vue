@@ -12,10 +12,10 @@
             <div class="intro-container">
                 <div class="intro-header">
                     <router-link :aria-label="prvbtn[0].ariaLabel" class="prev-btn"
-                    to="/blog/musings-on-vim"
+                    to="musings-on-vim"
                     v-html="prvbtn[0].svg"></router-link>
                     <router-link :aria-label="nxtbtn[0].ariaLabel" class="next-btn"
-                    to="/blog/ortholinear-keyboards"
+                    to="ortholinear-keyboards"
                     v-html="nxtbtn[0].svg"></router-link>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                 </p>
                 <h4 class="article-header4">A Brief Note On The Linux Desktop</h4>
                 <p class="article-content">
-                    As you may have already ascertained if you have read my <router-link class="inter-article-links" to="/blog/why-use-linux">Why Use Linux</router-link> article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one of the Linux Desktop Environment, that being the XFCE desktop environment. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinammon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar, if not more, amount of customization options to the XFCE Desktop Environment.
+                    As you may have already ascertained if you have read my <router-link class="inter-article-links" to="why-use-linux">Why Use Linux</router-link> article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one of the Linux Desktop Environment, that being the XFCE desktop environment. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinammon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar, if not more, amount of customization options to the XFCE Desktop Environment.
                 </p>
                 <p class="article-content">
                 <h4 class="article-header4">Customized Keybindings On Linux</h4>

@@ -1,47 +1,47 @@
 [
     {
        "id": 1,
-       "link": "/blog/one-with-the-keyboard",
+       "link": "one-with-the-keyboard",
        "title": "one with the keyboard"
     },
     {
        "id": 2,
-       "link": "/blog/command-line",
+       "link": "command-line",
        "title": "command line"
     },
     {
         "id": 3,
-        "link": "/blog/why-use-linux",
+        "link": "why-use-linux",
         "title": "why use linux"
     },
     {
         "id": 4,
-        "link": "/blog/musings-on-vim",
+        "link": "musings-on-vim",
         "title": "musings on vim"
     },
     {
        "id": 5,
-       "link": "/blog/the-keys-that-bind",
+       "link": "the-keys-that-bind",
        "title": "the keys that bind"
     },
     {
        "id": 6,
-       "link": "/blog/ortholinear-keyboards",
+       "link": "ortholinear-keyboards",
        "title": "ortholinear keyboards"
     },
     {
         "id": 7,
-        "link": "/blog/espanso-text-expander",
+        "link": "espanso-text-expander",
         "title": "espanso expand your text"
     },
     {
        "id": 8,
-       "link": "/blog/git-basics",
+       "link": "git-basics",
        "title": "git basics"
     },
     {
        "id": 9,
-       "link": "/blog/the-readme",
+       "link": "the-readme",
        "title": "readme intro to docs"
     },
     {

@@ -9,7 +9,7 @@ import nxtbtn from '../views_data/nextbtn.json'
                 <div class="intro-header">
                     <router-link class="prev-btn visibility-hidden" to=""></router-link>
                     <router-link :aria-label="nxtbtn[0].ariaLabel"
-                    class="next-btn" to="/blog/command-line"
+                    class="next-btn" to="command-line"
                     v-html="nxtbtn[0].svg"></router-link>
                 </div>
             </div>

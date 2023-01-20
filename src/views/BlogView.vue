@@ -4,6 +4,7 @@
 
 <template>
     <div>
+        <div>test</div>
         <RouterView />
     </div>
 </template>

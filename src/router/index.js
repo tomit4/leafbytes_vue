@@ -51,7 +51,7 @@ const router = createRouter({
             }
         },
         {
-            path: "/blog/:article-name",
+            path: "/blog/:",
             components: {
                 default: BlogView,
                 body: Body

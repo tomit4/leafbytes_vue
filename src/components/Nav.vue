@@ -136,14 +136,13 @@
     }
 
     #rss {
-        width: 1.5rem;
         margin-bottom: 0.25rem;
     }
 
     #contact {
-        transform: scale(1.1);
         margin-bottom: 0.25rem;
     }
+
     .navbar-onscrollup {
         height: 2.5em;
         animation: navbar-onscrollup-animation 1.25s ease-in;

@@ -21,20 +21,6 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: "/",
-            name: "root",
-            component: App,
-            redirect: "/home"
-        },
-        {
-            path: "/home",
-            name: "home",
-            components: {
-                default: HomeView,
-                body: Body
-            }
-        },
-        {
             path: "/about",
             name: "about",
             components: {

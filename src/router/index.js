@@ -53,7 +53,7 @@ const router = createRouter({
         {
             path: "/:?",
             components: {
-                default: BlogView,
+                default: HomeView,
                 body: Body
             },
             children: [

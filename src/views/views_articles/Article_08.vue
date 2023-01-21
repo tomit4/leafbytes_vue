@@ -42,8 +42,8 @@
                 </blockquote>
                 <h4 class="article-header4">Introduction</h4>
                 <p class="article-content">
-                    Whether working in Data Science, Software/Web Development, or even if one is
-                    just a modern Power User of Computers in general, one is probably at least
+                    Whether working in data science, software/web development, or even if one is
+                    just a modern power user of computers in general, one is probably at least
                     somewhat familiar with the Git version control system, or at least with the now
                     infamous hosting service, Github.
                 </p>
@@ -60,10 +60,11 @@
                 </p>
                 <h4 class="article-header4">A Brief History of Git</h4>
                 <p class="article-content">
-                    In looking over my previous article covering "Why Use Linux," I now realize I
+                    In looking over my previous article covering <router-link class="inter-article-links"
+                    to="/why-use-linux">Why Use Linux</router-link>, I now realize I
                     never referenced the history of Linux and its creator, Linus Torvalds. This was
                     probably due to the extensive history of Linux, and I didn't wish for that
-                    article to turn into more a history lesson than a beginner's installation
+                    article to turn into more of a history lesson than a beginner's installation
                     tutorial. While it is not my intention to do so with this article either, I feel
                     that Git's history is far more easy to cover, as it is a more recently developed
                     piece of software and has a far shorter timeline to cover.
@@ -75,7 +76,7 @@
                     floppy disks and later on CD-ROMs. Updates to the Linux Kernel in the early days
                     were distributed via email mailing lists. The emails included files known as "patches",
                     which provided the differing lines of code which were either added, removed, or
-                    altered in the pre-existing code base. While some form of version control had been a part of
+                    altered from the pre-existing code base. While some form of version control had been a part of
                     software development since the early 1960s, concurrent version systems would
                     become the standard for decades starting in 1975, which would later be overtaken
                     by Apache's Subversion system, and finally in the late 1990s, distributed
@@ -133,12 +134,13 @@
                     of your software on their server at their house. Great!
                 </p>
                 <p class="article-content">
-                    But the ideas keep coming, you keep on coding and adding features, occassionally
+                    But the ideas keep coming, you keep on coding and adding features, occasionally
                     refactoring the code to be less verbose and more succinct. You're becoming a
                     better developer and the program is starting to look good. Eventually you decide
                     to integrate a large new feature and start to write out a substantial amount of
-                    code for this new feature, and once completed, you save your progress, back it
-                    up on your external hard drive and at your friend's server and call it a night.
+                    code. Once completed, you save your progress, back it up on your external hard drive
+                    as well as at your friend's server. Satisfied with the new feature, you decide to call
+                    it a night, and hit the hay.
                 </p>
                 <p class="article-content">
                     In the morning you return to your project only to find that this new feature has
@@ -169,8 +171,8 @@
                 </p>
                 <p class="article-content">
                     Once you've established a Github account, log into Github, click on the "New"
-                    button in the top lefthand corner. Set up a project name called "my_awesome_js_project"
-                    and give it a brief description before hitting the "Create repository" button at the bottom.
+                    button in the top left-hand corner. Set up a project name called "my_awesome_js_project"
+                    and give it a brief description before hitting the "Create Repository" button at the bottom.
                 </p>
                 <p class="article-content">
                     After this, you will be presented with a project screen that is a visual
@@ -207,7 +209,7 @@
                     there aren't any new files...or are there? If you then try the "ls" command with
                     the "-a" flag, you'll see that we now have a hidden ".git" directory. You
                     shouldn't need to access this directory as a beginner, but it's good to know
-                    it's there in case you do need to make some direct modifications to your git
+                    it's there in case you do need to make some direct modifications to your Git
                     configuration.
                 </p>
                 <p class="article-content">
@@ -250,13 +252,13 @@
                     Whenever a new git repository is initialized, it defaults to a branch known as
                     "master". This branch, in practice, should never be touched except by the
                     project maintainer, who will "merge" the project branches first into a
-                    development branch commonly known as "main," which upon completion of certain
-                    versions, will finally merge these changes into "master". This is why Github
-                    then instructs us to create a main branch like so:
+                    development branch commonly known as "main." Upon completion of certain
+                    versions, the project maintainer will merge these changes into the "master" branch.
+                    This is why Github's documentation instructs us to create a main branch like so:
                     <pre><code class="language-bash">[ ~]$ git branch -M main</code></pre>
                 </p>
                 <p class="article-content">
-                    Finally, we'll configure git to send our changes to our Github repository using
+                    Finally, we'll configure Git to send our changes to our Github repository using
                     the following command:
                     <pre><code class="language-bash">[ ~]$ git remote add origin https://github.com/'your_name'/my_awesome_js_project.git</code></pre>
                 </p>
@@ -272,7 +274,7 @@
                     somewhat intimidating for a new user. While I recommend setting up an
                     <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                     href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">
-                    ssh key</a>, you can also set up a <a
+                    SSH key</a>, you can also set up a <a
                     class="article-outside-links" target="_blank" rel="noopener
                     noreferrer" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">
                     PAT</a> for this purpose as well.
@@ -316,8 +318,9 @@ console.log("this is my second line of code to commit");
                 <p class="article-content">
                     Upon entering this command, Git will now provide you with a brief summary of the
                     changes to your project. In this case we have "modified hello.js". We have yet
-                    to have add our changed files, commit our changes with a brief message
-                    about what we did, and finally push our changes up to our repository, so let's do that now:
+                    to have added our changed files, committed our changes with a brief message
+                    about what we did, and pushed our changes up to our repository, so let's do all
+                    of that now:
                     <pre><code class="language-bash">[ ~]$ git add hello.js</code></pre>
                 </p>
                 <p class="article-content">
@@ -339,7 +342,7 @@ console.log("this is my second line of code to commit");
                     <pre><code class="language-bash">[ ~]$ git push</code></pre>
                 </p>
                 <p class="article-content">
-                    Note that you no longer have to provide the remote name (origin), nor the branch
+                    Note that you no longer have to provide the remote name, nor the branch
                     name here. Github will once again prompt you for your credentials (either SSH
                     key or PAT). Once entered, you will get a confirmation message in your terminal
                     emulator, and can visit your Github repository to see the changes online:
@@ -393,7 +396,7 @@ console.log("this is my second line of code to commit");
                 <p class="article-content">
                     Keep in mind that using --force is considered to be somewhat overbearing, and
                     you should always heavily consider the ramifications of using this option on a
-                    collaberative project, as you can accidentally overwrite other contributors' code.
+                    collaborative project, as you can accidentally overwrite another contributor's code.
                     This is why when working on non-trivial projects it is always a good idea to
                     <a class="article-outside-links"
                     target="_blank" rel="noopener noreferrer"
@@ -416,7 +419,7 @@ console.log("this is my second line of code to commit");
                     <a class="article-outside-links" target="_blank"
                     rel="noopener noreferrer" href="https://git-scm.com/doc"> official documentation</a>
                     for more information.  Additionally, there are many pieces of software that make
-                    working with git less cumbersome than what is available at the standard command
+                    working with Git less cumbersome than what is available at the standard command
                     line. Some of these projects include
                    <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                    href="https://github.com/jesseduffield/lazygit">
@@ -429,10 +432,10 @@ console.log("this is my second line of code to commit");
                 <p class="article-content">
                     I would be remiss not to mention my own CLI tool that I wrote in bash, called
                     <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
-                    href="https://github.com/tomit4/bgit">bgit</a>. While not nearly as full featured as the
+                    href="https://github.com/tomit4/bgit">bgit</a>. While not nearly as fully featured as the
                     aforementioned software, it is a very basic wrapper around Git that automates
                     away some of the commands covered in this article. I wrote this script as
-                    a way to teach myself a little more about Git and Bash, and it is certainly not
+                    a way to teach myself a little more about Git and bash, and it is certainly not
                     without its flaws, but take a look if you're interested.
                 </p>
                 <p class="article-content">

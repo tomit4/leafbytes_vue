@@ -63,13 +63,13 @@
                 <h4 class="article-header4">What Is A Text Expander?</h4>
                 <p class="article-content">
                     Most standard workflows by "Power Users" involve the use of keyboard shortcuts.
-                    Mainly Ctrl+C, Ctrl+V, Ctrl+A, and Ctrl+Z. If one is particularly resourceful
+                    Mainly Ctrl+C, Ctrl+V, Ctrl+A, and Ctrl+Z. If one is particularly resourceful,
                     they are aware of various keyboard shortcuts involving the additional use of ALT
                     and SHIFT keys, but I digress. While these shortcuts are still very useful and a
                     necessary tool in the belt of any serious Computer user, these methods still
                     only hold a candle to the ultra capable workflows one can achieve with a tiling
                     window manager, a modal text editor, and an ortholinear keyboard (as well as the
-                    vimium extension installed on the browser). Each of these subjects I have covered
+                    Vimium extension installed on the browser). Each of these subjects I have covered
                     in detail in previous articles, and each of them continually improves upon the
                     user's implementation of the keyboard-centric workflow. There is, however, one
                     other tool that greatly adds to the keyboard-centric workflow, and that is the
@@ -93,11 +93,11 @@
                 <p class="article-content">
                     Indeed, when I first discovered that there even were applications like text
                     expanders, I found myself wondering why they even existed when one could write
-                    aliases for your shell, and write custom shortcuts for neovim. After a short
+                    aliases for your shell, and write custom shortcuts for NeoVim. After a short
                     period of time, however, it dawned on me the power of text expanders, and that
                     power was the ability to write quick aliases/text shortcuts that could be used
-                    in any application. And when used in conjunction with shell scripts and aliases,
-                    the power of text expansion becomes even more obvious.
+                    in <em>any</em> application. And when used in conjunction with shell scripts
+                    and aliases, the power of text expansion becomes even more obvious.
                 </p>
                 <h4 class="article-header4">Espanso Basics</h4>
                 <p class="article-content">
@@ -106,10 +106,10 @@
                     rel="noopener noreferrer" href="https://espanso.org/">this link</a> to the official
                     website for you to peruse. There are many other text expanders out there, but espanso
                     is open source and OS-agnostic. Additionally it is written in rust, which is known
-                    provide fast applications when utilized by a capable
+                    to provide fast applications when utilized by a capable
                     programmer. It is the only text expander I have used, so I cannot speak
-                    to how it compares to others, but the aforementioned features, along with my own
-                    positive experiences utilizing the program is enough for me to not investigate
+                    to how it compares to others, but considering the aforementioned features, along with my own
+                    positive experiences utilizing the program, is enough reason for me to not investigate
                     the alternatives at the time of this writing. Should you wish to install espanso
                     and try it for yourself, please see their official <a class="article-outside-links" target="_blank"
                     rel="noopener noreferrer" href="https://espanso.org/install/">installation
@@ -123,9 +123,9 @@
                 <pre><code class="language-bash">[~]$ :ip</code></pre>
                 </p>
                 <p class="article-content">
-                    This will expand out to display your ip! Of course, one could easily see this
-                    using command line, prior to using espanso, I had created a bash alias
-                    to do just that (and admittedly it gives more information):
+                    This will expand out to display your ip address! Of course, one could easily see this
+                    using command line. Prior to using espanso, I had created a bash alias
+                    to do just that (and admittedly it gives more information than espanso does by default):
                     <pre><code class="language-bash">[~]$ alias ipaddr="curl ifconfig.me/all.json | jq"</code></pre>
                 </p>
                 <p class="article-content">
@@ -181,7 +181,7 @@
                     this tool? Well one of my most constantly repeated series of code that I need on
                     the fly is "console.log()" whenever debugging a JavaScript file. While this
                     isn't a lot of text to write, it can indeed get cumbersome to rewrite it many
-                    times over, and so one my first espanso was this:
+                    times over, and so one my first espanso aliases was:
                     <pre><code class="language-yaml">
 - trigger: ";cll"
   replace: "console.log()"
@@ -190,7 +190,7 @@
                 <p class="article-content">
                     Note that instead of using the colon, I opted to use the semicolon for my custom
                     espanso aliases as the likelihood of typing out anything directly after a
-                    semicolon is even less likely than after a colon (especially if using vim in
+                    semicolon is even less likely than after a colon (especially if using Vim in
                     command mode). While this might seem trivial at first, if anyone has ever
                     debugged a JavaScript file using this most basic of tools, one can see how
                     useful this could be.
@@ -199,7 +199,7 @@
                     Within JavaScript (or any programming language), there are
                     many times one can find themselves writing various words or
                     series of code blocks over and over again, here a few examples
-                    of what I have written to occasionally speed this up:
+                    of what I have written in my espanso config to occasionally speed this up:
                     <pre><code class="language-yaml">
 - trigger: ";for"
   replace: "for (;;) {}"
@@ -235,7 +235,7 @@
                 <p class="article-content">
                     Okay, so what about use outside of the terminal? Well in writing any website,
                     any good web developer will be typing either "127.0.0.1:" or "localhost:" a lot,
-                    right? Well how about this one?:
+                    right? Well why not use this espanso alias instead?:
                     <pre><code class="language-yaml">
 - trigger: ";loc"
   replace: "localhost:"
@@ -260,7 +260,7 @@
                     Essentially, if one has DuckDuckgo as their default search engine
                     (or searx, which has this feature too), one can
                     simply enter into your search/url bar: !yt and any other words typed after that
-                    will be directly searched in youtube. There are a multitude of these bangs
+                    will be directly searched in YouTube. There are a multitude of these bangs
                     available and I'd encourage you to take a look at what is available. There are,
                     however, a few websites that DuckDuckgo hasn't integrated into bangs, so what to
                     do? While I'm sure there are other ways to accomplish this, I have utilized
@@ -291,7 +291,7 @@
                     a fair point, but I'd argue that what one can accomplish with espanso integrated
                     into your workflow with the shell, vim, and the browser, is just a little more
                     streamlined than without. Now, this last and final example on the uses of the
-                    espanso text expander will involve use of the shell, a shell script, and neovim.
+                    espanso text expander will involve use of the shell, a shell script, and NeoVim.
                     I am positive there are other ways of accomplishing what I have done here, but
                     nevertheless I am happy with the result as it stands right now.
                 </p>
@@ -307,21 +307,21 @@
                 <p class="article-content">
                     The script very simply saves an environment variable called $sdir, and an
                     optional environment variable for the file called $sdoc into a
-                    dotfile, which a corresponding alias, "rdir" could return to like so:
+                    dotfile. A corresponding alias, "rdir" could then return to said directory like so:
                     <pre><code class="language-bash">[~]$ rdir</code></pre>
                 </p>
                 <p class="article-content">
                     Originally, rdir was a shell script that looked for the existence of the $sdoc,
                     and if it existed, would call nvim on it, and if it didn't, would simply
                     navigate to the saved directory $sdir. This worked for some time, but I wanted
-                    to be able to save a different directory to this dotfile and seemlessly return
+                    to be able to save a different directory to this dotfile and seamlessly return
                     to it, and the built-in command "cd", doesn't work in shell scripts. I thought
                     "No problem, cd works in an alias, I'll just source the file in the alias and
                     then use cd to move into that new directory." Only to find out that source
                     didn't work inside an alias...
                 </p>
                 <p class="article-content">
-                    Like I said, there are probably other, less hacky, ways to accomplish my goal
+                    Like I said, there are probably other, less hacked together, ways to accomplish my goal
                     here. Nevertheless, it dawned on me that I could remove my rdir script and forego
                     using an alias by simply combining the sdir shell script with an espanso alias like so:
                     <pre><code class="language-yaml">
@@ -345,8 +345,10 @@
                     Admittedly, there are probably many other use cases for espanso I have not
                     explored in this article. If one looks over the documentation in more detail,
                     one will find a myriad of other useful tips more in-depth than the ones I have
-                    presented here, so please take the time to check out their great documentation.
-                    Now that I utilize espanso in my work-flow, I can't really imagine working without it.
+                    presented here, so please take the time to check out their great <a
+                    class="article-outside-links" target="_blank" rel="noopener noreferrer"
+                    href="https://espanso.org/">documentation</a>.
+                    Now that I utilize espanso, I can't really imagine working without it.
                     It's like the last puzzle piece to my keyboard-centric work flow was filled in when I
                     discovered this amazing tool.
                 </p>
@@ -355,12 +357,12 @@
                     script below (as well as this <a class="article-outside-links" target="_blank"
                     rel="noopener noreferrer"
                     href="https://raw.githubusercontent.com/tomit4/notes/main/scripts/sdir">link
-                    on my github</a>).
-                    Additionally, I'll provide you with some lines of lua code that when put into
+                    on my GitHub</a>).
+                    Additionally, I'll provide you with some lines of Lua code that when put into
                     your <a class="article-outside-links" target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/tomit4/notes/tree/main/.config/nvim">
-                    Neovim configuration files</a>, will return you to wherever you last saved in
+                    NeoVim configuration files</a>, will return you to wherever you last saved in
                     your files (this works incredibly well with the aforementioned sdir script and
                     espanso aliases, as I simply return to the exact directory, file, and
                     place in that file I left off on simply by typing ";rr" into the command

@@ -40,10 +40,10 @@
                 </blockquote>
                 <h4 class="article-header4">Introduction</h4>
                 <p class="article-content">
-                    When one first approaches the world of computers, their first interaction is with some kind of graphical user interface, commonly termed as a "GUI." This interface is what is termed as a "Desktop Environment" or "DE" for short. A common Desktop Environent's primary form of interaction is based around the utilization of the computer mouse, although, to varying degrees, can be modified to be more oriented towards a keyboard-based interface.
+                    When one first approaches the world of computers, their first interaction is with some kind of graphical user interface, commonly termed as a "GUI." This interface is what is termed as a "Desktop Environment" or "DE" for short. A common Desktop Environment's primary form of interaction is based around the utilization of the computer mouse, although, to varying degrees, can be modified to be more oriented towards a keyboard-based interface.
                 </p>
                 <p class="article-content">
-                        Less familiar to the general public is a piece of software known as the Tiling Window Manager, a much more basic, but possibly more efficient, GUI that is heavily based on the utilization of keyboard interactions from the user. Indeed, much like the Vim Text Editor, a Tiling Window Manager so heavily discourages the use of Mouse Interactions, that an uninitiated user can find themselves presented with an environment where attempts at using the computer mouse results in no feedback at all (i.e., clicking the mouse does nothing by default). At first glance this may seem as a negative, but with the incorporation of more and more keyboard-encouraged interactions with your various pieces of software, one finds that their efficiency utilizing their computer increases, and perhaps also their productivity.
+                    Less familiar to the general public is a piece of software known as a Tiling Window Manager, a much more basic, but possibly more efficient, GUI that is heavily based on the utilization of keyboard interactions from the user. Indeed, much like the Vim Text Editor, a Tiling Window Manager so heavily discourages the use of Mouse Interactions, that an uninitiated user can find themselves presented with an environment where attempts at using the computer mouse results in no feedback at all (i.e., clicking the mouse does nothing by default). At first glance this may seem as a negative, but with the incorporation of more and more keyboard-encouraged interactions with your various pieces of software, one finds that their efficiency utilizing their computer increases, and perhaps also their productivity increases as well.
                 </p>
                 <h4 class="article-header4">What Is A Desktop Environment?</h4>
                 <p class="article-content">
@@ -67,7 +67,7 @@
                 </p>
                 <h4 class="article-header4">The Keyboard-Centric Workflow</h4>
                 <p class="article-content">
-                    There have been few articles written on the keyboard-centric workflow. The subject is the realm mainly focused on by productivity enthusiasts and computer programmers (perhaps also the occasional stenographer). I have touched briefly on the concepts of the keyboard-centric workflow in my article on The Vim Text Editor, but will spend more time elaborating on the subject here.
+                    There have been few articles written on the keyboard-centric workflow. The subject is the realm mainly focused on by productivity enthusiasts and computer programmers (perhaps also the occasional stenographer). I have touched briefly on the concepts of the keyboard-centric workflow in <router-link class="inter-article-links" to="/musings-on-vim">my article on The Vim Text Editor</router-link>, but will spend more time elaborating on the subject here.
                 </p>
                 <p class="article-content">
                     I have always enjoyed the sensation of typing from an early age when I first sat down at a keyboard. In high school and especially college, I took the time to learn some of the classic keyboard shortcuts present in nearly every application. The knowledge of these shortcuts allowed me to navigate more quickly throughout applications, edit text more quickly, and generally work with the computer much faster than others. In short, I became what is known colloquially as a "power user".
@@ -80,16 +80,16 @@
                 </p>
                 <h4 class="article-header4">A Brief Note On The Linux Desktop</h4>
                 <p class="article-content">
-                    As you may have already ascertained if you have read my <router-link class="inter-article-links" to="why-use-linux">Why Use Linux</router-link> article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one of the Linux Desktop Environment, that being the XFCE desktop environment. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinammon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar, if not more, amount of customization options to the XFCE Desktop Environment.
+                    As you may have already ascertained if you have read my <router-link class="inter-article-links" to="why-use-linux">Why Use Linux</router-link> article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one Linux Desktop Environment, that being XFCE. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinnamon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar amount of customization options to XFCE.
                 </p>
                 <p class="article-content">
                 <h4 class="article-header4">Customized Keybindings On Linux</h4>
                 </p>
                 <p class="article-content">
-                    Most Desktop Environments on Linux have a GUI interface for changing the default keybindings, and I would encourage you to look into your particular Desktop Environment's interface for doing so. The Desktop Environment I utilized when I first started using Linux was XFCE, afterwards I then utilized the i3 Tiling Window Manager (and then the bspwm Tiling Window Manager, which is what I use currently). I will first go into how to adjust the keybindings in XFCE both via XFCE's native GUI application. After that, I will then go into how to utilize the i3 Tiling Window Manager, which is considered by many as a good introduction to Tiling Window Managers.
+                    Most Desktop Environments on Linux have a GUI interface for changing the default keybindings, and I would encourage you to look into your particular interface for doing so. The Desktop Environment I utilized when I first started using Linux was XFCE, afterwards I then utilized the i3 Tiling Window Manager (and then the bspwm Tiling Window Manager, which is what I use currently). I will first go into how to adjust the keybindings in XFCE both via XFCE's native GUI application. After that, I will then go into how to utilize the i3, which is considered by many as a good introduction to Tiling Window Managers.
                 </p>
                 <p class="article-content">
-                    Firstly, let's start by configuring the keybindings in the XFCE Desktop Environment. Here we see the base install of Debian Linux with the default XFCE Desktop Environment installed:
+                    Firstly, let's start by configuring the keybindings in XFCE. Here we see the base install of Debian Linux with the default XFCE Desktop Environment installed:
                 </p>
                 <figure>
                     <img
@@ -151,7 +151,7 @@
                     <figcaption>XFCE Menu To Change Keyboard Shortcuts</figcaption>
                 </figure>
                 <p class="article-content">
-                    After hitting the "OK" button, we will be presented with a menu that asks us to "Press any Key". Most keyboard shortcuts invoked utilize at at least two buttons so as to not accidentally invoking commands whenever typing, so let's choose a classic keybinding "super+enter". To the uninitiated the "super" key is the "windows" key in Microsoft Windows or the "options" key in MacOs. Once entered, the window prompt will disappear and you may notice the new keyboard command show up on the Application Shortcuts menu.
+                    After hitting the "OK" button, we will be presented with a menu that asks us to "Press any Key". Most keyboard shortcuts invoked utilize at at least two buttons so as to not accidentally invoke commands whenever typing, so let's choose a classic keybinding "super+enter". To the uninitiated the "super" key is the "windows" key in Microsoft Windows or the "options" key in MacOs. Once entered, the window prompt will disappear and you may notice the new keyboard command show up on the Application Shortcuts menu.
                 </p>
                 <figure>
                     <img
@@ -166,7 +166,7 @@
                     <figcaption>XFCE Menu To Change Keyboard Shortcuts</figcaption>
                 </figure>
                 <p class="article-content">
-                    Let's test it out. go ahead and enter "super + enter":
+                    Let's test it out, go ahead and enter "super + enter":
                 </p>
                 <figure>
                     <img
@@ -181,10 +181,10 @@
                     <figcaption>Spawning New Terminals Using Our New Keybinding</figcaption>
                 </figure>
                 <p class="article-content">
-                    And indeed, we have created a useful keybinding that calls one of our most used applications. You can chain various keys to open applications, but usually the alt, ctrl, or super keys are utilized first. You can call any application that you can invoke on the terminal in this fashion, and usually these are GUI applications, like your browser, your file manager, your music player, etc.
+                    And indeed, we have created a useful keybinding that calls one of our most used applications. You can chain various keys to open applications, but usually the alt, ctrl, or super keys are utilized. You can call any application that you can invoke on the terminal in this fashion, and usually these are GUI applications, like your browser, your file manager, your music player, etc.
                 </p>
                 <p class="article-content">
-                    I will now move onto our next subject, which covers the useful feature of Workspaces. The use of Workspaces is more important than Application-related keyboard shortcuts as they essentially maximize the use of space on your screen, allowing you to bring up an entirely new work area for you to fill with your various applications. Instead of moving application windows around and minimizing them when not in use, Workspaces allow you to simply keep those applications open at whatever screen size you like, hiding them from view temporarily, while you navigate to another workspace to do some other sort of work, and then navigate back to your previous workspace to utilize the applications you had been using earlier. The below gif demonstrates the use of Workspaces, which are changed using keybindings.
+                    I will now move onto our next subject, which covers the useful feature of workspaces. The use of workspaces is more important than application-related keyboard shortcuts as they essentially maximize the use of space on your screen, allowing you to bring up an entirely new work area for you to fill with your various applications. Instead of moving application windows around and minimizing them when not in use, Workspaces allow you to simply keep those applications open at whatever screen size you like, hiding them from view temporarily, while you navigate to another workspace to do some other sort of work, and then navigate back to your previous workspace to utilize the applications you had been using earlier. The below GIF demonstrates the use of Workspaces, which are changed using keybindings.
                 </p>
                 <figure>
                     <img
@@ -196,20 +196,20 @@
                         cite="screenshot"
                         loading="lazy"
                     />
-                    <figcaption>Navigation of WorkSpaces in XFCE</figcaption>
+                    <figcaption>Navigation of workspaces in XFCE</figcaption>
                 </figure>
                 <p class="article-content">
-                    As you can see, each time I enter the super key followed by a number, it brings me to that numbered workspace. The change of the various applications is the change of the workspace, each one having different applications open. There are usually 10 workspaces available (numbered 1-10) in tiling window managers. XFCE allows for 12 (using by default ctrl + f1-12 keys). In case you were wondering if I modified the keys for these, I did. That is because the super+number keybinding is more traditional in tiling window managers for switching workspces. In XFCE, if you wish to change the workspace keybindings, navigate from the start menu to the settings > window manager sub-menu and select keyboard. You should then edit the keybindings labeled "Workspace" followed by the workspace number. This is basically the same process as editing keybindings for applications.
+                    As you can see, each time I enter the super key followed by a number, it brings me to that numbered workspace. The change of the various applications is the change of the workspace, each one having different applications open. There are usually 10 workspaces available in tiling window managers. XFCE allows for 12 (using by default ctrl + f1-12 keys). In case you were wondering if I modified the keys for these, I did. That is because the super+number keybinding is more traditional in tiling window managers for switching workspaces. In XFCE, if you wish to change the workspace keybindings, navigate from the start menu to the settings > window manager sub-menu and select keyboard. You should then edit the keybindings labeled "Workspace" followed by the workspace number. This is basically the same process as editing keybindings for applications.
                 </p>
                 <p class="article-content">
-                    I could continue to explore the XFCE interface, but let us now move onto the subject of Tiling Window Managers with the introduction of the i3 window manager.
+                    I could continue to explore the XFCE interface, but let us now move onto the subject of Tiling Window Managers with the introduction of the i3.
                 </p>
                 <h4 class="article-header4">The i3 Tiling Window Manager</h4>
                 <p class="article-content">
-                    The installation of the i3 Tiling Window Manager is relatively straight forward, as it simply involves utilizing your native package manager to do so. It is highly likely that if you wish to install a tiling window manager for the first time, that you'd like to keep your current Desktop Environment in the event that you don't like using a Tiling Window Manager. This is completely understandable, and thus our tutorial here will cover how to install i3 alongside XFCE so that you can simply choose one or the other at login.
+                    The installation of the i3 Tiling Window Manager is relatively straight forward, as it simply involves utilizing your native package manager to do so. It is highly likely that if you wish to install a Tiling Window Manager for the first time, that you'd like to keep your current Desktop Environment in the event that you don't like it, and wish to revert back. This is completely understandable, and thus our tutorial here will cover how to install i3 alongside XFCE so that you can simply choose one or the other at login.
                 </p>
                 <p class="article-content">
-                    Let's get started with first installing the needed pieces of software. From your terminal emulator , install the i3 window manager, the i3status display bar, the picom compositor, and the dynamic menu, dmenu, and also the feh image viewer, for setting our background wallpaper.
+                    Let's get started with first installing the needed pieces of software. From your terminal emulator , install the i3 window manager, the i3status display bar, the picom compositor, the dynamic menu, dmenu, and also the feh image viewer, for setting our background wallpaper.
                 </p>
                 <p class="article-content">
                     On Arch Linux:
@@ -250,7 +250,7 @@
                     <figcaption>Select "Yes" To Generate a Default Configuration</figcaption>
                 </figure>
                 <p class="article-content">
-                    Afterwards which you will be asked which "Mod" key you'd like as default, either the "super" or "alt" key. This key will be the default for chaining with other keys which when used in sequence will call various applications and  change workspaces. I personally prefer the "super" key, so I'm going to choose the first option.
+                    Afterwards which you will be asked which "Mod" key you'd like as default, either the "super" or "alt" key. This key will be the default for chaining with other keys which when used in sequence will call various applications and change workspaces. I personally prefer the "super" key, so I'm going to choose the first option.
                 </p>
                 <figure>
                     <img
@@ -262,7 +262,7 @@
                         cite="screenshot"
                         loading="lazy"
                     />
-                    <figcaption>Selet "Win" or "Alt" for your Mod Key</figcaption>
+                    <figcaption>Select "Win" or "Alt" for your Mod Key</figcaption>
                 </figure>
                 <p class="article-content">
                     After this choice is made and you hit enter, you'll be left with no further instruction, which can be jarring for beginners. Don't worry, remember the keybinding to call the terminal we made in XFCE? Well the reason I chose "super + enter," was because that is the same command in the default i3 configuration for calling the terminal. So you can do the same here in i3, calling the terminal with "super + enter". In fact, let's call a few terminals to see the default tiling behavior of i3, hit "super + enter" a couple of times:
@@ -280,7 +280,7 @@
                     <figcaption>You can call a Terminal using "super+enter" keybinding</figcaption>
                 </figure>
                 <p class="article-content">
-                    As you can see, a Tiling Window Manager "tiles" its windows in a cascading fashion, utilizing as much of the available screen space (known in some circles as screen "real estate"). So how do we navigate this? Well you can indeed use the mouse to select which of your open applications you'd like to utilize, but obvioiusly, this article being about the keyboard-centric workflow, we'll choose to navigate using our keyboard. Hiting "super+j" or "super+;"(super + semicolon) will navgate left and right respectively. Additionally, if we move a window to the bottom so that it is in a horizontal orientation using (super+shift+k), then we can demonstrate navigation up and down windows using (super+k) or (super+l)
+                    As you can see, a Tiling Window Manager "tiles" its windows in a cascading fashion, utilizing as much of the available screen space (known in some circles as screen "real estate"). So how do we navigate this? Well you can indeed use the mouse to select which of your open applications you'd like to utilize, but obviously, this article being about the keyboard-centric workflow, we'll choose to navigate using our keyboard. Hitting "super+j" or "super+;"(super + semicolon) will navigate left and right respectively. Additionally, if we move a window to the bottom so that it is in a horizontal orientation using (super+shift+k), then we can demonstrate navigation up and down windows using (super+k) or (super+l)
                 </p>
                 <figure>
                     <img
@@ -312,7 +312,7 @@
                 </p>
                 <h4 class="article-header4">Conclusion</h4>
                 <p class="article-content">
-                    There is so much more I could cover regarding Tiling Window Managers and the keyboard-centric workflow, but I will leave you with this basic introduction on how to get started with creating your own version of it. While a classic Desktop Environment is fine for most, and will probably always be more popular than Tiling Window Managers, for those of you that have an affinity towards working on the keyboard (which, if you are invested in becoming more productive on the computer, you should), a Tiling Window Manager might be something worthwhile for you to investigate. Below I provide you with a short clip of my standard workflow (if you're wondering how to get transparency to work in the terminal like in this gif, you'll want to look into The Arch Wiki's <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://wiki.archlinux.org/title/Picom">documentation</a> on picom). To further emphasize the use of the keyboard, I have installed the <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/">Vimium extension</a> into the <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://librewolf.net/">Librewolf browser</a> to demonstrate further the possibilities of working almost completely without a mouse. Enjoy, and keep keybinding.
+                    There is so much more I could cover regarding Tiling Window Managers and the keyboard-centric workflow, but I will leave you with this basic introduction on how to get started with creating your own version of it. While a classic Desktop Environment is fine for most, and will probably always be more popular than Tiling Window Managers, for those of you that have an affinity towards working on the keyboard (which, if you are invested in becoming more productive on the computer, you should), a Tiling Window Manager might be something worthwhile for you to investigate. Below I provide you with a short clip of my standard workflow (if you're wondering how to get transparency to work in the terminal like in this GIF, you'll want to look into The Arch Wiki's <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://wiki.archlinux.org/title/Picom">documentation</a> on picom). To further emphasize the use of the keyboard, I have installed the <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/">Vimium extension</a> into the <a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://librewolf.net/">Librewolf browser</a> to demonstrate further the possibilities of working almost completely without a mouse. Enjoy, and keep keybinding.
                 </p>
                 <figure>
                     <img

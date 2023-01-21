@@ -49,9 +49,9 @@
                 <p class="article-content">
                     There are many forms of documenting projects, be they man pages accessible via
                     the terminal to official documentation provided by the developer hosted on their
-                    website. The intermediary piece of documentation that a new software developer
-                    must become familiar with how to write is the README.md file. If you have ever
-                    perused a properly maintained Repository page on Github or other hosting
+                    website. One essential type of documentation that a new software developer
+                    must become familiar with is the README.md file. If you have ever
+                    perused a properly maintained repository on Github or other hosting
                     service websites, you have most certainly come across a README.md. The finished
                     document looks something like this:
                 </p>
@@ -88,7 +88,7 @@
                     language has become the standard for writing READMEs, as it provides a quick way
                     to create formatted text that is well presented to the reader. READMEs are
                     traditionally capitalized so that the 'ls' command prioritizes its display, and
-                    the .md appended to the end of the README is to indicate that the document is
+                    the .md appended to the end of the README indicative that the document is
                     written in markdown.
                 </p>
                 <h4 class="article-header4">The Markdown Language</h4>
@@ -117,17 +117,18 @@
                     At the end of the day, Markdown is simply an extension upon a plain text
                     document, so one can get started working in it right away. Navigate to the base
                     of a project you'd like to write a README for (or just create a test directory),
-                    and let's create one from command line using the touch command:
+                    and let's create one from the command line using the touch command:
                     <pre><code class="language-bash">[ ~]$ touch README.md</code></pre>
                 </p>
                 <p class="article-content">
                     Next we'll open up our newly created README.md file in our favorite text editor
-                    and start documenting our project. I'll be using Neovim for my examples, and
+                    and start documenting our project. I'll be using NeoVim for my examples, and
                     will also be using an extension called
                     <a class="article-outside-links" target="_blank" rel="noopener noreferrer"
                     href="https://github.com/iamcco/markdown-preview.nvim">markdown-preview</a>. If
                     you are reading this blog post and want to follow along in
-                    VS Code, there is equivalent functionality available for that editor as well.
+                    VS Code, there is equivalent functionality available for that editor as well
+                    in the form of different extensions.
                 </p>
                 <p class="article-content">
                     Let's write out a header, with the title of our project. I'm going to call my
@@ -194,7 +195,7 @@
                         cite="screenshot"
                         loading="lazy"
                     />
-                    <figcaption>Bold, Italicize, Strikethrough and Underline in
+                    <figcaption>Bold, Italicize, Strike-through and Underline in
                     Markdown</figcaption>
                 </figure>
                 <p class="article-content">
@@ -204,13 +205,13 @@
 __two underscores also creates bold text__</code></pre>
                     <pre><code class="language-markdown">*single star creates italicized text*
 _single underscore also creates italicized text_</code></pre>
-                    <pre><code class="language-markdown">~~two tildes creates strikethrough text~~</code></pre>
+                    <pre><code class="language-markdown">~~two tildes creates strike-through text~~</code></pre>
                     <pre><code class="language-markdown">&ltu&gthtml style u tags create underline text&lt/u&gt</code></pre>
                 </p>
                 <h4 class="article-header4">Creating Lists</h4>
                 <p class="article-content">
                     As I mentioned earlier, the syntax of Markdown can be far nicer than HTML in
-                    many respects. A good example of this is creating ordered and unordered list. In
+                    many respects. A good example of this is creating ordered and unordered lists. In
                     HTML, creating an unordered list looks like this:
                     <pre><code class="language-cshtml">&ltul&gt
     &ltli&gtMy first item&lt/li&gt
@@ -321,7 +322,7 @@ _single underscore also creates italicized text_</code></pre>
                 <h4 class="article-header4">Conclusion</h4>
                 <p class="article-content">
                     The capabilities of Markdown are vast. In addition to what has been covered here,
-                    one can create tables, graphs, and embed images/gifs into Markdown files to
+                    one can create tables, graphs, and embed images/GIFs into Markdown files to
                     further help document your projects.
                 </p>
                 <p class="article-content">
@@ -336,7 +337,7 @@ _single underscore also creates italicized text_</code></pre>
                 </p>
                 <p class="article-content">
                     As a beginning software developer, the README is one of your most important
-                    tools when learning about a new tool, or even referring back to one of your old
+                    resources when learning about a new tool, or even referring back to one of your old
                     projects. It is within your best interest to develop a good habit of writing
                     READMEs and other forms documentation for your projects, so take the time to
                     familiarize yourself with one of the most common forms of it, Markdown.

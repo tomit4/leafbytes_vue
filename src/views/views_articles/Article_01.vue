@@ -45,14 +45,11 @@ import nxtbtn from '../views_data/nextbtn.json'
                 </p>
                 <p class="article-content">
                     There is such a huge skill and knowledge divide between the average everyday user of today's
-                    computers and programmers, and that divide is becoming ever wider with the emphasis placed on
+                    computers and today's programmers, and that divide is becoming ever wider with the emphasis placed on
                     tablets, phones, and touchscreens. In many ways, the ability to adequately type is becoming a
                     lost art form that only college graduates are capable of, let alone the amount of those who
-                    know about basic keyboard shortcuts These skills, while not uncommon, are also not nearly as
-                    common as they should be, especially when considering the prevalance of computers in our lives.
-                    This is certainly an opinion (as is nearly everything written on this blog), but I think it
-                    goes without saying that the ability to type at least 40 words per minute (WPM) is as important
-                    as, if not more important than, the ability to drive a motor vehicle in today's modern world.
+                    know about basic keyboard shortcuts. These skills, while not uncommon, are also not as ubiquitous
+                    as they should be, especially when considering the prevalence of computers in our lives.
                 </p>
                 <p class="article-content">
                     So where do you get started when learning to code? If you already can type adequately without
@@ -77,21 +74,22 @@ import nxtbtn from '../views_data/nextbtn.json'
                 </p>
                 <p class="article-content">
                     At first you will find yourself typing slowly and looking down at the keyboard often. Do not
-                    fret, do your best to not get frustrated. Learning a new skill takes time and is rarely a
+                    fret, and do your best to not get frustrated. Learning a new skill takes time and is rarely a
                     comfortable experience. Whenever you find yourself looking down at the keyboard, return your
                     fingers to the home row, place your index fingers on the j and f keys, feel the raised bars at
                     the bottom of the keys with your fingers to remind yourself of the tactile sensation of being
                     in the proper starting position, and continue to memorize where each key is. Eventually this
                     muscle memory will become engrained in you, and you will be more focused on what you are
-                    trying to write, rather than the location of the keys.
+                    trying to type, rather than the location of the keys.
                 </p>
                 <p class="article-content">
                     Once you feel you can write a short essay (2 pages long), at about 40wpm, you are ready to move
                     onto learning some basic keyboard shortcuts. This is markedly easier than learning to type, but
                     provides you with an ability to navigate applications (particularly the web browser and word
                     processor) much faster, and ultimately this makes doing research and editing documents much
-                    easier, less frustrating, and faster. Here are some of the basics that exist on the most
-                    common desktop platforms:
+                    easier, with the added benefit of making you more productive as your typing speed is no longer
+                    a bottleneck. Here are some of the basic keyboard shortcuts that exist on the most common desktop
+                    platforms:
                 </p>
                 <p class="article-content">
                     On the Browser:
@@ -121,19 +119,19 @@ import nxtbtn from '../views_data/nextbtn.json'
                     </ul>
                 </p>
                 <p class="article-content">
-                    The skill of typing and knowing certain keyboard shortcuts are not necessary, per se, to
-                    learning how to code, but having a basic proficiency in typing will make your journey learning
+                    The skill of typing and knowing certain keyboard shortcuts are not necessary to
+                    learning how to code, but having a basic proficiency in typing will make learning
                     to code much easier. An approachable way to think about the learning process when it comes to
                     typing is that it is very much akin to learning how to walk. Using the mouse can be thought of
                     as crawling, typing as walking, and utilizing slightly more advanced tools like keyboard
-                    shortcuts and text editors like vim as running. All this said, there is a point of
+                    shortcuts and text editors like Vim as running. All this said, there is a point of
                     diminishing returns when it comes to the correlation between quality of code and typing speed.
                     At some point you are reading code and looking at code and thinking about code much more than
                     simply typing it. You do not need to have the typing speed of a courtroom stenographer to learn
                     how to code, but it is essential that your typing speed (or lack thereof) not hinder your train
-                    of thought when you do put your thoughts onto the screen. The location of the keys must be
+                    of thought when you are writing code. The location of the keys must be
                     subconscious in your mind so that the only constraint is the speed of your thoughts, not the
-                    speed of fingers.
+                    speed of your fingers.
                 </p>
                 <p class="article-content">
                     I was once told that learning to code and program was like learning to wield a great lever.

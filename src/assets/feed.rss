@@ -4,7 +4,7 @@
 <title>leafbytes blog</title>
 <link>https://leafbytes.com</link>
 <language>en-us</language>
-<atom:link href="http://leafbytes.com/leafbytes.rss" rel="self" type="application/rss+xml" />
+<atom:link href="http://leafbytes.com/feed.rss" rel="self" type="application/rss+xml" />
 <description>Articles on Web Development, Development Tools, and Linux</description>
 <item>
     <pubDate>Fri, 04 Nov 2022 12:30:00 +0200</pubDate>

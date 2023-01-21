@@ -21,7 +21,7 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: "/home",
+            path: "/",
             name: "home",
             components: {
                 default: HomeView,
@@ -51,12 +51,6 @@ const router = createRouter({
                 body: Body
             },
             children: [
-                {
-                    path: '/',
-                    name: 'root',
-                    component: App,
-                    redirect: '/home'
-                },
                 {
                     path: 'one-with-the-keyboard',
                     name: 'one-with-the-keyboard',

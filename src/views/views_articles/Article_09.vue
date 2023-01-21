@@ -19,6 +19,7 @@
             <p class="article-header">the readme</p>
             <p class="article-header3">documentation for beginners</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Jan 13, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

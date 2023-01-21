@@ -22,6 +22,7 @@
             <p class="article-header">why use linux</p>
             <p class="article-header3">learning to love the penguin</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Nov 06, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

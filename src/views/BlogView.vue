@@ -56,6 +56,7 @@
         border-radius: 7px 7px 0px 0px;
     }
 
+    .article-pub-date,
     .article-content {
         font-family: LiberationMono;
         font-size: clamp(0.92rem, 1vw, 0.96rem);
@@ -63,6 +64,13 @@
         color: var(--dark-blue);
         line-height: 1.5rem;
         margin: 1rem;
+    }
+
+    .article-pub-date {
+        margin-top: -0.25rem;
+        margin-bottom: -1rem;
+        text-align: center;
+        font-size: clamp(0.8rem, 0.7vw, 0.90rem);
     }
 
     .article-outside-links {

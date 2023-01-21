@@ -22,6 +22,7 @@
             <p class="article-header">musings on vim</p>
             <p class="article-header3">one editor to rule them all</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Nov 08, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

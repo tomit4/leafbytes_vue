@@ -22,6 +22,7 @@
             <p class="article-header">the keys that bind</p>
             <p class="article-header3">on tiling window managers</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Nov 13, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"
@@ -326,37 +327,9 @@
                     />
                     <figcaption>i3 can be customized to be beautiful and efficient</figcaption>
                 </figure>
-                <div class="footnote-container">
-                <ul class="footnotes">
-                    <li class="footnotes-item" id="footnote-1"><span
-                    class="return-caret">[^]</span><span class="footnote-href"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://en.wikipedia.org/wiki/Computer_screen"> Wiki:
-                    Computer Screen</span></li>
-                    <li class="footnotes-item" id="footnote-1"><span
-                    class="return-caret">[^]</span><span class="footnote-href"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://en.wikipedia.org/wiki/Window_manager"> Wiki:
-                    Window Manager</span></li>
-                    <li class="footnotes-item" id="footnote-1"><span
-                    class="return-caret">[^]</span><span class="footnote-href"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://en.wikipedia.org/wiki/Tiling_window_manager"> Wiki:
-                    Tiling Window Manager</span></li>
-                    <li class="footnotes-item" id="footnote-1"><span
-                    class="return-caret">[^]</span><span class="footnote-href"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://en.wikipedia.org/wiki/Desktop_environment"> Wiki:
-                    Desktop Environment</span></li>
-                    <li class="footnotes-item" id="footnote-1"><span
-                    class="return-caret">[^]</span><span class="footnote-href"
-                    target="_blank" rel="noopener noreferrer"
-                    href="https://en.wikipedia.org/wiki/Keyboard_shortcuts"> Wiki:
-                    Keyboard Shortcuts</span></li>
-                </ul>
-            </div>
-            <div class="spacer"></div>
         </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
     </div>
     </div>
 </template>

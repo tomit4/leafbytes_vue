@@ -19,6 +19,7 @@
             <p class="article-header">ortholinear keyboards</p>
             <p class="article-header3">they're just better</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Dec 18, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

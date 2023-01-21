@@ -22,6 +22,7 @@
             <p class="article-header">git basics</p>
             <p class="article-header3">understanding version control</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Jan 11, 2023</p>
                 <figure>
                     <img
                         class="header-images intro-image"

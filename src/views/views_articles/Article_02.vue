@@ -22,6 +22,7 @@
             <p class="article-header">command line</p>
             <p class="article-header3">getting comfy in the shell</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Nov 05, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

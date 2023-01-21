@@ -22,6 +22,7 @@
             <p class="article-header">espanso</p>
             <p class="article-header3">expand your text</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Jan 11, 2023</p>
                 <figure>
                     <img
                         class="header-images intro-image"

@@ -16,6 +16,7 @@ import nxtbtn from '../views_data/nextbtn.json'
             <p class="article-header">one with the keyboard</p>
             <p class="article-header3">a necessary prerequisite</p>
             <div class="article-body">
+                <p class="article-pub-date">Published on Nov 04, 2022</p>
                 <figure>
                     <img
                         class="header-images intro-image"

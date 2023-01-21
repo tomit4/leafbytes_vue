@@ -51,47 +51,47 @@ const router = createRouter({
             }
         },
         {
-            path: 'one-with-the-keyboard',
+            path: '/one-with-the-keyboard',
             name: 'one-with-the-keyboard',
-            components: Article_01
+            component: Article_01
         },
         {
-            path: 'command-line',
+            path: '/command-line',
             name: 'command-line',
             component: Article_02
         },
         {
-            path: 'why-use-linux',
+            path: '/why-use-linux',
             name: 'why-use-linux',
             component: Article_03
         },
         {
-            path: 'musings-on-vim',
+            path: '/musings-on-vim',
             name: 'musings-on-vim',
             component: Article_04
         },
         {
-            path: 'the-keys-that-bind',
+            path: '/the-keys-that-bind',
             name: 'the-keys-that-bind',
             component: Article_05
         },
         {
-            path: 'ortholinear-keyboards',
+            path: '/ortholinear-keyboards',
             name: 'ortholinear-keyboards',
             component: Article_06
         },
         {
-            path: 'espanso-text-expander',
+            path: '/espanso-text-expander',
             name: 'espanso-text-expander',
             component: Article_07
         },
         {
-            path: 'git-basics',
+            path: '/git-basics',
             name: 'git-basics',
             component: Article_08
         },
         {
-            path: 'the-readme',
+            path: '/the-readme',
             name: 'the-readme',
             component: Article_09
         },

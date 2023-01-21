@@ -21,6 +21,20 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
+            path: "/",
+            name: "root",
+            component: App,
+            redirect: "/home"
+        },
+        {
+            path: "/home",
+            name: "home",
+            components: {
+                default: HomeView,
+                body: Body
+            }
+        },
+        {
             path: "/about",
             name: "about",
             components: {
@@ -37,58 +51,49 @@ const router = createRouter({
             }
         },
         {
-            path: "/:?",
-            components: {
-                default: HomeView,
-                body: Body
-            },
-            children: [
-                {
-                    path: 'one-with-the-keyboard',
-                    name: 'one-with-the-keyboard',
-                    component: Article_01
-                },
-                {
-                    path: 'command-line',
-                    name: 'command-line',
-                    component: Article_02
-                },
-                {
-                    path: 'why-use-linux',
-                    name: 'why-use-linux',
-                    component: Article_03
-                },
-                {
-                    path: 'musings-on-vim',
-                    name: 'musings-on-vim',
-                    component: Article_04
-                },
-                {
-                    path: 'the-keys-that-bind',
-                    name: 'the-keys-that-bind',
-                    component: Article_05
-                },
-                {
-                    path: 'ortholinear-keyboards',
-                    name: 'ortholinear-keyboards',
-                    component: Article_06
-                },
-                {
-                    path: 'espanso-text-expander',
-                    name: 'espanso-text-expander',
-                    component: Article_07
-                },
-                {
-                    path: 'git-basics',
-                    name: 'git-basics',
-                    component: Article_08
-                },
-                {
-                    path: 'the-readme',
-                    name: 'the-readme',
-                    component: Article_09
-                },
-            ]
+            path: 'one-with-the-keyboard',
+            name: 'one-with-the-keyboard',
+            components: Article_01
+        },
+        {
+            path: 'command-line',
+            name: 'command-line',
+            component: Article_02
+        },
+        {
+            path: 'why-use-linux',
+            name: 'why-use-linux',
+            component: Article_03
+        },
+        {
+            path: 'musings-on-vim',
+            name: 'musings-on-vim',
+            component: Article_04
+        },
+        {
+            path: 'the-keys-that-bind',
+            name: 'the-keys-that-bind',
+            component: Article_05
+        },
+        {
+            path: 'ortholinear-keyboards',
+            name: 'ortholinear-keyboards',
+            component: Article_06
+        },
+        {
+            path: 'espanso-text-expander',
+            name: 'espanso-text-expander',
+            component: Article_07
+        },
+        {
+            path: 'git-basics',
+            name: 'git-basics',
+            component: Article_08
+        },
+        {
+            path: 'the-readme',
+            name: 'the-readme',
+            component: Article_09
         },
         {
             path: "/:catchall(.*)*",

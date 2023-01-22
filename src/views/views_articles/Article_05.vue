@@ -94,7 +94,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_xfce"
                         src="../../assets/img/ss_debian_xfce.webp"
                         alt="The Default Debian XFCE Desktop Environment"
@@ -109,7 +108,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_xfce"
                         src="../../assets/img/ss_debian_terminal_spawn.webp"
                         alt="A Picture of the XFCE Terminal Calling Another Instance of Itself"
@@ -127,7 +125,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/ss_debian_xfce_keybindings01.webp"
                         alt="XFCE menu navigation to change keyboard shortcuts"
                         title="XFCE menu navigation to change keyboard shortcuts"
@@ -141,7 +138,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_xfce_key2"
                         src="../../assets/img/ss_debian_xfce_keybindings02.webp"
                         alt="XFCE menu navigation to change keyboard shortcuts"
@@ -156,7 +152,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_xfce_key3"
                         src="../../assets/img/ss_debian_xfce_keybindings03.webp"
                         alt="XFCE menu navigation to change keyboard shortcuts"
@@ -171,7 +166,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_01_gif"
                         src="../../assets/img/ss_debian_keybinding_01.gif"
                         alt="Demonstration of new Keybinding in XFCE"
@@ -189,7 +183,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_02_gif"
                         src="../../assets/img/ss_debian_keybinding_02.gif"
                         alt="Demonstration of Navigating Workspaces in XFCE"
@@ -225,7 +218,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_01"
                         src="../../assets/img/ss_debian_i3_01.webp"
                         alt="Screenshot of i3 Selection in LightDm Menu"
@@ -240,7 +232,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_02"
                         src="../../assets/img/ss_debian_i3_02.webp"
                         alt="Screenshot of i3 Welcome Prompt"
@@ -255,7 +246,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_03"
                         src="../../assets/img/ss_debian_i3_03.webp"
                         alt="Screenshot of i3 mod key choice prompt"
@@ -270,7 +260,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_demo_01"
                         src="../../assets/img/ss_debian_i3_demo_01.gif"
                         alt="Gif showing i3 calling terminals"
@@ -285,7 +274,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_demo_02"
                         src="../../assets/img/ss_debian_i3_demo_02.gif"
                         alt="Gif showing basic navigation in i3"
@@ -317,7 +305,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="ss_debian_i3_demo_03"
                         src="../../assets/img/ss_debian_i3_demo_03.gif"
                         alt="Demo of a highly customized i3 setup"

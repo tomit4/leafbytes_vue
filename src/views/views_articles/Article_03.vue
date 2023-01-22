@@ -185,7 +185,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="etcher"
                         src="../../assets/img/etcher.gif"
                         alt="A gif showing the basic usage of Balena Etcher"
@@ -203,7 +202,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="bios"
                         src="../../assets/img/bios.webp"
                         alt="An example picture of an ASUS BIOS Menu"
@@ -234,7 +232,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="grub"
                         src="../../assets/img/grub.webp"
                         alt="A Picture of the GRUB Bootloader menu"
@@ -249,7 +246,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="live-environment"
                         src="../../assets/img/live-environment.webp"
                         alt="A Picture of Linux Mint's Live Desktop Environment"
@@ -267,7 +263,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="mint-install"
                         src="../../assets/img/mint_install.webp"
                         alt="A Picture of Linux Mint Install Menu"
@@ -285,7 +280,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="mint_login"
                         src="../../assets/img/mint_login.webp"
                         alt="A Picture of The Linux Mint Login Screen"

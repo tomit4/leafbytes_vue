@@ -101,7 +101,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_01"
                         src="../../assets/img/ss_nvim_01.webp"
                         alt="The Introduction Screen to Neovim"
@@ -116,7 +115,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_03"
                         src="../../assets/img/ss_nvim_03.webp"
                         alt="Neovim in Insert Mode with Sample Text"
@@ -129,7 +127,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 <br>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_02"
                         src="../../assets/img/ss_nvim_02.webp"
                         alt="CloseUp of the INSERT mode prompt"
@@ -147,7 +144,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_04"
                         src="../../assets/img/ss_nvim_04.gif"
                         alt="Demonstration of basic navigation in Vim"
@@ -165,7 +161,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_05"
                         src="../../assets/img/ss_nvim_05.gif"
                         alt="Demonstration of word traversal in Vim"
@@ -180,7 +175,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_06"
                         src="../../assets/img/ss_nvim_06.gif"
                         alt="Demonstration of line traversal in Vim"
@@ -198,7 +192,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_07"
                         src="../../assets/img/ss_nvim_07.gif"
                         alt="Demonstration of vertical traversal in Vim"
@@ -216,7 +209,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_08"
                         src="../../assets/img/ss_nvim_08.gif"
                         alt="Demonstration of entire document traversal in Vim"
@@ -246,7 +238,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_09"
                         src="../../assets/img/ss_nvim_09.gif"
                         alt="Demonstration of deleting a word using 'dw' and 'db' in Vim"
@@ -279,7 +270,6 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         id="nvim_ss_10"
                         src="../../assets/img/ss_nvim_10.gif"
                         alt="Demonstration of various deletion methods in Vim"

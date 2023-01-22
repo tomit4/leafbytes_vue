@@ -58,7 +58,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-01.webp"
                         alt="A sample page of a readme"
                         title="A sample page of a readme"
@@ -137,7 +136,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-02.webp"
                         alt="a h1 header displayed in both neovim and the browser"
                         title="a h1 header displayed in both neovim and the browser"
@@ -153,7 +151,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-03.webp"
                         alt="a series of headers expressed in markdown"
                         title="a series of headers expressed in markdown"
@@ -171,7 +168,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-04.webp"
                         alt="basic display of paragraph text in markdown"
                         title="basic display of paragraph text in markdown"
@@ -189,7 +185,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-05.webp"
                         alt="various stylizing of markdown text"
                         title="various stylizing of markdown text"
@@ -232,7 +227,6 @@ _single underscore also creates italicized text_</code></pre>
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-06.webp"
                         alt="a demonstration of creating lists in markdown"
                         title="a demonstration of creating lists in markdown"
@@ -280,7 +274,6 @@ _single underscore also creates italicized text_</code></pre>
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-07.webp"
                         alt="demonstration of writing code blocks in markdown"
                         title="demonstration of writing code blocks in markdown"
@@ -308,7 +301,6 @@ _single underscore also creates italicized text_</code></pre>
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/readme-pic-08.webp"
                         alt="demonstration of how to write checkboxes in
                         markdown"

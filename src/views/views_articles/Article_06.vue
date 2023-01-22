@@ -67,7 +67,6 @@
                     </p>
                     <figure>
                         <img
-                            class="header-images"
                             id="olkb_01"
                             src="../../assets/img/olkb_01.webp"
                             alt="A Minimaliist Split OLKB"
@@ -79,7 +78,6 @@
                     </figure>
                     <figure>
                         <img
-                            class="header-images"
                             id="olkb_02"
                             src="../../assets/img/olkb_02.webp"
                             alt="An Ergodox Split OLKB"
@@ -91,7 +89,6 @@
                     </figure>
                     <figure>
                         <img
-                            class="header-images"
                             id="olkb_01"
                             src="../../assets/img/olkb_03.webp"
                             alt="An Miniaxe 40% Split OLKB"

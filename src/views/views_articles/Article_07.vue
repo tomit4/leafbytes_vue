@@ -151,7 +151,6 @@
                 </p>
                 <figure>
                     <img
-                        class="header-images"
                         src="../../assets/img/espanso_example.gif"
                         alt="Demonstration of Basic Usage of Espanso"
                         title="Demonstration of Basic Usage of Espanso"

@@ -807,7 +807,7 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                     For those more accustomed to VS Code or a similar Graphical
                     User Interface(GUI) text editor, Vim can appear rather
                     sparse. At least the introduction screen provides us with
-                    some information abut how to get started (:help vim &lt;Enter&gt;). I would encourage you to take a look at this help page, as Vim and Neovim documentation is quite good. I will now cover some of the basic keybindings and Vim "movements" in concluding this article, in order that you might get a sense of Vim's appeal.
+                    some information abut how to get started (:help vim "Enter"). I would encourage you to take a look at this help page, as Vim and Neovim documentation is quite good. I will now cover some of the basic keybindings and Vim "movements" in concluding this article, in order that you might get a sense of Vim's appeal.
                 &lt;/p&gt;
             <image>
                 <url>https://leafbytes.com/assets/ss_nvim_01-c106224a.webp</url>
@@ -2167,7 +2167,6 @@ _single underscore also creates italicized text_&lt;/code&gt;&lt;/pre&gt;
                     Markdown is especially easy on the eyes when it comes to creating links. In
                     HTML, creating a basic link can be created like so:
                 &lt;/p&gt;
-                    &lt;pre&gt;&lt;code class="language-cshtml"&gt;&lt;&lt;a href="https://www.example.com"&gt;my example link&lt;/a&gt&lt;/code&gt;&lt;/pre&gt;
                 &lt;p class="article-content"&gt;
                     The same can be accomplished in Markdown like so:
                     &lt;pre&gt;&lt;code class="language-markdown"&gt;[my example link](https://www.example.com)&lt;/code&gt;&lt;/pre&gt;

@@ -14,7 +14,7 @@
     <description>
                 &lt;h1&gt;one with the keyboard&lt;/h1&gt;
             &lt;h3&gt;a necessary prerequisite&lt;/h3&gt;
-        <enclosure url="https://leafbytes.com/assets/home-row-e938435b.webp" length="32000" type="image/webp" />
+            <enclosure url="https://leafbytes.com/assets/home-row-e938435b.webp" length="32000" type="image/webp" />
                 &lt;blockquote class="article-quotes" cite="https://www.brainyquote.com"&gt;
                     "What I was proud of was that I used very few parts to build a computer that could actually
                     speak words on a screen and type words on a keyboard and run a programming language that could
@@ -769,7 +769,7 @@
                 &lt;/p&gt;
                 &lt;h4 class="article-header4"&gt;Vim's Drawbacks&lt;/h4&gt;
                 &lt;p class="article-content"&gt;
-                    Utilizing Vim's keybindings and modal editing is actually nearly ubiquitous across text editors now. There is a Vim Feature/Plugin for nearly every text editor, as well as a Vim setting in your shell (simply write "set -o vi" in your ~/.bashrc), and even your web browser can be modified with an &lt;a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/"&gt;extension&lt;/a&gt; to utilize Vim-style keyboard-centric navigation. With Vim's flagship keybindings having been ported to many other text editors, one might wonder why use Vim at all? This is a more compelling argument against using the original terminal based Vim text editor (especially if you also don't find the following argument below regarding the efficient of use of system resources compelling). Vim in the terminal requires more in-depth configuration than other text editors. While being more customizable than other text editors, the time spent in configuring any piece of software could easily be spent learning some programming language, or simply doing anything else for that matter. The scripting language, vim-script, is not portable to other programs, and thus the time you spend learning vim-script does not transfer a commonly used skill over to other projects (It is of note that Vim's successor, Neovim, is configured in the scripting language Lua, and thusly learning Lua through configuring Neovim may be a more worthwhile endeavor in this regard). In my previous article on &lt;router-link class="inter-article-links" to="/why-use-linux"&gt;Why You Should Use Linux&lt;/router-link&gt;, one of my main arguments behind learning to utilize The Linux Operating System was the fact that the act of customizing your Linux machine will help you learn more about computers in general. This same argument cannot be applied when regarding configuring Vim as a way to learn more about your computer, though in configuring Vim, you will learn more about your text editor. Ultimately, many of the features available in VSCode natively have to be implemented in Vim via plugins and extensive configuration. So what are the utilitarian reasons for utilizing Vim?
+                    Utilizing Vim's keybindings and modal editing is actually nearly ubiquitous across text editors now. There is a Vim Feature/Plugin for nearly every text editor, as well as a Vim setting in your shell (simply write "set -o vi" in your ~/.bashrc), and even your web browser can be modified with an &lt;a class="article-outside-links" target="_blank" rel="noopener noreferrer" href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/"&gt;extension&lt;/a&gt; to utilize Vim-style keyboard-centric navigation. With Vim's flagship keybindings having been ported to many other text editors, one might wonder why use Vim at all? This is a more compelling argument against using the original terminal based Vim text editor (especially if you also don't find the following argument below regarding the efficient of use of system resources compelling). Vim in the terminal requires more in-depth configuration than other text editors. While being more customizable than other text editors, the time spent in configuring any piece of software could easily be spent learning some programming language, or simply doing anything else for that matter. The scripting language, vim-script, is not portable to other programs, and thus the time you spend learning vim-script does not transfer a commonly used skill over to other projects (It is of note that Vim's successor, Neovim, is configured in the scripting language Lua, and thusly learning Lua through configuring Neovim may be a more worthwhile endeavor in this regard). In my previous article on Why You Should Use Linux, one of my main arguments behind learning to utilize The Linux Operating System was the fact that the act of customizing your Linux machine will help you learn more about computers in general. This same argument cannot be applied when regarding configuring Vim as a way to learn more about your computer, though in configuring Vim, you will learn more about your text editor. Ultimately, many of the features available in VSCode natively have to be implemented in Vim via plugins and extensive configuration. So what are the utilitarian reasons for utilizing Vim?
                 &lt;/p&gt;
                 &lt;h4 class="article-header4"&gt;Why Use Vim?&lt;/h4&gt;
                 &lt;p class="article-content"&gt;
@@ -986,7 +986,7 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 &lt;/p&gt;
                 &lt;h4 class="article-header4"&gt;The Keyboard-Centric Workflow&lt;/h4&gt;
                 &lt;p class="article-content"&gt;
-                    There have been few articles written on the keyboard-centric workflow. The subject is the realm mainly focused on by productivity enthusiasts and computer programmers (perhaps also the occasional stenographer). I have touched briefly on the concepts of the keyboard-centric workflow in &lt;router-link class="inter-article-links" to="/musings-on-vim"&gt;my article on The Vim Text Editor&lt;/router-link&gt;, but will spend more time elaborating on the subject here.
+                    There have been few articles written on the keyboard-centric workflow. The subject is the realm mainly focused on by productivity enthusiasts and computer programmers (perhaps also the occasional stenographer). I have touched briefly on the concepts of the keyboard-centric workflow in my article on The Vim Text Editor, but will spend more time elaborating on the subject here.
                 &lt;/p&gt;
                 &lt;p class="article-content"&gt;
                     I have always enjoyed the sensation of typing from an early age when I first sat down at a keyboard. In high school and especially college, I took the time to learn some of the classic keyboard shortcuts present in nearly every application. The knowledge of these shortcuts allowed me to navigate more quickly throughout applications, edit text more quickly, and generally work with the computer much faster than others. In short, I became what is known colloquially as a "power user".
@@ -999,7 +999,7 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                 &lt;/p&gt;
                 &lt;h4 class="article-header4"&gt;A Brief Note On The Linux Desktop&lt;/h4&gt;
                 &lt;p class="article-content"&gt;
-                    As you may have already ascertained if you have read my &lt;router-link class="inter-article-links" to="why-use-linux"&gt;Why Use Linux&lt;/router-link&gt; article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one Linux Desktop Environment, that being XFCE. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinnamon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar amount of customization options to XFCE.
+                    As you may have already ascertained if you have read my Why Use Linux article, Linux allows for a great deal of user freedom and choice. Linux Desktop Environments are no different. There are a wide variety of options for Desktop Environments, each with their own features, advantages, and disadvantages. I must confess I only have extensive experience in one Linux Desktop Environment, that being XFCE. If you are curious, the other popular Linux Desktop Environments currently include GNOME, KDE, Cinnamon, and the LXQT Desktop environments. I cannot speak to the quality of these Desktop Environments, but would assume they have a similar amount of customization options to XFCE.
                 &lt;/p&gt;
                 &lt;p class="article-content"&gt;
                 &lt;h4 class="article-header4"&gt;Customized Keybindings On Linux&lt;/h4&gt;
@@ -1337,7 +1337,7 @@ Just like with choosing Linux, the choice of a text editor, like Vim, can become
                     utility. If you look towards the bottom of the
                     example text expansions, you'll see the ":ip"
                     example, which includes a very similar command to my ip alias:
-                    &lt;pre&gt;&lt;code v-pre class="language-yaml"&gt;
+                    &lt;pre&gt;&lt;code&gt;
 # Returns public ip address
 - trigger: ":ip"
   replace: "{{output}}"
@@ -1624,8 +1624,8 @@ vim.api.nvim_create_autocmd('BufReadPost', {
                 &lt;/p&gt;
                 &lt;h4 class="article-header4"&gt;A Brief History of Git&lt;/h4&gt;
                 &lt;p class="article-content"&gt;
-                    In looking over my previous article covering &lt;router-link class="inter-article-links"
-                    to="/why-use-linux"&gt;Why Use Linux&lt;/router-link&gt;, I now realize I
+                    In looking over my previous article covering
+                    Why Use Linux, I now realize I
                     never referenced the history of Linux and its creator, Linus Torvalds. This was
                     probably due to the extensive history of Linux, and I didn't wish for that
                     article to turn into more of a history lesson than a beginner's installation
@@ -2167,7 +2167,7 @@ _single underscore also creates italicized text_&lt;/code&gt;&lt;/pre&gt;
                     Markdown is especially easy on the eyes when it comes to creating links. In
                     HTML, creating a basic link can be created like so:
                 &lt;/p&gt;
-                    &lt;pre&gt;&lt;code class="language-cshtml"&gt;&lt;&lt;a href="https://www.example.com"&gt;my example link&lt;&lt;/a&gt&lt;/code&gt;&lt;/pre&gt;
+                    &lt;pre&gt;&lt;code class="language-cshtml"&gt;&lt;&lt;a href="https://www.example.com"&gt;my example link&lt;/a&gt&lt;/code&gt;&lt;/pre&gt;
                 &lt;p class="article-content"&gt;
                     The same can be accomplished in Markdown like so:
                     &lt;pre&gt;&lt;code class="language-markdown"&gt;[my example link](https://www.example.com)&lt;/code&gt;&lt;/pre&gt;

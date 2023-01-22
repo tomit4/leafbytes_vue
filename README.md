@@ -17,7 +17,7 @@ This website has had one previous iteration, the source code can be found <a hre
 </p>
 
 <p align="center">
-    Hosted On: <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
 </p>
 
 <p align="center">

@@ -4,7 +4,7 @@
 <title>leafbytes blog</title>
 <link>https://leafbytes.com</link>
 <language>en-us</language>
-<atom:link href="http://leafbytes.com/feed.rss" rel="self" type="application/rss+xml" />
+<atom:link href="http://leafbytes.com/assets/feed.rss" rel="self" type="application/rss+xml" />
 <description>Articles on Web Development, Development Tools, and Linux</description>
 <item>
     <pubDate>Fri, 04 Nov 2022 12:30:00 +0200</pubDate>
@@ -17,6 +17,7 @@
             <image>
                 <url>https://leafbytes.com/assets/home-row-e938435b.webp</url>
                 <title>Home Row Position</title>
+                <link>https://www.leafbytes.com</link>
             </image>
                 &lt;blockquote class="article-quotes" cite="https://www.brainyquote.com"&gt;
                     "What I was proud of was that I used very few parts to build a computer that could actually

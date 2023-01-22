@@ -22,7 +22,6 @@
         <Intro />
         <Background />
         <Body />
-        <a style="visibility: hidden;" href="/assets/feed.rss"></a>
     </div>
 </template>
 

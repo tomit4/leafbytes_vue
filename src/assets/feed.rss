@@ -13,12 +13,8 @@
     <guid isPermaLink="false">414153c9pcqklkdaqh77pii7zddktqkyl07n028j</guid>
     <description>
                 &lt;h1&gt;one with the keyboard&lt;/h1&gt;
-                &lt;h3&gt;a necessary prerequisite&lt;/h3&gt;
-            <image>
-                <url>https://leafbytes.com/assets/home-row-e938435b.webp</url>
-                <title>Home Row Position</title>
-                <link>https://www.leafbytes.com</link>
-            </image>
+            &lt;h3&gt;a necessary prerequisite&lt;/h3&gt;
+        <enclosure url="https://leafbytes.com/assets/home-row-e938435b.webp" length="32000" type="image/webp" />
                 &lt;blockquote class="article-quotes" cite="https://www.brainyquote.com"&gt;
                     "What I was proud of was that I used very few parts to build a computer that could actually
                     speak words on a screen and type words on a keyboard and run a programming language that could
